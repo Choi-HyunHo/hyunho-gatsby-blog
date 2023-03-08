@@ -1,5 +1,5 @@
 ---
-emoji: 🔮
+emoji: 📖
 title: 리액트(React.js)
 date: '2022-11-16'
 author: 최현호
