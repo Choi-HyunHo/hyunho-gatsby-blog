@@ -4,6 +4,7 @@ import IconButtonBar from '../icon-button-bar';
 import './style.scss';
 
 function TimeStampSection({ timestamps }) {
+  console.log(timestamps);
   if (!timestamps || timestamps.length < 2) return null;
   return (
     <div className="timestamp-section">
@@ -13,9 +14,12 @@ function TimeStampSection({ timestamps }) {
           index === 0 ? null : (
             <div className="timestamp" key={index}>
               <div className="date">{timestamp.date}</div>
-              <div className="activity">
-                {timestamp.activity}&nbsp;
-                {timestamp.links && <IconButtonBar links={timestamp.links} />}
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <div className="activity">
+                  {timestamp.activity}&nbsp;
+                  {timestamp.links && <IconButtonBar links={timestamp.links} />}
+                </div>
+                <div>{timestamp.info}</div>
               </div>
             </div>
           ),

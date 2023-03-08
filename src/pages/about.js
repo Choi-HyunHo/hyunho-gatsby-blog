@@ -47,6 +47,7 @@ export const pageQuery = graphql`
           timestamps {
             date
             activity
+            info
             links {
               post
               github
