@@ -16,7 +16,7 @@ function IconButtonBar({ links = {} }) {
     switch (icon) {
       case 'post':
         return <DescriptionIcon {...props} />;
-      case 'demo':
+      case 'web':
         return <PlayIcon {...props} />;
       case 'github':
         return <GitHubIcon {...props} />;

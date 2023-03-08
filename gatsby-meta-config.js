@@ -1,8 +1,8 @@
 module.exports = {
-  title: `hyun-ho.com`,
+  title: `Choi-hyunho.com`,
   description: `hoho.dev 개발 블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://hyun-ho.com`,
+  siteUrl: `https://Choi-hyunho.com`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
@@ -14,7 +14,7 @@ module.exports = {
     name: `최현호`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
+      description: ['Front-End', '내일을 바라보는'],
       thumbnail: '87301268.jpg', // Path to the image in the 'asset' folder
     },
     social: {
@@ -38,7 +38,7 @@ module.exports = {
           post: '',
           googlePlay: '',
           appStore: '',
-          demo: '',
+          web: '',
         },
       },
       // ========================================================
@@ -46,11 +46,11 @@ module.exports = {
       {
         date: '2022.06 ~',
         activity: '비플라이소프트',
-        info: 'Web front development group',
+        info: '로제우스 서비스 프론트 개발 및 유지보수',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          web: 'https://www.rozeus.com/',
+          appStore : 'https://apps.apple.com/kr/app/%EB%A1%9C%EC%A0%9C%EC%9A%B0%EC%8A%A4-rozeus-%EA%BC%AD-%ED%95%84%EC%9A%94%ED%95%9C-%EB%89%B4%EC%8A%A4/id1570566887',
+          googlePlay : 'https://play.google.com/store/apps/details?id=com.bflysoft.rozeus'
         },
       },
       {
@@ -58,9 +58,6 @@ module.exports = {
         activity: '한라대학교',
         info: '정보통신소프트웨어 학과',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
         },
       },
     ],
@@ -78,7 +75,7 @@ module.exports = {
           github: '',
           googlePlay: '',
           appStore: '',
-          demo: '',
+          web: '',
         },
       },
       // ========================================================
