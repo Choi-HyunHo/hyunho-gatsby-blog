@@ -30,7 +30,18 @@ function Utterances({ repo, path }) {
     isUtterancesLoaded.current = true;
   }, [repo, rootElm, path]);
 
-  return <div className="utterances" ref={rootElm} />;
+  return (
+    <div className="utterances" ref={rootElm} >
+      <script src="https://utteranc.es/client.js"
+      repo="Choi-HyunHo/hyunho-gatsby-blog"
+      issue-term="pathname"
+      theme="github-light"
+      crossorigin="anonymous"
+      async
+      >
+      </script>
+    </div>
+  );
 }
 
 export default Utterances;

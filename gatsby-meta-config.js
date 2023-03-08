@@ -1,12 +1,12 @@
 module.exports = {
-  title: `Choi-hyunho.com`,
-  description: `hoho.dev 개발 블로그`,
+  title: `choi-hyunho.com`,
+  description: `현호의 기술 블로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://Choi-hyunho.com`,
+  siteUrl: `https://choi-hyunho.com/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `Choi-HyunHo/hyunho-gatsby-blog`, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
