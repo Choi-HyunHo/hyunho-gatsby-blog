@@ -1,7 +1,7 @@
 ---
 emoji: 📖
 title: useState
-date: '2023-02-18'
+date: '2023-02-03'
 author: 최현호
 tags: React
 categories: React
