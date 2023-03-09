@@ -152,7 +152,7 @@ context 를 사용하기 위해서는 context API 를 사용해야 하며 **crea
 
 ### **결과**
 
-<iframe width='500px' height='300px' src="https://codesandbox.io/embed/usecontext-20sx7c?fontsize=14&amp;hidenavigation=1&amp;theme=dark"></iframe>
+<iframe width='100%' height='300px' src="https://codesandbox.io/embed/usecontext-20sx7c?fontsize=14&amp;hidenavigation=1&amp;theme=dark"></iframe>
 
 <br>
 <br>
