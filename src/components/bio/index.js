@@ -24,6 +24,20 @@ function Bio({ author, language = 'ko' }) {
           <div className="social-links">
             <IconButtonBar links={social} />
           </div>
+
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              marginTop: '12px',
+            }}
+          >
+            <span style={{ fontSize: '12px' }}>
+              <strong>Birth </strong> 1997.08.15
+            </span>
+            <span style={{ fontSize: '12px', marginTop: '6px' }}>living in Seoul</span>
+          </div>
         </div>
       ) : (
         <div className="introduction english">
