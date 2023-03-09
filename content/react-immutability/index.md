@@ -129,6 +129,8 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 [https://babycoder05.tistory.com/entry/React-Virtual-DOM-%EA%B3%BC-%EB%B9%84%EA%B5%90-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%96%95%EC%9D%80-%EB%B9%84%EA%B5%90?category=1023016](https://babycoder05.tistory.com/entry/React-Virtual-DOM-%EA%B3%BC-%EB%B9%84%EA%B5%90-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%96%95%EC%9D%80-%EB%B9%84%EA%B5%90?category=1023016 'React Virtual DOM 비교 원리와 얕은 비교')
 
+<br>
+
 ```toc
 
 ```
