@@ -80,11 +80,13 @@ useState 와 동일하게 보이면서도 dispatch, reducer 등 새로운 개념
 
 ![4](https://user-images.githubusercontent.com/87301268/223932444-02fd83e5-8911-4e3c-a9cc-b6a5a48bb137.png)
 
+<br>
+
 **컴포넌트에서 벗어나 상태 관리 로직이 만들어져 있는 걸 확인 할 수 있습니다.**
 
 먼저 버튼을 보면 아래 처럼 클릭 이벤트가 되어 있습니다.
 
-![5](https://user-images.githubusercontent.com/87301268/223932467-8764eda9-8c81-46f2-8252-d53ea3da8283.png)
+![7](https://user-images.githubusercontent.com/87301268/223934763-e0e9f0f2-2384-458a-bdbf-c663e8ea35c9.png)
 
 **dispatch :** reducer 함수를 실행 시키며, 컴포넌트 내에서 state 의 업데이트를 다루기 위해 사용
 
