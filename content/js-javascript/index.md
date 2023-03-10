@@ -1,6 +1,6 @@
 ---
 emoji: 📖
-title: 모던 자바스크립트 Deep Dive _자바스크립트란
+title: 모던 자바스크립트 Deep Dive_자바스크립트란
 date: '2022-11-10'
 author: 최현호
 tags: JavaScript
