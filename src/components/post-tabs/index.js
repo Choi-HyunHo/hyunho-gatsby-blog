@@ -5,6 +5,8 @@ import './style.scss';
 
 function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
   const tabPosts = useMemo(() => {
+    console.log(tabs);
+    // [tabs[3], tabs[1]] = [tabs[1], tabs[3]]; 배열 위치 조정
     if (tabs[tabIndex] === 'All') return posts;
     return posts.filter((post) => post.categories.includes(tabs[tabIndex]));
   }, [posts, tabs, tabIndex]);
