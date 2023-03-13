@@ -8,20 +8,20 @@ import './style.scss';
 function ThemeSwitch() {
   const [isDarkMode, setIsDarkMode] = useState(getValueFromLocalStorage('isDarkMode'));
 
-  useEffect(() => {
-    setValueToLocalStorage('isDarkMode', isDarkMode);
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-  }, [isDarkMode]);
+  // useEffect(() => {
+  //   setValueToLocalStorage('isDarkMode', isDarkMode);
+  //   document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+  // }, [isDarkMode]);
 
   return (
     <div className="dark-mode-button-wrapper">
-      <IconButton className="dark-mode-button" onClick={() => setIsDarkMode((isDark) => !isDark)}>
+      {/* <IconButton className="dark-mode-button" onClick={() => setIsDarkMode((isDark) => !isDark)}>
         {isDarkMode ? (
           <LightModeIcon className="dark-mode-icon" fontSize="large" />
         ) : (
           <DarkModeIcon className="dark-mode-icon" fontSize="large" />
         )}
-      </IconButton>
+      </IconButton> */}
     </div>
   );
 }
