@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { IconButton } from '@mui/material';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import { getValueFromLocalStorage, setValueToLocalStorage } from '../../utils/localStorage';
+import React from 'react';
+// import { IconButton } from '@mui/material';
+// import DarkModeIcon from '@mui/icons-material/DarkMode';
+// import LightModeIcon from '@mui/icons-material/LightMode';
+// import { getValueFromLocalStorage, setValueToLocalStorage } from '../../utils/localStorage';
 import './style.scss';
 
 function ThemeSwitch() {
-  const [isDarkMode, setIsDarkMode] = useState(getValueFromLocalStorage('isDarkMode'));
+  // const [isDarkMode, setIsDarkMode] = useState(getValueFromLocalStorage('isDarkMode'));
 
   // useEffect(() => {
   //   setValueToLocalStorage('isDarkMode', isDarkMode);
