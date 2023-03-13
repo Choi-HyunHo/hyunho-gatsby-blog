@@ -170,7 +170,7 @@ categories: CS
 
 #### **멱등(Idempotent Methods)**
 
-**연산을 여러 번 적용하더라도 <span style='background-color : #fff5b1'>결과가 달라지지 않는 성질</span>**을 멱등성(idempotence) 이라고 합니다.
+**연산을 여러 번 적용하더라도 <span style='background-color : #fff5b1'>결과가 달라지지 않는 성질</span>** 을 멱등성(idempotence) 이라고 합니다.
 
 - GET은 한 번 조회하든 두 번 조회하든 같은 결과로 조회 됩니다.
 - PUT은 결과를 대체하기 때문에 같은 요청을 여러 번 해도 최종 결과는 동일 합니다.
