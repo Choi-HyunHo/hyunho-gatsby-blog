@@ -35,7 +35,12 @@ function Bio({ author, language = 'ko' }) {
           >
             <span style={{ fontSize: '12px' }}>Birth. 1997.08.15</span>
             <span style={{ fontSize: '12px', marginTop: '6px' }}>living in Seoul</span>
-            <a style={{pointerEvents : 'none'}} href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoi-hyunho.com&count_bg=%23555555&title_bg=%23555555&icon=compropago.svg&icon_color=%23E7E7E7&title=Hits&edge_flat=false"/></a>
+            <a aria-label="" style={{ pointerEvents: 'none' }} href="https://hits.seeyoufarm.com">
+              <img
+                alt=""
+                src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoi-hyunho.com&count_bg=%23555555&title_bg=%23555555&icon=compropago.svg&icon_color=%23E7E7E7&title=Hits&edge_flat=false"
+              />
+            </a>
           </div>
         </div>
       ) : (
