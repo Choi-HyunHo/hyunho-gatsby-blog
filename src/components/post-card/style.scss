@@ -6,6 +6,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    border-radius: 10px;
+    background-color: rgb(247, 248, 250);
+  }
 
   .post-card {
     display: flex;
@@ -23,11 +29,12 @@
     cursor: pointer;
     transition: transform 0.2s;
 
-    &:hover {
-      .title {
-        text-decoration: underline;
-      }
-    }
+    // &:hover {
+    //   .title {
+    //     // text-decoration: underline;
+
+    //   }
+    // }
 
     @include md {
       margin-bottom: 0;
