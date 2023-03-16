@@ -17,6 +17,11 @@
       // font-weight: 700;
       font-size: 17px;
       color: var(--primary-text-color);
+      transition: color 200ms ease-in;
+
+      &:hover {
+        color: #6a737d;
+      }
 
       @include md {
         // font-weight: 700;
