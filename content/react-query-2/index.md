@@ -113,7 +113,7 @@ categories: React
 
 <br>
 
-#### 다음 포스팅은 uesQuery 의 <span style='background-color : #fff5b1'>로딩 및 오류 상태</span>를 살펴보겠습니다.
+#### 다음 포스팅은 useQuery 의 <span style='background-color : #fff5b1'>로딩 및 오류 상태</span>를 살펴보겠습니다.
 
 <br>
 
