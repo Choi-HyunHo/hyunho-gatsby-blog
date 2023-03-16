@@ -38,7 +38,7 @@ function Bio({ author, language = 'ko' }) {
             <a aria-label="" style={{ pointerEvents: 'none' }} href="https://hits.seeyoufarm.com">
               <img
                 alt=""
-                src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoi-hyunho.com&count_bg=%23555555&title_bg=%23555555&icon=compropago.svg&icon_color=%23E7E7E7&title=Hits&edge_flat=false"
+                src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoi-hyunho.com&count_bg=%23555555&title_bg=%23555555&icon=%23E7E7E7&title=%F0%9F%91%80+visitor&edge_flat=false"
               />
             </a>
           </div>
