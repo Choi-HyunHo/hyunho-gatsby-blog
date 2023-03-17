@@ -76,7 +76,7 @@ React는 자체적으로 state(와 props)를 관리할 수 있지만 컴포넌�
 
 디스패치는 스토어의 내장 함수 중 하나이며, 액션 객체를 넘겨줘 상태를 업데이트 시켜주는 역할을 합니다.
 
-기존 useReducer 에서 사용되는 단어의 정의와 비슷합니다  ➡️  [\[React\] - useReducer](https://choi-hyunho.com/react-useReducer/ 'https://choi-hyunho.com/react-useReducer/')
+기존 useReducer 에서 사용되는 단어의 정의와 비슷합니다  ➡️  [\[React\] - useReducer](https://choi-hyunho.com/react/react-useReducer/ 'https://choi-hyunho.com/react-useReducer/')
 
 먼저 참고하시면 좋을 것 같습니다!!
 

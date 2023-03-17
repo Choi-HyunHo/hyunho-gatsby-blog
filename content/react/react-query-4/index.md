@@ -102,7 +102,7 @@ staleTime 옵션으로 설정한 시간 동안 데이터가 stale 되지 않도�
 <br>
 <br>
 
-여기까지 stale 과 stalTime 의 정리였습니다. <br>
+여기까지 stale 과 staleTime 의 정리였습니다. <br>
 
 그리고 개발자 도구안에 fresh, fetching, stale, inactive 가 수시로 변하는 것을 보면서
 다른 개념을 알기 전에 위의 4가지를 포함한 React Query 라이프 사이클을 알아보겠습니다.

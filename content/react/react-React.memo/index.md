@@ -96,8 +96,8 @@ React.memo 는 <span style='background-color : #fff5b1'>**HOC(고차 컴포넌�
 ### ✅ 지금까지 최적화에 사용되는 3가지를 알아봤습니다
 
 1. React.memo
-2. [useMemo](https://choi-hyunho.com/react-useMemo/)
-3. [useCallback](https://choi-hyunho.com/react-useCallback/)
+2. [useMemo](https://choi-hyunho.com/react/react-useMemo/)
+3. [useCallback](https://choi-hyunho.com/react/react-useCallback/)
 
 <br>
 
