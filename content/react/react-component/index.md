@@ -52,12 +52,8 @@ categories: React
 ### **참고**
 
 [https://hanamon.kr/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-component%EB%9E%80/](https://hanamon.kr/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-component%EB%9E%80/)
-
 [https://ms3864.tistory.com/433](https://ms3864.tistory.com/433)
-
 [https://jewelism.github.io/fe/component.html](https://jewelism.github.io/fe/component.html)
-
-드림코딩
 
 <br>
 
