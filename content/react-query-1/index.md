@@ -77,6 +77,21 @@ react-query에서는 기존 상태 관리 라이브러리인 **redux, mobX, reco
 
 <br>
 
+### React-Query 사용 전 api 호출 비교
+
+![carbon (13)](https://user-images.githubusercontent.com/87301268/225797801-94928e4e-d963-4378-b930-5451d20be59d.png)
+
+![carbon (14)](https://user-images.githubusercontent.com/87301268/225797009-1349d70a-fc8e-49a3-9b37-4aaf179a37a8.png)
+
+<br>
+
+지금은 예시가 간단하여 useEffect 안에 api 호출 부분만 들어있지만 실제 코드에서는
+호출 부분 말고 부가적인 다른 코드가 여러 포함되어있을 확률이 있습니다. 그렇게 되면 코드도 길어지고 가독성 또한 좋지 않습니다.
+
+아래 React-Query 를 사용해서 불러온 코드를 보면 직관적이고, isLoading 등 반환되는 값들을 사용해 호출 여부에 대한 표현도 쉽습니다.
+
+<br>
+
 ### React-Query 설치하기
 
 ![carbon (12)](https://user-images.githubusercontent.com/87301268/225624841-fc879e58-932d-4507-a0d8-776391db6b62.png)
