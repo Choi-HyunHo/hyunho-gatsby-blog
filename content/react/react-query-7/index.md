@@ -1,7 +1,7 @@
 ---
 emoji: 📖
 title: React-Query - 데이터 프리패칭(Prefetching)
-date: '2023-03-22'
+date: '2023-03-23'
 author: 최현호
 tags: React
 categories: React
