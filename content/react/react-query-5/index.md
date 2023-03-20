@@ -104,7 +104,7 @@ categories: React
 <br>
 <br>
 
-**다음 포스팅은 페이지 매김(Pagination)에 대해 알아보겠습니다.**
+**다음 포스팅은 Pagination 에 대해 알아보겠습니다.**
 
 <br>
 
