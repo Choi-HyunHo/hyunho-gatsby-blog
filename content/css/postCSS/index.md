@@ -107,9 +107,9 @@ CSS 를 **모듈 별로 관리** 할 수 있습니다. <br>
 
 ### 참고
 
-https://postcss.org/
-https://velog.io/@since-1994/React-postCSS
-https://yoonjong-park.tistory.com/entry/CSS-PostCSS-%EC%9E%A5%EC%A0%90
+- https://postcss.org/
+- https://velog.io/@since-1994/React-postCSS
+- https://yoonjong-park.tistory.com/entry/CSS-PostCSS-%EC%9E%A5%EC%A0%90
 
 ```toc
 
