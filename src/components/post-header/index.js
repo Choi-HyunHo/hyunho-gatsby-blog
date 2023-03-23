@@ -19,7 +19,7 @@ function PostHeader({ post, viewCount }) {
       <h1 className="title">{post.title}</h1>
       <div className="info">
         <div className="author">
-          posted by <strong>{post.author}</strong>,
+          posted by <span style={{ color: 'black' }}>{post.author}</span>,
         </div>{' '}
         {post.date}
         {viewCount && ` · ${viewCount} views`}
