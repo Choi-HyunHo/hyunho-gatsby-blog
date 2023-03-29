@@ -1,5 +1,5 @@
 ---
-emoji: 📖
+emoji: ⚠️
 title: Next.js - Link 태그 Error
 date: '2022-11-21'
 author: 최현호
