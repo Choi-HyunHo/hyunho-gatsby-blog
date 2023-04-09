@@ -5,7 +5,7 @@ import Seo from '../components/seo';
 import Bio from '../components/bio';
 import TimeStampSection from '../components/timestamp-section';
 import ProjectSection from '../components/project-section';
-import TimeStamp from '../components/timestamp-section/timeStamp';
+import TimeStamp from '../components/timestamp';
 
 function AboutPage({ data }) {
   const metaData = data.site.siteMetadata;
