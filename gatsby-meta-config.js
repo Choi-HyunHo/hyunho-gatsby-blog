@@ -49,15 +49,59 @@ module.exports = {
         info: '→ 로제우스 서비스 프론트 개발 및 운영',
         links: {
           web: 'https://www.rozeus.com/',
-          appStore : 'https://apps.apple.com/kr/app/%EB%A1%9C%EC%A0%9C%EC%9A%B0%EC%8A%A4-rozeus-%EA%BC%AD-%ED%95%84%EC%9A%94%ED%95%9C-%EB%89%B4%EC%8A%A4/id1570566887',
-          googlePlay : 'https://play.google.com/store/apps/details?id=com.bflysoft.rozeus'
+          appStore:
+            'https://apps.apple.com/kr/app/%EB%A1%9C%EC%A0%9C%EC%9A%B0%EC%8A%A4-rozeus-%EA%BC%AD-%ED%95%84%EC%9A%94%ED%95%9C-%EB%89%B4%EC%8A%A4/id1570566887',
+          googlePlay: 'https://play.google.com/store/apps/details?id=com.bflysoft.rozeus',
         },
       },
       {
         date: '2016.03 ~ 2022.02',
         activity: '한라대학교',
         info: '→ 정보통신소프트웨어 학과',
+        links: {},
+      },
+    ],
+
+    timestamp: [
+      // =====       [Timestamp Sample and Structure]      =====
+      // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
+      {
+        date: '',
+        activity: '',
+        info: '',
         links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          web: '',
+        },
+      },
+      // ========================================================
+      // ========================================================
+      {
+        date: '2023.04 ~ 2023.04',
+        activity: '원티드 프리온보딩 프론트엔드 챌린지 4월',
+        info: '→ 프론트엔드 여행자를 위한 리액트 해부학',
+        links: {
+          web: 'https://www.wanted.co.kr/events/pre_challenge_fe_8',
+          post: 'https://choi-hyunho.com/react/react-wanted-1/',
+        },
+      },
+      {
+        date: '2023.03 ~ ',
+        activity: '러닝 타입스크립트 스터디',
+        info: '→ 러닝 타입스크립트 책을 활용한 공부',
+        links: {
+          github: 'https://github.com/FE-Friends/typescript_study/tree/main',
+        },
+      },
+      {
+        date: '2023.02 ~ 2022.03',
+        activity: '한입 크기로 잘라먹는 리액트(React.js) 스터디',
+        info: '→ 리액트 개념 공부',
+        links: {
+          github: 'https://github.com/FE-Friends/react_study',
         },
       },
     ],
