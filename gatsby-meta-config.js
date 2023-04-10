@@ -97,7 +97,7 @@ module.exports = {
         },
       },
       {
-        date: '2023.02 ~ 2022.03',
+        date: '2023.02 ~ 2023.03',
         activity: '한입 크기로 잘라먹는 리액트(React.js) 스터디',
         info: '→ 리액트 개념 공부',
         links: {
