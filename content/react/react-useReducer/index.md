@@ -22,7 +22,7 @@ categories: React
 
 state 를 관리하고 업데이트 하는 hook 인 useState 를 대체 할 수 있는 hook 입니다.
 
-즉, <span style='background-color : #fff5b1'>**useReducer 는 useState 처럼 state 를 관리하고 업데이트 할 수 있는 hook 입니다.**</span>
+즉, **useReducer 는 useState 처럼 state 를 관리하고 업데이트 할 수 있는 hook 입니다.**</span>
 
 <br>
 
@@ -48,7 +48,7 @@ state 를 관리하고 업데이트 하는 hook 인 useState 를 대체 할 수 
 
 <br>
 
-useReducer 의 핵심은 <span style='background-color : #fff5b1'>**분리!**</span>
+useReducer 의 핵심은 **분리!**</span>
 
 > 하나의 컴포넌트 내에서 state 를 다루는 로직을 해당 컴포넌트로 분리하여 외부에서 처리 할 수 있도록 해주는 것 입니다.
 
@@ -58,13 +58,13 @@ useReducer 의 핵심은 <span style='background-color : #fff5b1'>**분리!**</s
 
 ![3](https://user-images.githubusercontent.com/87301268/223932422-f3924877-d2d7-490a-92d6-f09ec51460e9.png)
 
-<span style='background-color : #fff5b1'>**state</span> :** 컴포넌트에서 사용할 상태 ( useState 의 state 와 동일 )
+**state</span> :** 컴포넌트에서 사용할 상태 ( useState 의 state 와 동일 )
 
-<span style='background-color : #fff5b1'>**dispatch</span> :** reducer 함수를 실행 시키며, 컴포넌트 내에서 state 의 업데이트를 다루기 위해 사용
+**dispatch</span> :** reducer 함수를 실행 시키며, 컴포넌트 내에서 state 의 업데이트를 다루기 위해 사용
 
-<span style='background-color : #fff5b1'>**reducer</span> :** 컴포넌트 외부에서 state 를 업데이트 하는 로직의 함수 ( state, action 객체를 인자로 받는다 )
+**reducer</span> :** 컴포넌트 외부에서 state 를 업데이트 하는 로직의 함수 ( state, action 객체를 인자로 받는다 )
 
-<span style='background-color : #fff5b1'>**initialState**</span> : 초기 state ( useState 의 초기 할당 값과 동일 )
+**initialState**</span> : 초기 state ( useState 의 초기 할당 값과 동일 )
 
 <br>
 
@@ -92,31 +92,31 @@ useState 와 동일하게 보이면서도 dispatch, reducer 등 새로운 개념
 
 즉, **현재 정의되어 있는 reducer 함수를 실행** 시키게 되며 ( export function reducer 부분 )
 
-**dispatch** 는 <span style='background-color : #fff5b1'>**함수의 인자로 업데이트 하기 위한 정보**</span>를 가진 <span style='background-color : #fff5b1'>**action**</span> 을 사용 합니다.
+**dispatch** 는 **함수의 인자로 업데이트 하기 위한 정보**</span>를 가진 **action**</span> 을 사용 합니다.
 
 <br>
 
-그렇다면 <span style='background-color : #fff5b1'>**action**</span> 은
+그렇다면 **action**</span> 은
 
-**업데이트를 위한 정보를 가지고 있는 것**이며, <span style='background-color : #fff5b1'>**reducer 함수**</span>의 두 번째 인자인 <span style='background-color : #fff5b1'>**action**</span> 에 할당 됩니다.
+**업데이트를 위한 정보를 가지고 있는 것**이며, **reducer 함수**</span>의 두 번째 인자인 **action**</span> 에 할당 됩니다.
 
-<span style='background-color : #fff5b1'>**action**</span> 의 주 모습은 **type 이라는 값을 가진 객체 형태**로 사용 됩니다. ➡️ ( **{ type : "decrement" }** )
+**action**</span> 의 주 모습은 **type 이라는 값을 가진 객체 형태**로 사용 됩니다. ➡️ ( **{ type : "decrement" }** )
 
 <br>
 
-<span style='background-color : #fff5b1'>**reducer 함수는**</span>
+**reducer 함수는**</span>
 
 ![6](https://user-images.githubusercontent.com/87301268/223932619-4ac4ed56-e842-434a-afd7-6d233c3cc5f7.png)
 
 **dispatch 함수**에 의해 실행되며 컴포넌트 외부에서 state 를 업데이트 하는 로직을 담당 합니다.
 
-인자로 **현재 state** 와 **action** 을 받게 되는데 <span style='background-color : #fff5b1'>**action**</span> 값에 근거하여 기존의 state 를 업데이트 합니다.
+인자로 **현재 state** 와 **action** 을 받게 되는데 **action**</span> 값에 근거하여 기존의 state 를 업데이트 합니다.
 
 <br>
 
 **참고로 reducer 함수에 if-else 를 사용하든, switch 를 사용하든 상관 없습니다.**
 
-그리고 잘 보시면, <span style='background-color : #fff5b1'>**reducer 함수 앞에 export 한 흔적을 볼 수 있습니다.**</span>
+그리고 잘 보시면, **reducer 함수 앞에 export 한 흔적을 볼 수 있습니다.**</span>
 
 맞습니다. '해당 컴포넌트로 분리하여 외부에서 처리 할 수 있도록 해주는 것' 의미를 되돌아보면 다른 파일에서도 불러와서 사용 할 수 있습니다.
 

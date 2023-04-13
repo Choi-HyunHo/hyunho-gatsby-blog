@@ -14,7 +14,7 @@ categories: React
 이 방법은 댓글을 작업했듯이 페이지마다 다른 쿼리키가 필요 합니다. <br>
 따라서 쿼리키를 배열로 업데이트해서 가져오는 페이지 번호를 포함하면 됩니다. <br>
 
-즉, 사용자가 다음 혹은 이전 페이지로 가는 버튼 누르면 <span style='background-color : #fff5b1'>current Page 상태를 업데이트</span>하면 되며, <span style='background-color : #fff5b1'>React Query가 바뀐 쿼리키를 감지하고 새로운 쿼리를 실행</span>해서 새 페이지를 표시 합니다.
+즉, 사용자가 다음 혹은 이전 페이지로 가는 버튼 누르면 current Page 상태를 업데이트</span>하면 되며, React Query가 바뀐 쿼리키를 감지하고 새로운 쿼리를 실행</span>해서 새 페이지를 표시 합니다.
 
 <br>
 
@@ -26,7 +26,7 @@ categories: React
 
 ➡️ 어떤 페이지 번호를 입력하든 간에 가져올 수 있도록 **쿼리 함수에 pageNum 를 인자**로 받았습니다. <br>
 
-➡️ <span style='background-color : #fff5b1'>현재 페이지를 쿼리 키로 사용</span>해서 **변화가 있을 때 마다 데이터를 다시 가져오도록** 하겠습니다.
+➡️ 현재 페이지를 쿼리 키로 사용</span>해서 **변화가 있을 때 마다 데이터를 다시 가져오도록** 하겠습니다.
 
 <br>
 
@@ -70,7 +70,7 @@ maxPostPage 는 페이지의 최대 개수를 임의로 지정한 변수 입니�
 <br>
 <br>
 
-하지만 <span style='background-color : #fff5b1'>다음 페이지로 넘어가는 도중에 로딩이 나와서 사용자 경험에 방해</span>를 줍니다.
+하지만 다음 페이지로 넘어가는 도중에 로딩이 나와서 사용자 경험에 방해</span>를 줍니다.
 
 **다음 포스팅에서 다음 페이지 결과를 프리패칭(Prefetching) 해서 바로 보일 수 있도록 하겠습니다.**
 

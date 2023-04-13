@@ -15,7 +15,7 @@ categories: React
 
 **✔  Props 특징**
 
-<span style='background-color : #fff5b1'>자식 컴포넌트에서 데이터를 변경 할 수 없습니다.</span> ( 컴포넌트 내부의 속성이라고 봐도 무방 합니다 )
+자식 컴포넌트에서 데이터를 변경 할 수 없습니다.</span> ( 컴포넌트 내부의 속성이라고 봐도 무방 합니다 )
 
 - 이미 HTML 를 사용하면서 태그에 대한 속성을 알고 사용하고 있습니다. (id, class, onClick 등)
 
@@ -35,7 +35,7 @@ categories: React
 
 ### **State ❓**
 
-> State는 한 컴포넌트 안에서 유동적인 데이터를 다룰 때 사용되며, 컴포넌트 안에서 데이터를 변경할 수 있습니다. 즉, <span style='background-color : #fff5b1'>State는 한 컴포넌트의 상태(State)</span>를 나타냅니다.
+> State는 한 컴포넌트 안에서 유동적인 데이터를 다룰 때 사용되며, 컴포넌트 안에서 데이터를 변경할 수 있습니다. 즉, State는 한 컴포넌트의 상태(State)</span>를 나타냅니다.
 
 - State는 컴포넌트 내에서 지속적으로 변경이 일어나는 값을 관리하기 위해 사용
 
@@ -43,7 +43,7 @@ categories: React
 
 **✔ State 문법**
 
-<span style='background-color : #fff5b1'>useState</span> hook 을 사용 합니다.
+useState</span> hook 을 사용 합니다.
 
 ![carbon (7)](https://user-images.githubusercontent.com/87301268/223894051-4c875586-038e-4d92-b8ff-a57f82ff4f9a.png)
 
@@ -51,8 +51,8 @@ categories: React
 
 **✔ State 특징**
 
-- useState를 사용하여 할당받은 변수는 <span style='background-color : #fff5b1'>불변값(Immutable)</span>입니다.
-- 따라서 해당 값은 직접 수정이 불가능하며 <span style='background-color : #fff5b1'>해당 값을 변경하기 위해서는 반드시 Set 함수를 사용</span>해야 합니다.
+- useState를 사용하여 할당받은 변수는 불변값(Immutable)</span>입니다.
+- 따라서 해당 값은 직접 수정이 불가능하며 해당 값을 변경하기 위해서는 반드시 Set 함수를 사용</span>해야 합니다.
 
 ![carbon (8)](https://user-images.githubusercontent.com/87301268/223894123-ea1ef90a-affb-4fd4-bdfc-f73724a7b95d.png)
 

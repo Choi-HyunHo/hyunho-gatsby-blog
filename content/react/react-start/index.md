@@ -25,45 +25,45 @@ categories: React
 
 리액트는 가상 돔을 사용하여 웹 애플리케이션의 성능을 극대화 시켰습니다.
 
-가상 돔을 이해하기 위해서는 우선 <span style='background-color : #fff5b1'>HTML과 CSS가 렌더링(Rendering) 되는 과정</span>을 알아야 합니다.
+가상 돔을 이해하기 위해서는 우선 HTML과 CSS가 렌더링(Rendering) 되는 과정</span>을 알아야 합니다.
 
 ![img](https://user-images.githubusercontent.com/87301268/223754419-ebba48b6-f27d-456f-b6da-822a2393027d.png)
 
 <br>
 
-1\. 웹 브라우저가 HTML 을 전달 받으면 브라우저 렌더링 엔진은 HTML 을 파싱하고 <span style='background-color : #fff5b1'>DOM</span> 트리를 생성 합니다. (Parsing)
+1\. 웹 브라우저가 HTML 을 전달 받으면 브라우저 렌더링 엔진은 HTML 을 파싱하고 DOM</span> 트리를 생성 합니다. (Parsing)
 
 > DOM(Document Object Model) 은 XML이나 HTML 문서에 접근하기 위한 일종의 인터페이스입니다.
 
 <br>
 
-2\. 또한 CSS 스타일을 모두 계산하여 <span style='background-color : #fff5b1'>CSSOM 트리</span>를 생성 합니다. (Parsing)
+2\. 또한 CSS 스타일을 모두 계산하여 CSSOM 트리</span>를 생성 합니다. (Parsing)
 
 > CSSOM은 DOM에 CSS가 적용된 객체 모델 입니다.
 
 <br>
 
-3\. 렌더 트리가 완성되면 브라우저는 <span style='background-color : #fff5b1'>Attachment</span>라는 과정을 통해 스타일 정보를 계산합니다.
+3\. 렌더 트리가 완성되면 브라우저는 Attachment</span>라는 과정을 통해 스타일 정보를 계산합니다.
 
 > Attachment 는 DOM 트리와 CSSOM 트리가 생성되면, 이 둘을 연결하여 표시해야 할 순서로 내용을 그려낼 수 있도록 하기 위해 렌더 트리를 생성하는 단계 입니다.
 
 <br>
 
-4\. 렌더 트리로 생성된 모든 노드들은 <span style='background-color : #fff5b1'>attach</span>라는 함수를 가지고 있는데, 이 Attachment라는 과정에서 이 메소드들이 호출되게 되며, 해당 메소드는 스타일 정보를 계산하고 결과 값을 객체 형태로 반환하게 됩니다. (Style)
+4\. 렌더 트리로 생성된 모든 노드들은 attach</span>라는 함수를 가지고 있는데, 이 Attachment라는 과정에서 이 메소드들이 호출되게 되며, 해당 메소드는 스타일 정보를 계산하고 결과 값을 객체 형태로 반환하게 됩니다. (Style)
 
 - 이때 이 계산 과정은 모두 동기적(Synchronous)으로 동작하게 되며,
 - 만약 렌더 트리에 새로운 노드가 추가된다면 해당 노드의 attach 메소드가 실행되어 계산 과정을 거치게 됩니다.
 
 <br>
 
-5\. 렌더 트리는 Attachment 과정을 거친 후 <span style='background-color : #fff5b1'>레이아웃(Layout)</span>이라는 과정을 거치게 됩니다. (Layout)
+5\. 렌더 트리는 Attachment 과정을 거친 후 레이아웃(Layout)</span>이라는 과정을 거치게 됩니다. (Layout)
 
 - 레이아웃 과정에서는 브라우저가 렌더 트리의 각 노드들에 좌표를 부여하고
 - 정확히 어디에 어떻게 표시되는지를 결정합니다.
 
 <br>
 
-6\. 마지막으로 브라우저는 <span style='background-color : #fff5b1'>페인팅(Painting)</span>이라는 과정을 거치게 됩니다. (Painting)
+6\. 마지막으로 브라우저는 페인팅(Painting)</span>이라는 과정을 거치게 됩니다. (Painting)
 
 - 페인팅 과정에서는 각 노드들에 paint 함수를 호출하여 렌더링된 요소들에 색상을 입히게 됩니다.
 
@@ -73,8 +73,8 @@ categories: React
 
 HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
-- 각 노드의 좌표를 계산하기 위해 <span style='background-color : #fff5b1'>레이아웃 과정</span>이 다시 실행되고 (Reflow)
-- 그 이후 색상을 입히기 위한 <span style='background-color : #fff5b1'>페인팅 과정이 다시 진행</span>되게 됩니다. (Repaint)
+- 각 노드의 좌표를 계산하기 위해 레이아웃 과정</span>이 다시 실행되고 (Reflow)
+- 그 이후 색상을 입히기 위한 페인팅 과정이 다시 진행</span>되게 됩니다. (Repaint)
 
 | Reflow ( 리플로우 )                           | Repaint(리페인트)               |
 | --------------------------------------------- | ------------------------------- |
@@ -84,7 +84,7 @@ HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
 ### **Reflow 와 Repaint 가 자주 수행되면 문제점 ❓** 
 
-<span style='background-color : #fff5b1'>DOM의 각 노드에 대한 연산 과정을 다시 수행함</span>으로 이 과정이 많이 수행될수록 웹 서비스의 성능이 저하되는 문제가 발생
+DOM의 각 노드에 대한 연산 과정을 다시 수행함</span>으로 이 과정이 많이 수행될수록 웹 서비스의 성능이 저하되는 문제가 발생
 
 <br>
 
@@ -207,25 +207,25 @@ HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
 차이점을 위해 양뱡향 데이터 바인딩 먼저 살펴보겠습니다.
 
-<span style='background-color : #fff5b1'>양뱡향 데이터 바인딩 ❓</span>
+양뱡향 데이터 바인딩 ❓</span>
 
 ![img (1)](https://user-images.githubusercontent.com/87301268/223754653-ea688bf9-0ada-42b9-9dda-76a67062fee7.png)
 
 > 사용자 UI의 데이터 변경을 감시하는 Watcher와 자바스크립트 데이터의 변경을 감시하는 Watcher가 UI와 자바스크립트 데이터를 자동으로 동기화 시켜주는 방식을 말합니다.
 
-- 이를 통해 프로그래머는 <span style='background-color : #fff5b1'>자바스크립트내에 데이터 변경</span>과
-- <span style='background-color : #fff5b1'>사용자 UI에 데이터 변경에 관한 동기화</span>를 신경쓰지 않고 프로그램을 작성할 수 있습니다.
+- 이를 통해 프로그래머는 자바스크립트내에 데이터 변경</span>과
+- 사용자 UI에 데이터 변경에 관한 동기화</span>를 신경쓰지 않고 프로그램을 작성할 수 있습니다.
 
 <br>
 
-양방향 데이터 바인딩 <span style='background-color : #fff5b1'>문제점 ❓</span>
+양방향 데이터 바인딩 문제점 ❓</span>
 
 > 하나에 데이터 동기화에 두 개의 Watcher가 사용되고,데이터 많아지게 되면  
 > 이 데이터의 동기화를 위한 수많은 Watcher가 생성되므로, 반대로 성능 저하가 발생할 수 있습니다.
 
 <br>
 
-그렇다면 <span style='background-color : #fff5b1'>단방향 데이터 바인딩은 ❓</span>
+그렇다면 단방향 데이터 바인딩은 ❓</span>
 
 ![img (2)](https://user-images.githubusercontent.com/87301268/223754764-8876dd52-a04b-4e94-aac0-23068f69c4ea.png)
 
@@ -238,7 +238,7 @@ HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
 ### **✔ JSX** 
 
-<span style='background-color : #fff5b1'>JavaScript에 XML을 추가하여 확장한 문법</span>
+JavaScript에 XML을 추가하여 확장한 문법</span>
 
 ![carbon (8)](https://user-images.githubusercontent.com/87301268/223755185-e61f01aa-3663-438a-ba95-5d36eb813686.png)
 
@@ -252,7 +252,7 @@ HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
 명령형 프로그래밍
 
-> 프로그래밍을 할 때  <span style='background-color : #fff5b1'>어떻게(How)</span> 에 집중하는 것 -  과정
+> 프로그래밍을 할 때  어떻게(How)</span> 에 집중하는 것 -  과정
 
 ![carbon (9)](https://user-images.githubusercontent.com/87301268/223756533-73110341-7784-4a61-ad67-92e9f11c12f9.png)
 
@@ -260,7 +260,7 @@ HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
 선언형 프로그래밍
 
-> 프로그래밍을 할 때  <span style='background-color : #fff5b1'>무엇(What)</span> 에 집중하는 것 - 결과
+> 프로그래밍을 할 때  무엇(What)</span> 에 집중하는 것 - 결과
 
 ![carbon (10)](https://user-images.githubusercontent.com/87301268/223756712-5c4e1165-068c-48fa-ac8d-cc785323ccd4.png)
 
@@ -268,7 +268,7 @@ HTML을 자바스크립트를 사용하여 DOM을 조작하게 되면
 
 ### **✔  컴포넌트 기반** 
 
-컴포넌트(Component)란 <span style='background-color : #fff5b1'>프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈</span>을 뜻 합니다.
+컴포넌트(Component)란 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈</span>을 뜻 합니다.
 
 ![carbon (11)](https://user-images.githubusercontent.com/87301268/223756859-cb395b53-ea4a-4e11-b6fd-62a4f51bc408.png)
 

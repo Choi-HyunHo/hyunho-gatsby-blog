@@ -21,7 +21,7 @@ categories: CS
 
 하지만, 대부분 두 사이가 멀기 때문에 **인터넷망** 을 통해서 메세지를 주고 받습니다.
 
-또한 **인터넷망 내부**는 <span style='background-color : #fff5b1'>수많은 중간 노드(서버)</span>를  거쳐 메세지가 **서버(목적지)로 전달**되기 때문에
+또한 **인터넷망 내부**는 수많은 중간 노드(서버)</span>를  거쳐 메세지가 **서버(목적지)로 전달**되기 때문에
 
 어떠한 규칙을 가지고 노드들을 지나 전달되는지 지금부터 살펴보겠습니다.
 
@@ -29,7 +29,7 @@ categories: CS
 
 ### **2\. IP (인터넷 프로토콜)**
 
-**✔ 메세지를 전달하기 위해서 <span style='background-color : #fff5b1'>클라이언트(출발지) 와 서버(목적지) IP주소</span>가 부여된 상태여야 합니다.**
+**✔ 메세지를 전달하기 위해서 클라이언트(출발지) 와 서버(목적지) IP주소</span>가 부여된 상태여야 합니다.**
 
 ![2](https://user-images.githubusercontent.com/87301268/224227150-8be4db25-a771-422a-b137-7ecb009d1d38.png)
 
@@ -38,7 +38,7 @@ categories: CS
 **IP(인터넷 프로토콜) 역할**
 
 - 지정한 IP 주소에 데이터 전달
-- <span style='background-color : #fff5b1'>**패킷(Packet)**</span> 이라는 통신 단위로 데이터 전달
+- **패킷(Packet)**</span> 이라는 통신 단위로 데이터 전달
 
 패킷 단위로 데이터를 전달하며, 전송데이터 + 출발지 IP(클라이언트) + 목적지 IP(서버)  등을 함께 묶어서 전달 합니다.
 
@@ -63,18 +63,18 @@ categories: CS
 
 ### **3\. IP 프로토콜의 한계**
 
-**✔ <span style='background-color : #fff5b1'>비연결성**</span>
+**✔ 비연결성**</span>
 
 ![6](https://user-images.githubusercontent.com/87301268/224227234-28a3f50a-d2c0-4b35-99a6-2e77993461ca.png)
 
 <br>
 
-**✔ <span style='background-color : #fff5b1'>비신뢰성**</span>
+**✔ 비신뢰성**</span>
 
 ![7](https://user-images.githubusercontent.com/87301268/224227255-da389581-d5aa-4b02-865f-a619b08bd3dc.png)
 ![8](https://user-images.githubusercontent.com/87301268/224227283-144cef58-f2cb-4b00-9ea0-d05eb8593932.png)
 
-- 메시지를 한 번에 보낼 때 보통 <span style='background-color : #fff5b1'>1500byte 가 넘어가면 부담스러워 나눠 보내는데</span>,
+- 메시지를 한 번에 보낼 때 보통 1500byte 가 넘어가면 부담스러워 나눠 보내는데</span>,
 - 인터넷 망안에 있는 노드들을 통해서 패킷마다 노드를 각각 선택해서 따로 보내게 되는 상황이 발생하다보니
 - 클라이언트가 보낸 메시지 순서가 서버가 받은 메시지 순서와 상이하게 됩니다.
 
@@ -82,7 +82,7 @@ categories: CS
 
 ### **4\. TCP / UDP**
 
-**✔ 앞서 보았던 <span style='background-color : #fff5b1'>IP 프로토콜의 한계점들을 해결</span> 해주는 것이 TCP 입니다**.
+**✔ 앞서 보았던 IP 프로토콜의 한계점들을 해결</span> 해주는 것이 TCP 입니다**.
 
 4.1 인터넷 프로토콜 4계층
 
@@ -118,8 +118,8 @@ categories: CS
 
 ![12](https://user-images.githubusercontent.com/87301268/224228233-924dc4f5-e04b-433f-a376-cb50793e974d.png)
 
-- <span style='background-color : #fff5b1'>SYN(synchronize)</span> : 접속 요청
-- <span style='background-color : #fff5b1'>ACK(acknowledge)</span> : 요청 수락
+- SYN(synchronize)</span> : 접속 요청
+- ACK(acknowledge)</span> : 요청 수락
 
 1\. 클라이언트에서 먼저 SYN 메시지를 서버에게 접속을 허락해달라고 요청
 
@@ -133,13 +133,13 @@ categories: CS
 
 <br>
 
-위에 TCP 연결이 되었다고 연결이 된 게 아니라 <span style='background-color : #fff5b1'>**개념적으로 연결되어 있을 뿐**</span>입니다.
+위에 TCP 연결이 되었다고 연결이 된 게 아니라 **개념적으로 연결되어 있을 뿐**</span>입니다.
 
 인터넷 망에 있는 수 많은 서버들이 연결되어 있는 건지 잘 모릅니다.
 
 <br>
 
-✔ <span style='background-color : #fff5b1'>데이터 전달 보증</span>
+✔ 데이터 전달 보증</span>
 
 ![13](https://user-images.githubusercontent.com/87301268/224228245-f2f3a015-3edc-41b3-8eed-b6542dda0af6.png)
 
@@ -149,7 +149,7 @@ categories: CS
 
 <br>
 
-✔ <span style='background-color : #fff5b1'>순서보장</span>
+✔ 순서보장</span>
 
 ![14](https://user-images.githubusercontent.com/87301268/224228254-d209a149-990f-4d48-9731-4a04a03b844a.png)
 
@@ -171,7 +171,7 @@ UDP는 아무것도 없기 때문에 상대적으로 전송 속도가 빠릅니
 
 ### **7\. PORT**
 
-**✔ <span style='background-color : #fff5b1'> 클라이언트 PC에서 IP가 한 개만 할당</span>되어 있어 있는데 게임용, 음악용 등 구분하기위해 PORT를 사용**
+**✔  클라이언트 PC에서 IP가 한 개만 할당</span>되어 있어 있는데 게임용, 음악용 등 구분하기위해 PORT를 사용**
 
 ![15](https://user-images.githubusercontent.com/87301268/224228260-3e7c850f-59c8-483f-bce4-84c835afb79c.png)
 
@@ -187,7 +187,7 @@ UDP는 아무것도 없기 때문에 상대적으로 전송 속도가 빠릅니
 
 위에 봤던 TCP/IP 패킷 정보에 TCP와 UDP에서 출발지 PORT와 목적지 PORT가 있습니다.
 
-<span style='background-color : #fff5b1'>IP는 목적지 서버를 찾는 용도이고 서버 안에서 돌아가는 애플리케이션들을 구분하는게 PORT 입니다.</span>
+IP는 목적지 서버를 찾는 용도이고 서버 안에서 돌아가는 애플리케이션들을 구분하는게 PORT 입니다.</span>
 
 <br>
 

@@ -13,7 +13,7 @@ useState 와 useEffect 발표 중 먼저 리액트의 대표적인 hook 중 하�
 
 ### **먼저 State 란❓**
 
-> State는 한 컴포넌트 안에서 유동적인 데이터를 다룰 때 사용되며, 컴포넌트 안에서 데이터를 변경할 수 있습니다. 즉, State는 <span style='background-color : #fff5b1'>한 컴포넌트의 상태(State)</span>를 나타냅니다.
+> State는 한 컴포넌트 안에서 유동적인 데이터를 다룰 때 사용되며, 컴포넌트 안에서 데이터를 변경할 수 있습니다. 즉, State는 한 컴포넌트의 상태(State)</span>를 나타냅니다.
 
 - State는 컴포넌트 내에서 지속적으로 변경이 일어나는 값을 관리하기 위해 사용 합니다.
 
@@ -43,15 +43,15 @@ useState 와 useEffect 발표 중 먼저 리액트의 대표적인 hook 중 하�
 
 #### State 특징
 
-- useState를 사용하여 할당받은 변수는 <span style='background-color : #fff5b1'>불변성</span> 을 가집니다.
-- 따라서 해당 값은 <span style='background-color : #fff5b1'>직접 수정이 불가능</span>하며 해당 값을 변경하기 위해서는 반드시 Set 함수를 사용 해야 합니다.
-- setState()가 쓰일 때, 컴포넌트의 state 객체에 대한 업데이트를 실행합니다. <span style='background-color : #fff5b1'>state가 변경되면, 컴포넌트는 리렌더링</span> 됩니다.
+- useState를 사용하여 할당받은 변수는 불변성</span> 을 가집니다.
+- 따라서 해당 값은 직접 수정이 불가능</span>하며 해당 값을 변경하기 위해서는 반드시 Set 함수를 사용 해야 합니다.
+- setState()가 쓰일 때, 컴포넌트의 state 객체에 대한 업데이트를 실행합니다. state가 변경되면, 컴포넌트는 리렌더링</span> 됩니다.
 
 <br>
 
 #### state 값을 직접 변경하지 않고 setState 를 사용해야 할까❓
 
-<span style='background-color : #fff5b1'>직접 state 를 수정하게 되면, 컴포넌트가 변경한 값을 인지하지 못하여 변경된 부분이 있다고 하더라도, 다시 리렌더링을 하지 않습니다.</span>
+직접 state 를 수정하게 되면, 컴포넌트가 변경한 값을 인지하지 못하여 변경된 부분이 있다고 하더라도, 다시 리렌더링을 하지 않습니다.</span>
 
 <br>
 
@@ -110,7 +110,7 @@ state 의 불변성을 지켜줘야 리액트 컴포넌트에서 '상태가 업�
 
 ### **이유는, setState 는 비동기 함수 입니다.**
 
-비동기적으로 동작하는 이유는 <span style='background-color : #fff5b1'>**일정시간 동안 변화하는 상태를 모아서 한 번에 렌더링**</span> 하기 위함 입니다.
+비동기적으로 동작하는 이유는 **일정시간 동안 변화하는 상태를 모아서 한 번에 렌더링**</span> 하기 위함 입니다.
 
 하나의 컴포넌트 내에는 수 많은 상태가 존재 할 수 있습니다.
 
@@ -122,13 +122,13 @@ state 의 불변성을 지켜줘야 리액트 컴포넌트에서 '상태가 업�
 
 ### **이러한 특징을 batch 라고 합니다.**
 
-리액트는 <span style='background-color : #fff5b1'>batch 업데이트를 16ms 단위</span>로 진행 합니다.
+리액트는 batch 업데이트를 16ms 단위</span>로 진행 합니다.
 
-즉, 16ms 동안 변경된 상태 값들을 모아서 <span style='background-color : #fff5b1'>단 한 번만 리렌더링</span>을 합니다.
+즉, 16ms 동안 변경된 상태 값들을 모아서 단 한 번만 리렌더링</span>을 합니다.
 
 ➡️ 이러한 행동은 페이지의 렌더링 횟수를 줄여 조금 더 빠른 속도로 동작하게 해줍니다. 👍
 
-➡️ setState() 호출되면, 바로 전달받은 state 값을 바꾸지 않고 <span style='background-color : #fff5b1'>이전의 virtual DOM 과 전달받은 state 가 적용된 virtual DOM 트리를 비교하는 과정을 거치고, 최종적으로 변경된 부분만 DOM에 적용</span> 됩니다.
+➡️ setState() 호출되면, 바로 전달받은 state 값을 바꾸지 않고 이전의 virtual DOM 과 전달받은 state 가 적용된 virtual DOM 트리를 비교하는 과정을 거치고, 최종적으로 변경된 부분만 DOM에 적용</span> 됩니다.
 
 <br>
 

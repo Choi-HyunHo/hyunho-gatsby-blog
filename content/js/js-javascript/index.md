@@ -14,10 +14,10 @@ categories: JS
 - 1995년, 넷스케이스 커뮤니케이션즈는 웹페이지의 보조적인 기능을 수행하기 위해  
   ➡️ 브라우저에서 동작하는 경량 프로그래밍 언어를 도입하기를 결정  
   ➡️ 그래서 탄생한 것이, 브렌던 아이크가 개발한 자바스크립트
-- 1996년 3월, <span style='background-color : #fff5b1'>**모카(Mocha)**</span> 로 명명  
+- 1996년 3월, **모카(Mocha)**</span> 로 명명  
   ➡️ 넷스케이프 커뮤니케이션즈의 웹 브라우저인 넷스케이프 내비게이터2 에 탑재  
-  ➡️ 그 해 9월, <span style='background-color : #fff5b1'>**라이브스크립트**</span>로 이름이 변경  
-  ➡️ 그 해 12월, <span style='background-color : #fff5b1'>**자바스크립트**</span>라는 이름으로 최종 명명
+  ➡️ 그 해 9월, **라이브스크립트**</span>로 이름이 변경  
+  ➡️ 그 해 12월, **자바스크립트**</span>라는 이름으로 최종 명명
 
 <br>
 
@@ -29,7 +29,7 @@ categories: JS
 
 <br>
 
-> 결론적으로 브라우저에 따라 웹페이지가 정상적으로 동작하지 않는 <span style='background-color : #fff5b1'>**크로스 브라우징 이슈**</span>가 발생하기 시작했다.
+> 결론적으로 브라우저에 따라 웹페이지가 정상적으로 동작하지 않는 **크로스 브라우징 이슈**</span>가 발생하기 시작했다.
 
 <br>
 
@@ -37,8 +37,8 @@ categories: JS
 - 1997년 7월, ECMA-262라 불리는 표준화된 자바스크립트 초판 사양이 완성되었고, 상표권 문제로 자바스크립트는 ECMAScript로 명명
 - 1999년, **ECMAScript 3(ES3)** 가 공개.
 - 2009년, **ECMAScript 5(ES5)** 출시. HTML5와 함께 출현한 표준 사양
-- 2015년, <span style='background-color : #fff5b1'>**ECMAScript 6(ECMAScript2015, ES6)**</span> 공개.  
-  ➡️ <span style='background-color : #fff5b1'>let/const 키워드, 화살표 함수, 클래스, 모듈 등과 같이 범용 프로그래밍 언어로서 갖춰야 할 기능들이 대거 도입하는 큰 변화가 있었다.</span>
+- 2015년, **ECMAScript 6(ECMAScript2015, ES6)**</span> 공개.  
+  ➡️ let/const 키워드, 화살표 함수, 클래스, 모듈 등과 같이 범용 프로그래밍 언어로서 갖춰야 할 기능들이 대거 도입하는 큰 변화가 있었다.</span>
 - ES6 이후, 버전업은 비교적 작은 기능을 추가하는 수준으로 매년 공개될 것으로 예고 되었다.
 
 <br>
@@ -93,9 +93,9 @@ categories: JS
 
 #### 2.3.4 Node.js
 
-- 2009년 라이언 달이 발표한 Node.js 는 구글 V8 자바스크립트 엔진으로 빌드된 <span style='background-color : #fff5b1'>**자바스크립트 런타임 환경**</span>이다.
-- Node.js 는 브라우저의 자바스크립트 엔진에서만 동작하던 자바스크립트를 <span style='background-color : #fff5b1'>**브라우저 이외의 환경에서도 동작 할 수 있도록 자바스크립트 엔진을 브라우저에서 독립**</span>시킨 자바스크립트 실행 환경이다.
-- Node.js는 <span style='background-color : #fff5b1'>**비동기 I/O를 지원, 단일 스레드(single thread) 이벤트 루프 기반으로 동작**</span>, 요청 처리 성능이 우수하다.
+- 2009년 라이언 달이 발표한 Node.js 는 구글 V8 자바스크립트 엔진으로 빌드된 **자바스크립트 런타임 환경**</span>이다.
+- Node.js 는 브라우저의 자바스크립트 엔진에서만 동작하던 자바스크립트를 **브라우저 이외의 환경에서도 동작 할 수 있도록 자바스크립트 엔진을 브라우저에서 독립**</span>시킨 자바스크립트 실행 환경이다.
+- Node.js는 **비동기 I/O를 지원, 단일 스레드(single thread) 이벤트 루프 기반으로 동작**</span>, 요청 처리 성능이 우수하다.
 
 <br>
 
@@ -131,14 +131,14 @@ ECMAScript 는 자바스크립트의 표준 사양인 ECMA-262를 말하며, 프
 
 ### 2.5 자바스크립트의 특징
 
-- 자바스크립트는 HTML, CSS 와 함께 웹을 구성하는 요소 중 하나로 <span style='background-color : #fff5b1'>**웹 브라우저에서 동작하는 유일한 프로그래밍 언어**</span> 이다.
-- 자바스크립트는 개발자가 별도의 컴파일 작업을 수행하지 않는 <span style='background-color : #fff5b1'>**인터프리어 언어**</span> 다.
+- 자바스크립트는 HTML, CSS 와 함께 웹을 구성하는 요소 중 하나로 **웹 브라우저에서 동작하는 유일한 프로그래밍 언어**</span> 이다.
+- 자바스크립트는 개발자가 별도의 컴파일 작업을 수행하지 않는 **인터프리어 언어**</span> 다.
 - 대부분의 모던 자바스크립트 엔진(Chrome의 V8, FireFox의 Spidermonkey, Safari의 JavaScriptCore, Microsoft Edge의 Chakra 등)은
   - 인터프리어와 컴파일러의 장점을 결합  
     ➡️ 비교적 처리 속도가 느린 인터프리어의 단점을 해결 했다.
 - 인터프리어는 소스코드를 즉시 실행
 - 컴파일러는 빠르게 동작하는 머신 코드를 생성하고 최적화한다.
-- 자바스크립트는 명령형(imperative), 함수형(functional), 프로토타입 기반(prototype-based) 객체지향 프로그래밍을 지원하는 <span style='background-color : #fff5b1'>**멀티 패러다임 프로그래밍 언어**</span> 다.
+- 자바스크립트는 명령형(imperative), 함수형(functional), 프로토타입 기반(prototype-based) 객체지향 프로그래밍을 지원하는 **멀티 패러다임 프로그래밍 언어**</span> 다.
 
 <br>
 

@@ -42,7 +42,7 @@ categories: React
 위에 보이는 comments 쿼리 키는 오후 9시 59분에 마지막으로 업데이트가 되었습니다. <br>
 다른 게시물을 눌러도 변화하지 않으며, 데이터는 만료(stale) 되었고, 리패칭 또한 일어나지 않습니다.
 
-궁극적인 이유는, <span style='background-color : #fff5b1'>**모든 쿼리가 comments 쿼리 키를 동일하게 사용**</span>하고 있기 때문 입니다.
+궁극적인 이유는, **모든 쿼리가 comments 쿼리 키를 동일하게 사용**</span>하고 있기 때문 입니다.
 
 > 예시처럼 comments 같이 알려진 쿼리 키가 있을 때는 <br> 어떠한 변화가 있어야만 데이터를 다시 가져오게 됩니다.
 
@@ -63,13 +63,13 @@ categories: React
 
 ### Array as Query Key
 
-<span style='background-color : #fff5b1'>**쿼리 키에 문자열(String) 대신 배열(Array) 을 전달**</span>하면 가능 합니다.
+**쿼리 키에 문자열(String) 대신 배열(Array) 을 전달**</span>하면 가능 합니다.
 
 ![carbon](https://user-images.githubusercontent.com/87301268/226222357-7d18570d-6ac9-48de-bc2e-753d38aa11ab.png)
 
 ➡️ 위와 같은 경우 배열의 첫 번째 요소로 문자열 "comment" 를 가지고, 두 번째 요소로 post.id 를 가집니다.<br>
-➡️ <span style='background-color : #fff5b1'>쿼리 키를 쿼리에 대한 의존성 배열로 취급</span>하게 됩니다.<br>
-➡️ 쿼리 키가 변경되면, <span style='background-color : #fff5b1'>즉 post.id 가 업데이트되면 React Query가 새 쿼리를 생성해서 staleTime 과 cacheTime 을 가지게 되고 의존성 배열이 다르다면 완전히 다른 것으로 간주됩니다.</span>
+➡️ 쿼리 키를 쿼리에 대한 의존성 배열로 취급</span>하게 됩니다.<br>
+➡️ 쿼리 키가 변경되면, 즉 post.id 가 업데이트되면 React Query가 새 쿼리를 생성해서 staleTime 과 cacheTime 을 가지게 되고 의존성 배열이 다르다면 완전히 다른 것으로 간주됩니다.</span>
 
 <br>
 
@@ -87,7 +87,7 @@ categories: React
 <br>
 
 개발자 도구를 보면 해당하는 댓글의 id 가 다 다른것을 볼 수 있습니다. <br>
-➡️ <span style='background-color : #fff5b1'>이때 다른 게시물을 클릭하자마자 그 전의 쿼리가 비활성화 되는 것을 볼 수 있는데 아직 캐시에 있는 상태 입니다.</span> <br>
+➡️ 이때 다른 게시물을 클릭하자마자 그 전의 쿼리가 비활성화 되는 것을 볼 수 있는데 아직 캐시에 있는 상태 입니다.</span> <br>
 ➡️ 가비지 컬렉터로 수집되기 전까지 캐시에 남아있을 것 입니다.
 
 <br>

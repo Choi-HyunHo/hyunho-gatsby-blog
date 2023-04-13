@@ -9,19 +9,19 @@ categories: React
 
 ### React.memo 란 ❓
 
-React.memo 는 <span style='background-color : #fff5b1'>**HOC(고차 컴포넌트)**</span> 입니다.
+React.memo 는 **HOC(고차 컴포넌트)**</span> 입니다.
 
 > HOC 는 컴포넌트를 인자로 받아서 새로운 컴포넌트를 리턴해주는 함수 입니다.
 
 컴포넌트를 React.memo()로 감싸주면 리액트는 컴포넌트를 렌더링하고 결과를 메모이제이션 합니다.
-그리고 <span style='background-color : #fff5b1'>다음 렌더링이 일어날 때 props가 같다면</span>, 리액트는 <span style='background-color : #fff5b1'>컴포넌트를 다시 렌더링 하지 않고</span> 메모이제이션 된 내용을 재사용 합니다.
+그리고 다음 렌더링이 일어날 때 props가 같다면</span>, 리액트는 컴포넌트를 다시 렌더링 하지 않고</span> 메모이제이션 된 내용을 재사용 합니다.
 
 #### 예를 들어보면
 
-리액트에서 부모 컴포넌트가 렌더링 될 때 해당 <span style='background-color : #fff5b1'>**컴포넌트에 속하는 모든 자식 컴포넌트 또한 렌더링**</span> 됩니다.
-하지만 부모 컴포넌트에서 자식 컴포넌트로 내려주는 <span style='background-color : #fff5b1'>**props가 바뀌지 않았다면**</span>, 해당 자식 컴포넌트를 굳이 렌더링이 될 필요가 없습니다.
+리액트에서 부모 컴포넌트가 렌더링 될 때 해당 **컴포넌트에 속하는 모든 자식 컴포넌트 또한 렌더링**</span> 됩니다.
+하지만 부모 컴포넌트에서 자식 컴포넌트로 내려주는 **props가 바뀌지 않았다면**</span>, 해당 자식 컴포넌트를 굳이 렌더링이 될 필요가 없습니다.
 
-이렇듯, 컴포넌트에서 리렌더링이 필요한 상황에서만 해주도록 설정을 할 수 있는데<br>이때 사용하는 함수가 바로 <span style='background-color : #fff5b1'>React.memo</span> 입니다.
+이렇듯, 컴포넌트에서 리렌더링이 필요한 상황에서만 해주도록 설정을 할 수 있는데<br>이때 사용하는 함수가 바로 React.memo</span> 입니다.
 
 <br>
 
@@ -45,8 +45,8 @@ React.memo 는 <span style='background-color : #fff5b1'>**HOC(고차 컴포넌�
 
 <br>
 
-위의 코드를 실행하면 SmartHome 의 <span style='background-color : #fff5b1'>자식 컴포넌트인 Light 컴포넌트</span>에 대해 <br>
-만약, 침실만 전등을 on 했다고 가정 했을 때 콘솔에 침실 뿐만 아니라 <span style='background-color : #fff5b1'>켜지지 않은 주방과 욕조 또한 렌더링 되는 것을 볼 수 있습니다.</span>
+위의 코드를 실행하면 SmartHome 의 자식 컴포넌트인 Light 컴포넌트</span>에 대해 <br>
+만약, 침실만 전등을 on 했다고 가정 했을 때 콘솔에 침실 뿐만 아니라 켜지지 않은 주방과 욕조 또한 렌더링 되는 것을 볼 수 있습니다.</span>
 
 ![img](https://user-images.githubusercontent.com/87301268/224592816-929521e1-667d-442c-b9ea-dc24160d3c93.png)
 
@@ -58,7 +58,7 @@ React.memo 는 <span style='background-color : #fff5b1'>**HOC(고차 컴포넌�
 
 ![carbon (29)](https://user-images.githubusercontent.com/87301268/224593287-270f89bb-398d-4260-bc82-3417f8e34552.png)
 
-<span style='background-color : #fff5b1'>침실을 누르면 주방과 욕조는 렌더링 되지 않고</span>, **클릭 한 방의 전등** 만 렌더링 되는 것을 볼 수 있습니다.
+침실을 누르면 주방과 욕조는 렌더링 되지 않고</span>, **클릭 한 방의 전등** 만 렌더링 되는 것을 볼 수 있습니다.
 
 <br>
 
@@ -80,7 +80,7 @@ React.memo 는 <span style='background-color : #fff5b1'>**HOC(고차 컴포넌�
 
 1. Pure Functional Component에서
 2. Rendering이 자주 일어날 경우
-3. <span style='background-color : #fff5b1'>re-rendering이 되는 동안 계속 같은 props값이 전달 될 경우</span>
+3. re-rendering이 되는 동안 계속 같은 props값이 전달 될 경우</span>
 4. UI element의 양이 많은 컴포넌트의 경우
 
 <br>
@@ -110,9 +110,9 @@ React.memo 는 <span style='background-color : #fff5b1'>**HOC(고차 컴포넌�
 차이점
 
 - React.memo는 HOC이고, useMemo와 useCallback은 hook 입니다.
-- **React.memo** 는 <span style='background-color : #fff5b1'>컴포넌트의 결과 값</span>을 메모이제이션
-- **useMemo** 는 <span style='background-color : #fff5b1'>함수의 연산량이 많을때 이전 결과값</span>을 재사용하는 목적
-- **useCallback** 은 <span style='background-color : #fff5b1'>함수를 재사용</span> 하기 위한 목적
+- **React.memo** 는 컴포넌트의 결과 값</span>을 메모이제이션
+- **useMemo** 는 함수의 연산량이 많을때 이전 결과값</span>을 재사용하는 목적
+- **useCallback** 은 함수를 재사용</span> 하기 위한 목적
 
 <br>
 

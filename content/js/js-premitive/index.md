@@ -10,13 +10,13 @@ categories: JS
 ### 11\_원시 값과 객체의 비교
 
 자바스크립트에서 제공하는 데이터 타입은  
-크게 <span style='background-color : #fff5b1'>**원시 타입(premitive type)**</span> 과 <span style='background-color : #E6E6FA'>**객체 타입(obejct/reperence type)**</span> 으로 구분 하는데,<br>둘 사이는 차이점이 존재한다.
+크게 **원시 타입(premitive type)**</span> 과 <span style='background-color : #E6E6FA'>**객체 타입(obejct/reperence type)**</span> 으로 구분 하는데,<br>둘 사이는 차이점이 존재한다.
 
-1. 원시 타입 값은 <span style='background-color : #fff5b1'>**변경 불가능 한 값**</span> 이고, 객체(참조) 타입 값은 <span style='background-color : #E6E6FA'>**변경 가능한 값**</span> 이다.
+1. 원시 타입 값은 **변경 불가능 한 값**</span> 이고, 객체(참조) 타입 값은 <span style='background-color : #E6E6FA'>**변경 가능한 값**</span> 이다.
 
-2. 원시 타입 값을 변수에 할당하면 변수(확보된 메모리 공간) 에는 <span style='background-color : #fff5b1'>**실제 값이 저장**</span> <br>객체(참조) 타입 값은 변수(확보된 메모리 공간)에는 <span style='background-color : #E6E6FA'>**참조 값이 저장**</span>
+2. 원시 타입 값을 변수에 할당하면 변수(확보된 메모리 공간) 에는 **실제 값이 저장**</span> <br>객체(참조) 타입 값은 변수(확보된 메모리 공간)에는 <span style='background-color : #E6E6FA'>**참조 값이 저장**</span>
 
-3. 원시 타입 값을 갖는 변수를 다른 변수에 할당하면 <span style='background-color : #fff5b1'>**원본의 원시 값이 복사되어 전달**</span>  
+3. 원시 타입 값을 갖는 변수를 다른 변수에 할당하면 **원본의 원시 값이 복사되어 전달**</span>  
    객체 타입 값을 갖는 변수를 다른 변수에 할당하면 <span style='background-color : #E6E6FA'>**원본의 참조 값이 복사되어 전달**</span>
 
 <br>
@@ -25,9 +25,9 @@ categories: JS
 
 #### 11.1.1 변경 불가능한 값
 
-<span style='background-color : #fff5b1'>**원시 타입은**</span> 변경 불가능한 값으로 **읽기 전용(read only)** 값이다.
+**원시 타입은**</span> 변경 불가능한 값으로 **읽기 전용(read only)** 값이다.
 
-> 원시 값 자체를 변경 불가능하다는 것이지, <span style='background-color : #fff5b1'>변수 값을 변경 할 수 없다는 것이 아님</span>을 유의!
+> 원시 값 자체를 변경 불가능하다는 것이지, 변수 값을 변경 할 수 없다는 것이 아님</span>을 유의!
 
 ![carbon (89)](https://user-images.githubusercontent.com/87301268/225221816-0c431c6f-2b2f-4b7a-9c22-7bacca046b54.png)
 
@@ -35,13 +35,13 @@ categories: JS
 
 ![](https://velog.velcdn.com/images/hoho_0815/post/570afc57-b9c9-47af-958a-224c2508b540/image.png)
 
-원시 값을 할당한 변수에 <span style='background-color : #fff5b1'>**새로운 원시 값을 재할당**</span> 하면,
+원시 값을 할당한 변수에 **새로운 원시 값을 재할당**</span> 하면,
 
-1. 메모리 공간에 저장되어 있는 <span style='background-color : #fff5b1'>**재할당 이전의 원시 값을 변경하는 것이 아니라**</span>
-2. <span style='background-color : #fff5b1'>**새로운 메모리 공간을 확보**</span> 하고 재할당한 원시 값을 저장한 후 <br>
+1. 메모리 공간에 저장되어 있는 **재할당 이전의 원시 값을 변경하는 것이 아니라**</span>
+2. **새로운 메모리 공간을 확보**</span> 하고 재할당한 원시 값을 저장한 후 <br>
    ➡️ 메모리 공간의 주소가 변경된 이유는, 변수에 할당된 원시 값이 변경 불가능한 값이기 때문
 
-3. 변수는 <span style='background-color : #fff5b1'>**새롭게 재할당한 원시 값을 가리킨다.**</span>
+3. 변수는 **새롭게 재할당한 원시 값을 가리킨다.**</span>
 
 이러한 특성을 불변성이라고 한다.<br> 불변성을 갖는 원시 값을 할당한 변수는 재할당 이외에 값을 변경 할 수 있는 방법이 없다.
 
@@ -51,7 +51,7 @@ categories: JS
 
 > 문자열은 유사 배열 객체로서 배열과 유사하게 각 문장에 접근 할 수 있으나, 변경 불가능 한 값이기 때문에 일부 문자를 변경해도 반영되지 않는다. 원시 타입은 문자열은 읽기 전용이기 때문이다.
 
-원시 값을 저장하려면 <span style='background-color : #fff5b1'>먼저 확보해야 하는 메모리 공간의 크기를 결정</span>해야 한다.
+원시 값을 저장하려면 먼저 확보해야 하는 메모리 공간의 크기를 결정</span>해야 한다.
 
 - 이를 위해 원시 타입별로 메모리 공간의 크기가 미리 정해져 있다.
 - ECMAScript 에 따르면, 문자열 타입(2바이트) 와 숫자 타입(8바이트)
@@ -71,7 +71,7 @@ categories: JS
 <br>
 
 score 변수와 copy 변수는 숫자 값 100을 갖는다는 점에서는 동일하지만,  
-score 변수와 copy 변수의 값 100은 <span style='background-color : #fff5b1'>**다른 메모리 공간에 저장된 별개의 값**</span>이다.
+score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된 별개의 값**</span>이다.
 
 <br>
 
@@ -79,7 +79,7 @@ score 변수와 copy 변수의 값 100은 <span style='background-color : #fff5b
 
 ➡️ 변수에 원시 값을 갖는 변수를 할당하면, ( 위와 같이 ) <br>
 ➡️ 변수 할당 시점 이든, 두 변수 중 어느 하나의 변수에 값을 재할당 하는 시점 이든 <br>
-➡️ 두 변수의 원시 값은 <span style='background-color : #fff5b1'>**서로 다른 메모리 공간에 저장된 별개의 값**</span>이 되어 <br>
+➡️ 두 변수의 원시 값은 **서로 다른 메모리 공간에 저장된 별개의 값**</span>이 되어 <br>
 ➡️ **어느 한쪽에서 재할당을 통해 값을 변경하더라도 서로 간섭할 수 없다.** <br>
 
 <br>
@@ -120,7 +120,7 @@ score 변수와 copy 변수의 값 100은 <span style='background-color : #fff5b
 
 객체를 프로퍼티 값으로 갖는 객체인 경우
 
-- <span style='background-color : #fff5b1'>**얕은 복사**</span> 는 <span style='background-color : #fff5b1'>**한 단계**</span> 까지만 복사하는 것을 말하고 ➡️ 참조 값을 복사
+- **얕은 복사**</span> 는 **한 단계**</span> 까지만 복사하는 것을 말하고 ➡️ 참조 값을 복사
 - <span style='background-color : #E6E6FA'>**깊은 복사**</span> 는 <span style='background-color : #E6E6FA'>**객체에 중첩되어 있는 객체**</span> 까지 복사하는 것을 말한다.  
   ➡️ 객체에 중첩되어 있는 객체까지 모두 복사해서 원시 값처럼 **완전한 복사본**을 만드는 복사
 
@@ -151,7 +151,7 @@ score 변수와 copy 변수의 값 100은 <span style='background-color : #fff5b
 
 #### 원시 타입과 객체 타입의 차이
 
-> 원시타입과 가장 큰 차이점은 변수의 크기가 <span style='background-color : #fff5b1'>동적으로 변한다는 것</span>이다.
+> 원시타입과 가장 큰 차이점은 변수의 크기가 동적으로 변한다는 것</span>이다.
 
 이러한 특징 때문에 <span style='background-color : #E6E6FA'>객체의 데이터 자체는</span> 별도의 [메모리 공간(heap)](https://choi-hyunho.com/react-immutability/)에 저장되며, 변수에 할당 시 <span style='background-color : #E6E6FA'>데이터에 대한 주소</span> ( 힙(Heap) 메모리의 주소값)가 저장되기 때문에 자바스크립트 엔진이 변수가 가지고 있는 <span style='background-color : #E6E6FA'>메모리 주소를 이용해서 변수의 값에 접근</span>하게 되는것이다.
 

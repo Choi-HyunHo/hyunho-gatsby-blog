@@ -11,15 +11,15 @@ categories: React
 
 > '신선하지 않은' 데이터를 말 합니다.
 
-<span style='background-color : #fff5b1'>유통기한이 지난</span> 오래된 식빵과 비슷하다고 할 수 있습니다.
+유통기한이 지난</span> 오래된 식빵과 비슷하다고 할 수 있습니다.
 
 <br>
 
 ### 신선하다는 말은 무슨 의미인가요 ❓
 
-**서버에서 조회할 당시**의 데이터는 요청할 당시의 snapshot 이지만 <span style='background-color : #fff5b1'>( 신선한 )</span>
+**서버에서 조회할 당시**의 데이터는 요청할 당시의 snapshot 이지만 ( 신선한 )</span>
 
-**외부 요청으로 데이터가 변경**된 경우 <span style='background-color : #fff5b1'>브라우저가 가진 데이터는 오래된 데이터가 되어버려서</span> <br>
+**외부 요청으로 데이터가 변경**된 경우 브라우저가 가진 데이터는 오래된 데이터가 되어버려서</span> <br>
 ➡️ stale 하다고 하는 것 입니다.
 
 <br>
@@ -28,7 +28,7 @@ categories: React
 
 > **staleTime** 은 데이터를 허용하는 '최대 시간' 라고 할 수 있습니다.
 
-➡️ 달리 말하면, **데이터가 만료됐다고 판단하기 전**까지 <span style='background-color : #fff5b1'>**허용되는 시간**</span> 이 staleTime 입니다. <br>
+➡️ 달리 말하면, **데이터가 만료됐다고 판단하기 전**까지 **허용되는 시간**</span> 이 staleTime 입니다. <br>
 
 ➡️ **'웹사이트에 표시된 데이터가 10초 까지는 그대로여도 괜찮다'** 라고 판단하면 staleTime 을 10초로 설정 합니다. <br>
 
@@ -40,7 +40,7 @@ categories: React
 
 > 데이터 리패칭(Refetching) 이 발생 합니다.
 
-데이터 리패칭(Refetching) 은 <span style='background-color : #fff5b1'>**만료된 데이터**</span> 에서만 실행 됩니다. <br>
+데이터 리패칭(Refetching) 은 **만료된 데이터**</span> 에서만 실행 됩니다. <br>
 ➡️ **staleTime 이 지난 데이터**
 
 #### 주의할 점 ⚠️
@@ -67,13 +67,13 @@ staleTime 옵션으로 설정한 시간 동안 데이터가 stale 되지 않도�
 
 #### 리패칭이 발생 한다는 것은
 
-<span style='background-color : #fff5b1'>서버로부터 **fresh한 데이터를 전달받기 위해** refetch가 이루어집니다.</span>
+서버로부터 **fresh한 데이터를 전달받기 위해** refetch가 이루어집니다.</span>
 
 <br>
 
 ### staleTime 사용
 
-**useQuery** 에 <span style='background-color : #fff5b1'>세번째 옵션</span>으로 추가 합니다.
+**useQuery** 에 세번째 옵션</span>으로 추가 합니다.
 
 ![carbon (12)](https://user-images.githubusercontent.com/87301268/225818397-464b11bb-8b17-48b9-b399-4333726d890b.png)
 
@@ -118,39 +118,39 @@ staleTime 옵션으로 설정한 시간 동안 데이터가 stale 되지 않도�
 
 #### 상태 별 개념 ( 중요 ✅ )
 
-- <span style='background-color : #fff5b1'>fetching</span> : **데이터 요청 상태**
-- <span style='background-color : #fff5b1'>fresh</span> : 데이터가 프레시한 **(만료되지 않은 상태)** <br>
+- fetching</span> : **데이터 요청 상태**
+- fresh</span> : 데이터가 프레시한 **(만료되지 않은 상태)** <br>
   ➡️ 컴포넌트의 상태가 변경되더라도, 데이터를 다시 요청하지 않지 않습니다. <br>
   ➡️ 새로고침하면 다시 fetching.
 
-- <span style='background-color : #fff5b1'>stale</span> : **데이터가 만료된 상태.** <br>
+- stale</span> : **데이터가 만료된 상태.** <br>
   ➡️ 한번 프론트로 내려준 서버 데이터는, 최신화가 필요한 데이터라고 볼 수 있습니다. <br>
   ➡️ 그 사이에 다른 유저가 데이터를 추가, 수정, 삭제 등을 할 수 있기 때문에 컴포넌트가 마운트, 업데이트되면 데이터를 다시 요청 합니다. <br>
   ➡️ fresh 에서 stale 로 넘어가는 시간의 디폴트는 0.
-- <span style='background-color : #fff5b1'>inactive</span> : **사용하지 않는 상태** <br>
+- inactive</span> : **사용하지 않는 상태** <br>
   ➡️ 일정 시간이 지나면 가비지 콜렉터가 캐시에서 제거 합니다. 기본값 5분
-- <span style='background-color : #fff5b1'>delete</span> : **가비지 콜렉터에 의해 캐시에서 제거된 상태.**
+- delete</span> : **가비지 콜렉터에 의해 캐시에서 제거된 상태.**
 
 <br>
 
 #### 라이프 사이클 ( 중요 ✅ )
 
-1. A 쿼리 인스턴스가 <span style='background-color : #fff5b1'>mount 됨</span>
-2. 네트워크에서 데이터를 **fetch** 하고 <span style='background-color : #fff5b1'>A 라는 **query key 로 캐싱함**</span>
-3. 이 데이터는 fresh 상태에서 <span style='background-color : #fff5b1'>staleTime (기본값 0) 이후</span> **stale 상태**로 변경됨
-4. A 쿼리 인스턴스가 <span style='background-color : #fff5b1'>unmount</span> 됨
-5. **캐시**는 cacheTime (기본값 5분) 만큼 유지되다가 <span style='background-color : #fff5b1'>**가비지 콜렉터**로 수집됨</span>
-6. 만일 cacheTime 이 지나기 전에 A 쿼리 인스턴스가 <span style='background-color : #fff5b1'>**새롭게 mount 되면**, fetch 가 실행되고, **fresh 한 값을 가져오는 동안 캐시 데이터를 보여줌**.</span>
+1. A 쿼리 인스턴스가 mount 됨</span>
+2. 네트워크에서 데이터를 **fetch** 하고 A 라는 **query key 로 캐싱함**</span>
+3. 이 데이터는 fresh 상태에서 staleTime (기본값 0) 이후</span> **stale 상태**로 변경됨
+4. A 쿼리 인스턴스가 unmount</span> 됨
+5. **캐시**는 cacheTime (기본값 5분) 만큼 유지되다가 **가비지 콜렉터**로 수집됨</span>
+6. 만일 cacheTime 이 지나기 전에 A 쿼리 인스턴스가 **새롭게 mount 되면**, fetch 가 실행되고, **fresh 한 값을 가져오는 동안 캐시 데이터를 보여줌**.</span>
 
 <br>
 
 #### cacheTime 이란 ?
 
-데이터가 <span style='background-color : #fff5b1'>inactive 상태</span>일 때 **캐싱된 상태로 남아있는 시간**
+데이터가 inactive 상태</span>일 때 **캐싱된 상태로 남아있는 시간**
 
-➡️ **쿼리 인스턴스가 unmount** 되면 데이터는 <span style='background-color : #fff5b1'>inactive 상태로 변경</span>되며, 캐시는 cacheTime만큼 유지된다. <br>
+➡️ **쿼리 인스턴스가 unmount** 되면 데이터는 inactive 상태로 변경</span>되며, 캐시는 cacheTime만큼 유지된다. <br>
 ➡️ cacheTime이 지나면 **가비지 콜렉터**로 수집된다. <br>
-➡️ cacheTime이 지나기 전에 쿼리 인스턴스가 다시 mount 되면, <span style='background-color : #fff5b1'>데이터를 fetch하는 동안 캐시 데이터를 보여준다.</span> <br>
+➡️ cacheTime이 지나기 전에 쿼리 인스턴스가 다시 mount 되면, 데이터를 fetch하는 동안 캐시 데이터를 보여준다.</span> <br>
 ➡️ cacheTime은 staleTime과 관계없이, 무조건 inactive 된 시점을 기준으로 캐시 데이터 삭제를 결정한다. <br>
 
 <br>

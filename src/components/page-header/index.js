@@ -10,7 +10,7 @@ const MainWrap = styled.div`
   top: 0;
   z-index: 999;
   ${(props) => props.eleval > 0 && elevalCss}
-  background: #fff;
+  background: var(--background-color);
   transition: box-shadow 400ms ease-in-out, transform 400ms ease-in-out;
 `;
 

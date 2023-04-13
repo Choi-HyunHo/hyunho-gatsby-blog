@@ -10,7 +10,7 @@
 
   &:hover {
     border-radius: 10px;
-    background-color: rgb(247, 248, 250);
+    background-color: var(--post-card-hover-color);
   }
 
   .post-card {

@@ -11,10 +11,10 @@ categories: React
 
 **우선 간단하게 용어부터 정리 해보겠습니다**
 
-- <span style='background-color : #fff5b1'>**SPA(Single Page Application)**</span> : 한 개의 페이지로 구성된 애플리케이션
-- <span style='background-color : #fff5b1'>**MPA(Multiple Page Application)**</span> : 여러 개의 페이지로 구성된 애플리케이션
-- <span style='background-color : #fff5b1'>**CSR(Client Side Rendering)**</span> : 클라이언트 측에서 렌더링을 하는 방식
-- <span style='background-color : #fff5b1'>**SSR(Server Side Rendering)**</span> : 서버 측에서 렌더링을 하는 방식
+- **SPA(Single Page Application)**</span> : 한 개의 페이지로 구성된 애플리케이션
+- **MPA(Multiple Page Application)**</span> : 여러 개의 페이지로 구성된 애플리케이션
+- **CSR(Client Side Rendering)**</span> : 클라이언트 측에서 렌더링을 하는 방식
+- **SSR(Server Side Rendering)**</span> : 서버 측에서 렌더링을 하는 방식
 
 대부분 CSR + SPA 한 묶음, SSR + MPA 한 묶음 이라고 정의하곤 합니다.
 
@@ -28,7 +28,7 @@ categories: React
 
 이전 웹 사이트는 문서 하나의 전달되는 파일의 용량이 적었고, 페이지 전환 시 완전히 새로운 HTML을 서버에서 전송하는 방식으로 이루어졌습니다. 그러나 기술의 발전에 따라 웹 사이트가 고도화되며 페이지 용량이 커져갔고, 매번 새로운 페이지를 전달받아 보여주는 것이 부담이 되기 시작했습니다.
 
-위와 같은 방식을 <span style='background-color : #fff5b1'>MPA(Multiple Page Application) 이라고 하며, SSR 방식</span>을 사용 합니다.
+위와 같은 방식을 MPA(Multiple Page Application) 이라고 하며, SSR 방식</span>을 사용 합니다.
 
 <br>
 
@@ -36,7 +36,7 @@ categories: React
 
 1.브라우저에서 URL을 입력해서 서버에 HTTP Request를 보낸다.
 
-2.서버가 이 요청을 받아서 해당 페이지를 만들기 시작한다. 이때 <span style='background-color : #fff5b1'>필요한 Data Fetching을 미리 해서 (API Call, Hydrate 등) 빈 페이지가 아닌 초기 콘텐츠가 로딩된 페이지를 만들어준다.</span> 브라우저가 이 HTML 페이지를 받아 페이지를 DOM에 그린다. (이 시점부터 페이지가 사용자에게 보이게 된다)
+2.서버가 이 요청을 받아서 해당 페이지를 만들기 시작한다. 이때 필요한 Data Fetching을 미리 해서 (API Call, Hydrate 등) 빈 페이지가 아닌 초기 콘텐츠가 로딩된 페이지를 만들어준다.</span> 브라우저가 이 HTML 페이지를 받아 페이지를 DOM에 그린다. (이 시점부터 페이지가 사용자에게 보이게 된다)
 
 3.브라우저가 페이지를 그리면서 동시에 태그 등을 통해 JS, CSS파일 등을 로딩한다.
 
@@ -48,9 +48,9 @@ categories: React
 
 **SSR 의 장점은**
 
-1\. 서버에서 한 번에 완성된 페이지를 받아오기 때문에 <span style='background-color : #fff5b1'>초기 로딩속도가 빠릅니다.</span>
+1\. 서버에서 한 번에 완성된 페이지를 받아오기 때문에 초기 로딩속도가 빠릅니다.</span>
 
-2\. 서버에서 한 번에 웹의 정보를 HTML로 받아오기 때문에 검색로봇이 페이지를 크롤링하기에 적합해 <span style='background-color : #fff5b1'>SEO(검색 엔진 최적화)가 유리합니다.</span>
+2\. 서버에서 한 번에 웹의 정보를 HTML로 받아오기 때문에 검색로봇이 페이지를 크롤링하기에 적합해 SEO(검색 엔진 최적화)가 유리합니다.</span>
 
 <br>
 
@@ -72,7 +72,7 @@ categories: React
 
 1\. HTML 의 a태그 href 를 통해 페이지 이동을 하고, 해당 리소스를 서버에 요청하기 때문에
 
-➡️ 새로운 페이지로 이동을 할 때 마다 <span style='background-color : #fff5b1'>화면이 새로고침되어 사용자 경험이 좋지 않습니다.</span>
+➡️ 새로운 페이지로 이동을 할 때 마다 화면이 새로고침되어 사용자 경험이 좋지 않습니다.</span>
 
 2\. 매 페이지마다 서버에서 전송할 데이터를 저장해야 하기 때문에 부하가 발생할 수 있습니다.
 
@@ -80,11 +80,11 @@ categories: React
 
 ### **CSR 방식의 SPA**
 
-CSR은 <span style='background-color : #fff5b1'>단 한 번만 리소스(HTML, CSS, JavaScript) 를 로딩하고, 그 후에는 데이터를 받아올 때만 서버와 통신 합니다.</span>
+CSR은 단 한 번만 리소스(HTML, CSS, JavaScript) 를 로딩하고, 그 후에는 데이터를 받아올 때만 서버와 통신 합니다.</span>
 
 ➡️ 하나의 페이지에서 모든 데이터를 주고 받습니다
 
-➡️ 사실 페이지 이동처럼 보이게 하는 것도 react-router-dom과 같은 대표적인 라우팅 라이브러리로 사실은 페이지 이동이 아니라 <span style='background-color : #fff5b1'>URL이 변경될 때 보여주는 컴포넌트가 달라지는 것 뿐입니다.</span>
+➡️ 사실 페이지 이동처럼 보이게 하는 것도 react-router-dom과 같은 대표적인 라우팅 라이브러리로 사실은 페이지 이동이 아니라 URL이 변경될 때 보여주는 컴포넌트가 달라지는 것 뿐입니다.</span>
 
 ➡️ 실제로 페이지가 이동되어서 다시 html과 javascript를 받아오는 건 아닙니다!
 
@@ -107,7 +107,7 @@ CSR은 <span style='background-color : #fff5b1'>단 한 번만 리소스(HTML, C
 <br>
 
 요약하자면, CSR의 경우<br>
-➡️ <span style='background-color : #fff5b1'>먼저 빈 html을 받고, js 스크립트 파일들을 다운로드한 뒤 react를 활용하면서 html을 채우고, 렌더링을 시작 합니다.</span>
+➡️ 먼저 빈 html을 받고, js 스크립트 파일들을 다운로드한 뒤 react를 활용하면서 html을 채우고, 렌더링을 시작 합니다.</span>
 
 <br>
 
@@ -121,9 +121,9 @@ CSR은 <span style='background-color : #fff5b1'>단 한 번만 리소스(HTML, C
 
 **CSR 의 단점은**
 
-1\. JS 파일을 한 번에 내려 받기 때문에 <span style='background-color : #fff5b1'>초기 구동 속도가 느립니다.</span>
+1\. JS 파일을 한 번에 내려 받기 때문에 초기 구동 속도가 느립니다.</span>
 
-2\. 위에서 말한 것 처럼 <span style='background-color : #fff5b1'>SEO 취약</span> 합니다.
+2\. 위에서 말한 것 처럼 SEO 취약</span> 합니다.
 
 <br>
 

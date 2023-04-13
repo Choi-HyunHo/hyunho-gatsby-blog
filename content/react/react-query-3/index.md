@@ -28,8 +28,8 @@ useQuery에 반환되는 값들을 활용해 이전 포스팅에서 보지못했
 
 ### isLoading
 
-<span style='background-color : #fff5b1'>현재 로딩중인지 아닌지를 알려주는 역할</span>을 하는 useQuery 의 값 입니다. <br>
-➡️ useQuery가 **fetch** 로 담아온 <span style='background-color : #fff5b1'>데이터 값을 기다리는 중</span> 입니다. <br>
+현재 로딩중인지 아닌지를 알려주는 역할</span>을 하는 useQuery 의 값 입니다. <br>
+➡️ useQuery가 **fetch** 로 담아온 데이터 값을 기다리는 중</span> 입니다. <br>
 
 ![carbon (8)](https://user-images.githubusercontent.com/87301268/225788819-3c286cec-b0b6-403f-9ce6-8d9135a4b34d.png)
 
@@ -37,12 +37,12 @@ useQuery에 반환되는 값들을 활용해 이전 포스팅에서 보지못했
 
 #### 특징으로
 
-isLoading 은 <span style='background-color : #fff5b1'>캐시된 데이터조차 없이, **처음 실행한 쿼리 일 때**</span> 로딩 여부에 따라 `true / false` 로 나누어집니다.
+isLoading 은 캐시된 데이터조차 없이, **처음 실행한 쿼리 일 때**</span> 로딩 여부에 따라 `true / false` 로 나누어집니다.
 
 ![image](https://user-images.githubusercontent.com/87301268/225789097-cda20015-fbab-45cc-acb5-abc98044f2e1.gif)
 
 - 개발자 도구로 데이터를 불러오는 모습을 보면, **로딩을 포기하기 전까지 총 세번을 시도** 합니다.
-- 시도 횟수는 변경 할 수 있지만, React Query 는 기본적으로 <span style='background-color : #fff5b1'>세 번 시도한 후에 해당 데이터를 가져올 수 없다고 결정</span> 합니다.
+- 시도 횟수는 변경 할 수 있지만, React Query 는 기본적으로 세 번 시도한 후에 해당 데이터를 가져올 수 없다고 결정</span> 합니다.
 
 지금 다뤄볼 것은 아니지만 비슷한 개념으로 **isFetching** 이 있습니다.
 
@@ -50,19 +50,19 @@ isLoading 은 <span style='background-color : #fff5b1'>캐시된 데이터조차
 
 ### isFetching
 
-react-query가 요청 되었을 때 <span style='background-color : #fff5b1'>비동기 함수가 처리되었는지 여부</span>에 따라 `true / false` 로 나누어집니다.
+react-query가 요청 되었을 때 비동기 함수가 처리되었는지 여부</span>에 따라 `true / false` 로 나누어집니다.
 
 여기까지만 보면 사실 같은 의미라고 생각 할 수 있는데 일상적인 예시를 들어보면, <br>
 
-➡️ 음식을 <span style='background-color : #fff5b1'>처음 주문</span>하면 **음식 및 물, 수저, 젓가락** 등 자리 세팅을 처음부터 해줍니다. **(isLoading)** <br>
-➡️ 부족해서 음식을 <span style='background-color : #fff5b1'>재주문</span>하면 **음식만** 가져다 줍니다. **(isFetching)**
+➡️ 음식을 처음 주문</span>하면 **음식 및 물, 수저, 젓가락** 등 자리 세팅을 처음부터 해줍니다. **(isLoading)** <br>
+➡️ 부족해서 음식을 재주문</span>하면 **음식만** 가져다 줍니다. **(isFetching)**
 
 <br>
 
 ### isLoading vs isFetching 정리해보면
 
-- <span style='background-color : #fff5b1'>isLoading</span>은 서버에 데이터 요청을 **처음** 할 때
-- <span style='background-color : #fff5b1'>isFetching</span>은 서버에 데이터 요청을 **다시** 할 때 (캐시된 데이터가 있을 때)
+- isLoading</span>은 서버에 데이터 요청을 **처음** 할 때
+- isFetching</span>은 서버에 데이터 요청을 **다시** 할 때 (캐시된 데이터가 있을 때)
 
 다시 본론으로 돌아와 이번에는 isError 에 대해 알아보겠습니다.
 
@@ -70,7 +70,7 @@ react-query가 요청 되었을 때 <span style='background-color : #fff5b1'>비
 
 ### isError
 
-비동기 함수 요청이 **실패**하면 <span style='background-color : #fff5b1'>사용자에게 보여줄 데이터를 가져오지 못합니다.</span> <br>
+비동기 함수 요청이 **실패**하면 사용자에게 보여줄 데이터를 가져오지 못합니다.</span> <br>
 이런 상황에서 사용자에게 데이터를 불러오는 여부에 대해 알려줄 수 있습니다.
 
 ![carbon (9)](https://user-images.githubusercontent.com/87301268/225788951-a17d0c9f-8da4-4c8a-a423-0843543cb65f.png)

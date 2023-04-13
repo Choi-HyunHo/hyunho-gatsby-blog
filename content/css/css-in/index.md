@@ -31,15 +31,15 @@ categories: CSS
 
 ### CSS-in-CSS ?
 
-웹 애플리케이션의 스타일을 작성하는 전통적인 방법으로, <span style='background-color : #fff5b1'>CSS 스타일을 별도의 파일이나 HTML 마크업 내에 작성하는 기술입니다.</span>
+웹 애플리케이션의 스타일을 작성하는 전통적인 방법으로, CSS 스타일을 별도의 파일이나 HTML 마크업 내에 작성하는 기술입니다.</span>
 
-특징으로, pure CSS와 마찬가지로 <span style='background-color : #fff5b1'>**전체 페이지에 필요한 CSS를 처음부터 전부 로딩하여 style 태그를 생성**</span>합니다.
+특징으로, pure CSS와 마찬가지로 **전체 페이지에 필요한 CSS를 처음부터 전부 로딩하여 style 태그를 생성**</span>합니다.
 
 <br>
 
 #### CSS Module
 
-CSS 모듈은 <span style='background-color : #fff5b1'>**CSS를 모듈화 하여 사용**</span>하는 방식 입니다. <br>
+CSS 모듈은 **CSS를 모듈화 하여 사용**</span>하는 방식 입니다. <br>
 
 1. CSS 클래스를 만들면 자동으로 고유한 클래스네임을 만들어서 scope를 지역적으로 제한 하고
 2. 모듈화된 CSS를 번들러로 불러오면
@@ -51,15 +51,15 @@ CSS 모듈은 <span style='background-color : #fff5b1'>**CSS를 모듈화 하여
 
 CSS Module를 사용하면
 
-➡️ CSS 파일에 선언한 클<span style='background-color : #fff5b1'>래스 이름들이 모두 고유</span>해지기 때문에 <br>
+➡️ CSS 파일에 선언한 클래스 이름들이 모두 고유</span>해지기 때문에 <br>
 ➡️ Global namespace 문제를 해결할 수 있습니다. <br>
-➡️ 하지만, <span style='background-color : #fff5b1'>지나친 모듈화는 유지 보수 및 재사용이 힘들어집니다.</span>
+➡️ 하지만, 지나친 모듈화는 유지 보수 및 재사용이 힘들어집니다.</span>
 
 <br>
 
 #### CSS 전처리기
 
-처리기의 자신만의 특별한 <span style='background-color : #fff5b1'>syntax를 가지고 CSS를 생성하도록 하는 프로그램</span> 입니다. CSS의 문제점을 프로그래밍 방식, 즉 변수/함수/상속 등 일반적인 **프로그래밍 개념**을 사용하여 보완 합니다.
+처리기의 자신만의 특별한 syntax를 가지고 CSS를 생성하도록 하는 프로그램</span> 입니다. CSS의 문제점을 프로그래밍 방식, 즉 변수/함수/상속 등 일반적인 **프로그래밍 개념**을 사용하여 보완 합니다.
 
 CSS 전처리기는
 
@@ -67,7 +67,7 @@ CSS 전처리기는
 2. 임의 함수 및 내장 함수로 인해 **개발 시간과 비용 절약**
 3. 중첩·상속과 같은 요소로 인해 **구조화된 코드 유지 및 관리 용이** 등의 장점이 있습니다.
 
-반면 <span style='background-color : #fff5b1'>전처리기를 위한 도구가 필요하고 다시 컴파일하는데 시간이 소요된다는 단점</span>도 존재 합니다.
+반면 전처리기를 위한 도구가 필요하고 다시 컴파일하는데 시간이 소요된다는 단점</span>도 존재 합니다.
 
 > 전처리기 종류 : Sass, Less, Post CSS, Stylus
 
@@ -75,9 +75,9 @@ CSS 전처리기는
 
 ### CSS-in-JS
 
-CSS-in-JS는 단어 그대로 <span style='background-color : #fff5b1'>자바스크립트 코드에서 CSS를 작성하는 방식</span>
+CSS-in-JS는 단어 그대로 자바스크립트 코드에서 CSS를 작성하는 방식</span>
 
-특징은 <span style='background-color : #fff5b1'>해당 컴포넌트가 렌더링 될 때만 스타일 태그를 생성</span> ➡️ **현재 사용 중인 스타일만 DOM에 포함**
+특징은 해당 컴포넌트가 렌더링 될 때만 스타일 태그를 생성</span> ➡️ **현재 사용 중인 스타일만 DOM에 포함**
 
 <br>
 
@@ -93,16 +93,16 @@ CSS-in-JS로 해결할 수 있는 이슈는
 
 <br>
 
-하지만 단점으로 <span style='background-color : #fff5b1'>**번들 크기의 증가**</span>를 뽑을 수 있습니다.
+하지만 단점으로 **번들 크기의 증가**</span>를 뽑을 수 있습니다.
 
 대표적인 CSS-in-JS 인 styled-components 를 사용하면 별도의 라이브러리를 설치해야 합니다. <br> 그 뜻은 즉, **번들의 크기가 증가**하는 것인데
 
-**CSR** 방식을 사용하는 입장에서 <span style='background-color : #fff5b1'>**최초 로딩 시간을 지연 시킨다는 단점**</span>으로 드러날 수 있습니다. <br>
+**CSR** 방식을 사용하는 입장에서 **최초 로딩 시간을 지연 시킨다는 단점**</span>으로 드러날 수 있습니다. <br>
 
 또한 **SSR** 을 사용하면 문제가 없지 않을까 생각 할 수 있지만
-위에서 언급한 것 처럼 <span style='background-color : #fff5b1'>'해당 컴포넌트가 렌더링 될 때만 스타일 태그를 생성'</span> 한다고 했습니다.
+위에서 언급한 것 처럼 '해당 컴포넌트가 렌더링 될 때만 스타일 태그를 생성'</span> 한다고 했습니다.
 
-그렇다는 것은 <span style='background-color : #fff5b1'>**실제 페이지가 이동할 때마다 내려 받아야 하는 문제**</span>가 발생하기 때문에
+그렇다는 것은 **실제 페이지가 이동할 때마다 내려 받아야 하는 문제**</span>가 발생하기 때문에
 성능적인 불이익이 나타날 수 있습니다.
 
 <br>
@@ -111,16 +111,16 @@ CSS-in-JS로 해결할 수 있는 이슈는
 
 #### 1. classname 동적 생성
 
-1. CSS-in-JS 사용자가 스타일에 className을 사용하지 않더라도, 결국 <span style='background-color : #fff5b1'>브라우저는 webkit 엔진에서 스타일링을 수행할 때 className을 기반으로 하고 있기 때문에</span> **브라우저 런타임에서는 각 CSS 와 컴포넌트를 이어주는 className이 필요함**
-2. CSS-in-JS 에서는 각 컴포넌트를 `hashing`하여 <span style='background-color : #fff5b1'>동적인 className을 만듬</span> <br> `e.g. "sc-cMWNzn"`
-3. 컴포넌트가 생성될 때 `head` tag에 `style tag`로 같이 생성되며, <span style='background-color : #fff5b1'>사라질 때도 같이 사라짐</span> (라이프사이클이 같음)
+1. CSS-in-JS 사용자가 스타일에 className을 사용하지 않더라도, 결국 브라우저는 webkit 엔진에서 스타일링을 수행할 때 className을 기반으로 하고 있기 때문에</span> **브라우저 런타임에서는 각 CSS 와 컴포넌트를 이어주는 className이 필요함**
+2. CSS-in-JS 에서는 각 컴포넌트를 `hashing`하여 동적인 className을 만듬</span> <br> `e.g. "sc-cMWNzn"`
+3. 컴포넌트가 생성될 때 `head` tag에 `style tag`로 같이 생성되며, 사라질 때도 같이 사라짐</span> (라이프사이클이 같음)
 4. styled-components의 경우, 같은 컴포넌트가 여러개 생성될 때는 하나의 css만 사용됨 => 최적화가 되어 있음
 
 <br>
 
 #### 2. css parser
 
-- 각 **CSS-in-JS** 엔진은 style html tag를 만드는 <span style='background-color : #fff5b1'>CSS parser를 내장</span>하고 있음
+- 각 **CSS-in-JS** 엔진은 style html tag를 만드는 CSS parser를 내장</span>하고 있음
 - styled-components는 stylis라는 CSS preprocessor를 이용함
 - material-ui의 경우도 비슷한 방식으로 동적 생성을 지원함
 

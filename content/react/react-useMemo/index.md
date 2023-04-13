@@ -13,13 +13,13 @@ categories: React
 
 ### **useMemo 란 ❓**
 
-<span style='background-color : #fff5b1'>**컴포넌트의 성능을 최적화**</span> 시킬 수 있는 대표적인 hook 중 하나로, useMemo 에서 **Memo** 는 <span style='background-color : #fff5b1'>**'Memoization'**</span> 을 말합니다.
+**컴포넌트의 성능을 최적화**</span> 시킬 수 있는 대표적인 hook 중 하나로, useMemo 에서 **Memo** 는 **'Memoization'**</span> 을 말합니다.
 
 <br>
 
 ### **Memoization .. ❓**
 
-<span style='background-color : #fff5b1'>**기존의 수행한 연산의 결과 값**</span>을 <span style='background-color : #fff5b1'>**어딘가에 저장**</span>해 두고 <span style='background-color : #fff5b1'>**동일한 입력이 들어오면 재활용**</span>하는
+**기존의 수행한 연산의 결과 값**</span>을 **어딘가에 저장**</span>해 두고 **동일한 입력이 들어오면 재활용**</span>하는
 
 프로그래밍 기법 입니다.
 
@@ -33,7 +33,7 @@ categories: React
 함수형 컴포넌트는
 
 1.  컴포넌트 함수 호출
-2.  <span style='background-color : #fff5b1'>모든 내부 변수 초기화</span>
+2.  모든 내부 변수 초기화</span>
 
 ➡️ 위와 같은 순서를 거칩니다.
 
@@ -53,11 +53,11 @@ categories: React
 
 불필요한 호출을 막기 위해 useMemo 훅을 사용하는 것이고 useMemo를 사용하면
 
-<span style='background-color : #fff5b1'>렌더링 ➡️ 컴포넌트 함수 호출 ➡️ memoize된 함수 재사용하는 순서를 거칩니다.</span>
+렌더링 ➡️ 컴포넌트 함수 호출 ➡️ memoize된 함수 재사용하는 순서를 거칩니다.</span>
 
 이렇게 되면 calculate 함수를 반복적으로 실행할 필요가 없게 되고,
 
-<span style='background-color : #fff5b1'>메모리에 저장되어있는 계산된 값을 가져와 재사용할 수 있게 해줍니다.</span>
+메모리에 저장되어있는 계산된 값을 가져와 재사용할 수 있게 해줍니다.</span>
 
 <br>
 
@@ -116,7 +116,7 @@ hardNumber 값이 변경될 때에만 콜백함수가 실행되게 됩니다.
 
 useEffect의 의존성 배열에 location을 넣었는데 **number** state를 변경해도 useEffect가 실행 됩니다.
 
-그 이유는 자바스크립트에서 <span style='background-color : #fff5b1'>**객체**</span>는 원시 타입과는 다르게 <span style='background-color : #fff5b1'>**값이 저장될 때 주소 값으로 저장**</span>되기 때문 입니다. ➡️ [불변성이란](https://choi-hyunho.com/react/react-immutability/)
+그 이유는 자바스크립트에서 **객체**</span>는 원시 타입과는 다르게 **값이 저장될 때 주소 값으로 저장**</span>되기 때문 입니다. ➡️ [불변성이란](https://choi-hyunho.com/react/react-immutability/)
 
 > 즉, 메모리 주소가 다르게 저장되어 있습니다.
 
@@ -141,7 +141,7 @@ number 상태 값을 눌러도 더 이상 의미없는 호출이 되지 않는 �
 
 **useMemo 란 ❓**
 
-<span style='background-color : #fff5b1'>**컴포넌트의 성능을 최적화**</span> 시킬 수 있는 대표적인 hook 중 하나로,
+**컴포넌트의 성능을 최적화**</span> 시킬 수 있는 대표적인 hook 중 하나로,
 
 useMemo 에서 **Memo** 는 **'Memoization'** 을 말합니다.
 
@@ -149,7 +149,7 @@ useMemo 에서 **Memo** 는 **'Memoization'** 을 말합니다.
 
 **Memoization .. ❓**
 
-<span style='background-color : #fff5b1'>**기존의 수행한 연산의 결과 값**</span>을 <span style='background-color : #fff5b1'>**어딘가에 저장**</span>해 두고 <span style='background-color : #fff5b1'>**동일한 입력이 들어오면 재활용**</span>하는
+**기존의 수행한 연산의 결과 값**</span>을 **어딘가에 저장**</span>해 두고 **동일한 입력이 들어오면 재활용**</span>하는
 
 프로그래밍 기법 입니다.
 

@@ -17,13 +17,13 @@ categories: React
 
 자바스크립트 객체로 이루어진 컴포넌트들은 트리 형태로 이루어지게 되는데, 이런 형태의 데이터를 Virtual DOM(가상 돔)이라고 합니다.
 
-<span style='background-color : #fff5b1'>DOM 노드를 생성하거나 기존 DOM 노드에 접근하는 것이 JavaScript 객체로 표현된 트리 노드를 생성하거나 접근하는 거에 비해 느리기 때문에</span> JavaScript 객체로 표현된 트리에 CRUD 작업을 수행하는 것이 DOM 노드에 CRUD 작업을 수행하는 것보다 일반적으로 더 빠릅니다.
+DOM 노드를 생성하거나 기존 DOM 노드에 접근하는 것이 JavaScript 객체로 표현된 트리 노드를 생성하거나 접근하는 거에 비해 느리기 때문에</span> JavaScript 객체로 표현된 트리에 CRUD 작업을 수행하는 것이 DOM 노드에 CRUD 작업을 수행하는 것보다 일반적으로 더 빠릅니다.
 
 <br>
 
 ### 2. Rendering ❓
 
-리액트에서 렌더링이란, <span style='background-color : #fff5b1'>컴포넌트가 현재 props와 state의 상태에 기초하여 UI를 어떻게 구성할지 컴포넌트에게 요청하는 작업</span>을 의미 합니다.
+리액트에서 렌더링이란, 컴포넌트가 현재 props와 state의 상태에 기초하여 UI를 어떻게 구성할지 컴포넌트에게 요청하는 작업</span>을 의미 합니다.
 
 렌더링 과정은 다음과 같이 3단계로 설명 할 수 있습니다.
 
@@ -66,10 +66,10 @@ categories: React
 
 render 는 2단계로 나누어집니다.
 
-1.  <span style='background-color : #fff5b1'>Render phase</span> : 업데이트를 수행해서 화면을 변경하는 것 <br>
+1.  Render phase</span> : 업데이트를 수행해서 화면을 변경하는 것 <br>
     ➡️ 변경된 사항을 감지하여 virtual DOM 을 생성하는 과정
 
-2.  <span style='background-color : #fff5b1'>Commit phase</span> : 변경된 화면을 실제 브라우저에 나타내는 것
+2.  Commit phase</span> : 변경된 화면을 실제 브라우저에 나타내는 것
 
 <br>
 
@@ -77,7 +77,7 @@ render 는 2단계로 나누어집니다.
 
 ![image (1)](https://user-images.githubusercontent.com/87301268/230375159-4b78cc4c-34cd-4c5d-bb13-bb398e865b14.png)
 
-컴포넌트에서 prop이나 state가 변경 되었을 때, <span style='background-color : #fff5b1'>직전 렌더링 된 요소와 새로 반환된 요소를 비교하여 실제 DOM을 업데이트 할지 말지 결정해야 합니다.</span>
+컴포넌트에서 prop이나 state가 변경 되었을 때, 직전 렌더링 된 요소와 새로 반환된 요소를 비교하여 실제 DOM을 업데이트 할지 말지 결정해야 합니다.</span>
 
 이 때, Element가 일치 하지 않으면 새로운 요소로 DOM을 업데이트 하는 프로세스를 의미합니다.
 
@@ -88,7 +88,7 @@ render 는 2단계로 나누어집니다.
 
 #### 3.5 Commit Phase
 
-Render phase에서 재조정된 <span style='background-color : #fff5b1'>virtual DOM 을 DOM 에 적용하고 라이프 사이클을 실행하는 단계</span>
+Render phase에서 재조정된 virtual DOM 을 DOM 에 적용하고 라이프 사이클을 실행하는 단계</span>
 
 잠깐, 화면에 DOM 을 **마운트** 하는거지 화면에 paint 는 그 후 입니다.
 

@@ -13,7 +13,7 @@ useState 와 더불어 가장 많이 사용되는 hook 인 useEffect 에 대해�
 
 ### **먼저 useEffect 란 ❓**
 
-> <span style='background-color : #fff5b1'>컴포넌트가 렌더링 될 때</span> 마다 Side Effect 로직을 다루는 hook 입니다.
+> 컴포넌트가 렌더링 될 때</span> 마다 Side Effect 로직을 다루는 hook 입니다.
 
 <br>
 
@@ -21,7 +21,7 @@ useState 와 더불어 가장 많이 사용되는 hook 인 useEffect 에 대해�
 
 함수형 프로그래밍의 특징 이라고도 볼 수 있습니다. 사전적인 정의는
 
-> Side Effect 란, 원래의 목적과 다르게 다른 효과 즉, <span style='background-color : #fff5b1'>부작용</span>을 말합니다.
+> Side Effect 란, 원래의 목적과 다르게 다른 효과 즉, 부작용</span>을 말합니다.
 
 <br>
 
@@ -31,7 +31,7 @@ useState 와 더불어 가장 많이 사용되는 hook 인 useEffect 에 대해�
 
 ### **순수 함수❓**
 
-> 함수형 프로그래밍에서는 <span style='background-color : #fff5b1'>어떤 외부 상태에 의존하지도 않고 변경시키지도 않는</span>
+> 함수형 프로그래밍에서는 어떤 외부 상태에 의존하지도 않고 변경시키지도 않는</span>
 > 즉, 부수 효과(Side Effect)가 없는 함수를 순수함수(Pure function)이라고 한다.
 
 <br>
@@ -81,11 +81,11 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 <br>
 
-**✅ <span style='background-color : #fff5b1'>React의 컴포넌트는 순수 함수이며, input 을 받아 예측 가능한 리턴 값을 만들어 냅니다.</span>**
+**✅ React의 컴포넌트는 순수 함수이며, input 을 받아 예측 가능한 리턴 값을 만들어 냅니다.</span>**
 
 ➡️ 아래와 같이 같은 input 을 전달하면, 항상 같은 output 을 리턴 할 것 입니다.
 
-➡️ props 는 '<span style='background-color : #fff5b1'>읽기 전용'</span> 입니다.
+➡️ props 는 '읽기 전용'</span> 입니다.
 
 ![3](https://user-images.githubusercontent.com/87301268/223919171-23de678d-2e8d-4c5b-b90d-d69258ae34f0.png)
 
@@ -93,7 +93,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 ### **리액트에서 Side Effect..❓**
 
-> 함수가 실행되면서 <span style='background-color : #fff5b1'>함수 외부에 존재하는 값이나 상태를 변경</span>시키는 등의 행위를 말합니다.
+> 함수가 실행되면서 함수 외부에 존재하는 값이나 상태를 변경</span>시키는 등의 행위를 말합니다.
 
 <br>
 
@@ -105,7 +105,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 <br>
 
-즉, <span style='background-color : #fff5b1'>무언가를 하기 위해 컴포넌트 외부에 도달</span>해야 하는 경우 Side Effect 를 수행 합니다.
+즉, 무언가를 하기 위해 컴포넌트 외부에 도달</span>해야 하는 경우 Side Effect 를 수행 합니다.
 
 그래서 useEffect 는 컴포넌트 내에서 이러한 Side Effect 를 처리하게 위해 사용 합니다.
 
@@ -113,17 +113,17 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 ### **useEffect  특징**
 
-➡️ 컴포넌트의 <span style='background-color : #fff5b1'>**Lifecycle**</span> 를 제어하는 hook 입니다.
+➡️ 컴포넌트의 **Lifecycle**</span> 를 제어하는 hook 입니다.
 
 ![4](https://user-images.githubusercontent.com/87301268/223919267-2e709239-e31e-4fc7-9c9b-1a8b530cb2eb.jpeg)
 
 <br>
 
-<span style='background-color : #fff5b1'>**탄생**</span> : 컴포넌트가 화면에 나타나는 것 ( React 에서 **Mount** 라고 지칭 )
+**탄생**</span> : 컴포넌트가 화면에 나타나는 것 ( React 에서 **Mount** 라고 지칭 )
 
-<span style='background-color : #fff5b1'>**변화**</span> : state 가 바뀌거나, 업데이트(리렌더) 되거나 이런 변화들 ( **Update** )
+**변화**</span> : state 가 바뀌거나, 업데이트(리렌더) 되거나 이런 변화들 ( **Update** )
 
-<span style='background-color : #fff5b1'>**죽음**</span> : 컴포넌트가 화면에서 사라지게 되는 것 입니다. ( React 에서 **unMount** 라고 지칭 )
+**죽음**</span> : 컴포넌트가 화면에서 사라지게 되는 것 입니다. ( React 에서 **unMount** 라고 지칭 )
 
 > 즉, React 에서 제작하고 사용하는 컴포넌트들의 탄생 부터 시작해서  
 > state 나 props 이 바뀌게 되어 일어나는 변화를 거쳐, 컴포넌트가 화면에서 없어지게 되는 죽음에 관한 이야기 입니다.
@@ -158,8 +158,8 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 ![8](https://user-images.githubusercontent.com/87301268/223919377-ccc868f0-99cd-42d7-8ca8-801a0202ae0d.png)
 
-- 2개의 파라미터를 전달하게 되는데 <span style='background-color : #fff5b1'>**1\. callback 함수,** **2\. 의존성 배열**</span> 을 전달 합니다.
-- 의존성 배열을 <span style='background-color : #fff5b1'>**뎁스(deps)**</span> 라고 부르기도 합니다.
+- 2개의 파라미터를 전달하게 되는데 **1\. callback 함수,** **2\. 의존성 배열**</span> 을 전달 합니다.
+- 의존성 배열을 **뎁스(deps)**</span> 라고 부르기도 합니다.
 
 <br>
 
@@ -169,7 +169,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 ![9](https://user-images.githubusercontent.com/87301268/223919431-3de4d48d-1f60-4897-9895-6ee7b6c2041f.png)
 
-**빈 배열을 전달하면 컴포넌트 <span style='background-color : #fff5b1'>최초 렌더링 이후 한 번만 실행</span> 합니다.** **즉, 생애주기로 보면 생성 되는 시점이라고 볼 수 있습니다.**
+**빈 배열을 전달하면 컴포넌트 최초 렌더링 이후 한 번만 실행</span> 합니다.** **즉, 생애주기로 보면 생성 되는 시점이라고 볼 수 있습니다.**
 
 주로 사용하는 상황은
 
@@ -182,7 +182,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 ![10](https://user-images.githubusercontent.com/87301268/223919447-0493dfd3-2a98-4166-9437-cf5a5068e4cb.png)
 
-**props, state 를 deps 에 전달하게 되면 <span style='background-color : #fff5b1'>컴포넌트 최초 렌더링</span> 및 <span style='background-color : #fff5b1'>해당 값이 변경 될 때마다</span> 실행 합니다.**
+**props, state 를 deps 에 전달하게 되면 컴포넌트 최초 렌더링</span> 및 해당 값이 변경 될 때마다</span> 실행 합니다.**
 **생애주기로 보면, 변화하는 중이라고 볼 수 있습니다.**
 
 <br>
@@ -191,7 +191,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 ![11](https://user-images.githubusercontent.com/87301268/223919735-7f6383eb-f4e8-4f1f-b73d-f93e0d1fb759.png)
 
-**useEffect 안에 return 문이 존재하면 <span style='background-color : #fff5b1'>컴포넌트가 unmount 인 경우 실행되는 클린업 함수</span>라고 합니다.**
+**useEffect 안에 return 문이 존재하면 컴포넌트가 unmount 인 경우 실행되는 클린업 함수</span>라고 합니다.**
 
 주로 사용하는 상황은
 
@@ -208,7 +208,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 
 **컴포넌트가 렌더링 될 때 마다** 실행 됩니다.
 
-주의해야 할 점은 **모든 렌더링에 상호작용** 하기 때문에 <span style='background-color : #fff5b1'>**의도와 다르게 Side Effect 가 실행**</span> 될 수 있습니다.
+주의해야 할 점은 **모든 렌더링에 상호작용** 하기 때문에 **의도와 다르게 Side Effect 가 실행**</span> 될 수 있습니다.
 
 <br>
 
@@ -222,7 +222,7 @@ useEffect 를 알기 위해서 이걸 알아야 하나라고 생각 할 수 있�
 짧게 정리을 해보면
 
 - **useEffect()** 훅으로만 **클래스 컴포넌트의 생명주기 함수들과 동일한 기능을 수행 할 수 있음**
-- <span style='background-color : #fff5b1'>**첫 컴포넌트 렌더링 시 한 번은 수행**</span> ( \[ \] 여부와 관계없이 )
+- **첫 컴포넌트 렌더링 시 한 번은 수행**</span> ( \[ \] 여부와 관계없이 )
 
 ![13](https://user-images.githubusercontent.com/87301268/223919801-a07a3a2f-8c3b-4795-9360-cb186bb4636f.png)
 

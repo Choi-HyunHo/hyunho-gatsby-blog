@@ -9,13 +9,13 @@ categories: JS
 
 ### 07\_연산자
 
-<span style='background-color : #fff5b1'>**연산자(Operator)는 하나 이상의 표현식을 대상으로 값으로 평가될 수 있는 표현식이어야 한다.**</span>
+**연산자(Operator)는 하나 이상의 표현식을 대상으로 값으로 평가될 수 있는 표현식이어야 한다.**</span>
 
 - 산술, 할당, 비교, 논리, 타입, 지수 연산 등을 수행해서 하나의 값을 만든다.
 
 ![carbon (47)](https://user-images.githubusercontent.com/87301268/224878376-c3991c8e-f67f-4c76-8059-d4f0965e5f75.png)
 
-> 피연산자는 **값**이라는 명사의 역할을 하고 <br> 연산자는 <span style='background-color : #fff5b1'>**피연산자를 연산하여 새로운 값을 만든다**</span> 라는 동사 역할을 한다.
+> 피연산자는 **값**이라는 명사의 역할을 하고 <br> 연산자는 **피연산자를 연산하여 새로운 값을 만든다**</span> 라는 동사 역할을 한다.
 
 <br>
 
@@ -23,7 +23,7 @@ categories: JS
 
 산술 연산자(arithmetic operator)는 피연산자를 대상으로
 
-- <span style='background-color : #fff5b1'>**수학적 계산을 수행해 새로운 숫자 값을 만든다.**</span>
+- **수학적 계산을 수행해 새로운 숫자 값을 만든다.**</span>
 - 산술 연산이 **불가능 할 경우** `NaN` 을 반환한다.
 - 피연산자의 개수에 따라 이항 산술 연산자와 단항 산술 연산자로 구분 할 수 있다.
 
@@ -34,7 +34,7 @@ categories: JS
 이항 산술 연산자는 2개의 피연산자를 산술 연산하여 숫자 값을 만든다.
 
 - 모든 이항 연산자는 피연산자의 값을 변경하는 부수 효과가 없다.
-- **어떤 산술 연산을 해도 <span style='background-color : #fff5b1'>피연산자의 값이 바뀌는 경우는 없고 언제나 새로운 값을 만든다.**</span>
+- **어떤 산술 연산을 해도 피연산자의 값이 바뀌는 경우는 없고 언제나 새로운 값을 만든다.**</span>
 
 | 이항 산술 연산자 | 의미   | 부수효과 |
 | ---------------- | ------ | -------- |
@@ -48,9 +48,9 @@ categories: JS
 
 #### 7.1.2 단항 산술 연산자
 
-단항 산술 연산자는 <span style='background-color : #fff5b1'>1개의 피연산자를 산술 연산</span>하여 숫자 값을 만든다.
+단항 산술 연산자는 1개의 피연산자를 산술 연산</span>하여 숫자 값을 만든다.
 
-- 이항 산술 연산자와는 달리 <span style='background-color : #fff5b1'>**증가/감소(++/--)**</span> 연산자는 피연산자의 값을 변경하는 부수 효과가 있다.
+- 이항 산술 연산자와는 달리 **증가/감소(++/--)**</span> 연산자는 피연산자의 값을 변경하는 부수 효과가 있다.
 
 | 단항 산술 연산자 | 의미                                                 | 부수효과 |
 | ---------------- | ---------------------------------------------------- | -------- |
@@ -59,8 +59,8 @@ categories: JS
 | +                | 어떠한 효과도 없다, 음수를 양수로 반전하지도 않는다. | x        |
 | \-               | 양수를 음수로, 음수로 양수로 반전한 값을 반환한다.   | x        |
 
-- 피연산자 <span style='background-color : #fff5b1'>앞</span>에 위치한 **전위 증가/감소 연산자**는 먼저 <span style='background-color : #fff5b1'>피연산자의 값을 증가/감소 시킨 후,</span> 다른 연산자를 수행
-- 피연산자 <span style='background-color : #fff5b1'>뒤</span>에 위치한 **후위 증가/감소 연산자**는 먼저 <span style='background-color : #fff5b1'>다른 연산자를 수행 후,</span> 피연산자의 값을 증가/감소
+- 피연산자 앞</span>에 위치한 **전위 증가/감소 연산자**는 먼저 피연산자의 값을 증가/감소 시킨 후,</span> 다른 연산자를 수행
+- 피연산자 뒤</span>에 위치한 **후위 증가/감소 연산자**는 먼저 다른 연산자를 수행 후,</span> 피연산자의 값을 증가/감소
 
 <br>
 
@@ -70,19 +70,19 @@ categories: JS
 
 #### 7.1.3 문자열 연결 연산자
 
-**\+ 연산자는 <span style='background-color : #fff5b1'>피연산자 중 하나 이상의 문자열인 경우</span> 문자열 연결 연산자로 동작한다.**
+**\+ 연산자는 피연산자 중 하나 이상의 문자열인 경우</span> 문자열 연결 연산자로 동작한다.**
 
 ![carbon (49)](https://user-images.githubusercontent.com/87301268/224878426-ddc11a20-cd3b-492c-b1e3-cacdd9e7270f.png)
 
 - 주목할 것은 개발자의 의도와는 상관없이 자바스크립트 엔진에 의해 암묵적으로 타입이 자동 변환 되기도 한다는 것이다.
 - `1 + true` 를 연산하면 자바스크립트 엔진은 암묵적으로 불리언 타입의 값인 true를 숫자 타입인 1로 강제 변환한 후 연산을 수행한다.
-- 이를 <span style='background-color : #fff5b1'>**암묵적 타입 변환**</span> 또는 <span style='background-color : #fff5b1'>**타입 강제 변환**</span> 이라고 한다.
+- 이를 **암묵적 타입 변환**</span> 또는 **타입 강제 변환**</span> 이라고 한다.
 
 <br>
 
 ### 7.2 할당 연산자
 
-할당 연산자는 <span style='background-color : #fff5b1'>**우항에 있는 피연산자의 평가 결과를 좌항에 있는 변수에 할당**</span>한다.
+할당 연산자는 **우항에 있는 피연산자의 평가 결과를 좌항에 있는 변수에 할당**</span>한다.
 
 - 좌항의 변수에 값을 할당하므로 변수 값이 변하는 부수 효과가 있다.
 
@@ -99,7 +99,7 @@ categories: JS
 
 ### 7.3 비교 연산자
 
-좌항과 우항의 피연산자를 비교한 다음 그 결과를 <span style='background-color : #fff5b1'>**불리언 값**</span>으로 반환한다.
+좌항과 우항의 피연산자를 비교한 다음 그 결과를 **불리언 값**</span>으로 반환한다.
 
 - 비교 연산자는 **if** 문이나 **for** 문과 같은 제어문의 조건식에서 주로 사용한다.
 
@@ -107,7 +107,7 @@ categories: JS
 
 #### 7.3.1 동등 / 일치 비교 연산자
 
-<span style='background-color : #fff5b1'>**동등 비교 연산자**</span>와 <span style='background-color : #fff5b1'>**일치 비교 연산자**</span>는
+**동등 비교 연산자**</span>와 **일치 비교 연산자**</span>는
 
 - 좌항과 우항의 피연산자가 같은 값으로 평가되는지 비교해 불리언 값을 반환한다.
 
@@ -119,7 +119,7 @@ categories: JS
 | !==         | 불일치 비교 | x !== y | x와 y의 값과 타입이 다름 | X         |
 
 - 동등 비교(==) 연산자는 좌항과 우항의 피연산자를 비교할 때 먼저 암묵적 타입 변환을 통해 타입을 일치 시킨 후 같은 값인지 비교한다.
-- 따라서 동등 비교 연산자는 좌항과 우항의 피연산자가 타입은 다르더라도 <span style='background-color : #fff5b1'>암묵적 타입 변환을 통해 같은 값일 수 있다면</span> **true** 를 반환한다.
+- 따라서 동등 비교 연산자는 좌항과 우항의 피연산자가 타입은 다르더라도 암묵적 타입 변환을 통해 같은 값일 수 있다면</span> **true** 를 반환한다.
 
 <br>
 
@@ -135,7 +135,7 @@ categories: JS
 
 #### 7.3.2 대소 관계 비교 연산자
 
-대소 관계 비교 연산자는 피연산자의 크기를 비교해서 <span style='background-color : #fff5b1'>**불리언 값**</span> 을 반환한다.
+대소 관계 비교 연산자는 피연산자의 크기를 비교해서 **불리언 값**</span> 을 반환한다.
 
 | 대소 관계 비교 연산자 | 예제   | 설명                  |
 | --------------------- | ------ | --------------------- |
@@ -152,9 +152,9 @@ categories: JS
 
 ![](https://velog.velcdn.com/images/hoho_0815/post/a3938e20-2279-45ac-8c45-df860a4568aa/image.png)
 
-- **물음표 앞의 첫 번째 피연산자**는 boolean 타입의 값으로 평가될 <span style='background-color : #fff5b1'>**표현식(조건식)**</span>s이다.
+- **물음표 앞의 첫 번째 피연산자**는 boolean 타입의 값으로 평가될 **표현식(조건식)**</span>s이다.
 - 만약 조건식의 평가 결과가 boolean 값이 아니면 boolean 값으로 암묵적 타입 변환 된다.
-- **삼항 조건 연산자는 <span style='background-color : #fff5b1'>값으로 평가될 수 있는 표현식인 문**</span>이다. 따라서 값처럼 다른 표현식의 일부가 될 수 있어 매우 유용하다.
+- **삼항 조건 연산자는 값으로 평가될 수 있는 표현식인 문**</span>이다. 따라서 값처럼 다른 표현식의 일부가 될 수 있어 매우 유용하다.
 
 <br>
 
@@ -184,8 +184,8 @@ categories: JS
 
 ### 7.6 쉼표 연산자
 
-쉼표(,) 연산자는 <span style='background-color : #fff5b1'>왼쪽 피연산자</span>부터 차례대로 피연산자를 평가하고 <br>
-마지막 피연산자의 평가가 끝나면 <span style='background-color : #fff5b1'>마지막 피연산자의 평가 결과를 반환</span>한다.
+쉼표(,) 연산자는 왼쪽 피연산자</span>부터 차례대로 피연산자를 평가하고 <br>
+마지막 피연산자의 평가가 끝나면 마지막 피연산자의 평가 결과를 반환</span>한다.
 
 ![carbon (54)](https://user-images.githubusercontent.com/87301268/224878781-8ce442d8-eefe-4071-bf26-d68df4f80672.png)
 
@@ -196,7 +196,7 @@ categories: JS
 소괄호(`()`)로 피연산자를 감싸는 그룹 연산자는 자신의 피연산자인 표현식을 가장 먼저 평가한다.
 
 - 그룹 연산자를 사용하면 연산자의 우선순위를 조절 할 수 있다.
-- 그룹 연산자는 <span style='background-color : #fff5b1'>**연산자 우선순위가 가장 높다.**</span>
+- 그룹 연산자는 **연산자 우선순위가 가장 높다.**</span>
 
 ![carbon (55)](https://user-images.githubusercontent.com/87301268/224878791-3f452c7a-07c6-4ba9-a809-dad3accf71a7.png)
 
@@ -204,7 +204,7 @@ categories: JS
 
 ### 7.8 typeof 연산자
 
-typeof 연산자는 피연산자의 데이터 타입을 <span style='background-color : #fff5b1'>**문자열로 반환**</span>한다.
+typeof 연산자는 피연산자의 데이터 타입을 **문자열로 반환**</span>한다.
 
 - `null` 을 반환하는 경우는 없으며, 함수의 경우 `function` 을 반환한다.
 - typeof 연산자로 `null` 값을 연산해 보면 `object` 를 반환한다.
@@ -221,8 +221,8 @@ typeof 연산자는 피연산자의 데이터 타입을 <span style='background-
 
 ES7 에서 도입된 지수 연산자는
 
-- <span style='background-color : #fff5b1'>**좌항의 피연산자를 밑**</span>으로
-- <span style='background-color : #fff5b1'>**우항의 피연산자를 지수로 거듭 제곱**</span>하여 숫자 값을 반환한다.
+- **좌항의 피연산자를 밑**</span>으로
+- **우항의 피연산자를 지수로 거듭 제곱**</span>하여 숫자 값을 반환한다.
 
 ![carbon (57)](https://user-images.githubusercontent.com/87301268/224879119-313c1bd6-5a25-4af5-8b96-015df65694b1.png)
 

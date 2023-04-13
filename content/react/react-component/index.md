@@ -13,7 +13,7 @@ categories: React
 
 ### **컴포넌트란 ❓**
 
-> 프로그래밍에 있어 <span style='background-color : #fff5b1'>재사용이 가능한</span> 각각의 독립된 모듈
+> 프로그래밍에 있어 재사용이 가능한</span> 각각의 독립된 모듈
 
 <br>
 

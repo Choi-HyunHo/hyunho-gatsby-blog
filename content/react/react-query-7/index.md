@@ -22,7 +22,7 @@ categories: React
 
 ### Prefetching
 
-<span style='background-color : #fff5b1'>프리패칭은 데이터를 쿼리 키에 추가하며, 기본 값으로 만료(stale) 상태 입니다.</span>
+프리패칭은 데이터를 쿼리 키에 추가하며, 기본 값으로 만료(stale) 상태 입니다.</span>
 
 - 데이터를 사용하고자 할 때 만료 상태에서 데이터를 다시 가져옵니다.
 - 데이터를 가져오는 중에는 캐시에 있는 데이터를 이용해 화면에 나타냅니다.
@@ -41,7 +41,7 @@ categories: React
 
 ### useQueryClient
 
-**prefetch** 는 <span style='background-color : #fff5b1'>queryClient</span> 의 메서드 입니다.
+**prefetch** 는 queryClient</span> 의 메서드 입니다.
 
 ![carbon (23)](https://user-images.githubusercontent.com/87301268/226373277-5fe89965-fb97-40ab-b530-b2f15f559560.png)
 
@@ -67,13 +67,13 @@ categories: React
 ![carbon (26)](https://user-images.githubusercontent.com/87301268/226383004-9194723b-fefe-45ce-be03-b0938e825e7a.png)
 
 현재 페이지가 변경될 때 마다 useEffect 안의 함수가 실행되고 nextPage 를 프리패칭의 쿼리 키를 활용해
-<span style='background-color : #fff5b1'>만약 현재 2페이지면 3페이지 데이터를 미리 불러오는 방식</span> 입니다.
+만약 현재 2페이지면 3페이지 데이터를 미리 불러오는 방식</span> 입니다.
 
 <br>
 
 ### keepPreviousData
 
-<span style='background-color : #fff5b1'>쿼리 키(ex.페이지 번호)가 변경되어서 새로운 데이터를 요청하는 동안에도 마지막 data값을 유지 합니다.</span>
+쿼리 키(ex.페이지 번호)가 변경되어서 새로운 데이터를 요청하는 동안에도 마지막 data값을 유지 합니다.</span>
 
 ➡️ pagination을 구현할 때 유용 <br>
 ➡️ 캐시되지 않은 페이지를 가져올 때 화면에서 목록이 사라지는 깜빡임 현상을 방지할 수 있습니다. <br>
@@ -95,9 +95,9 @@ categories: React
 
 <br>
 
-개발자 도구를 보면 <span style='background-color : #fff5b1'>**쿼리가 미리 쌓여있는 것**</span>을 볼 수 있습니다.
+개발자 도구를 보면 **쿼리가 미리 쌓여있는 것**</span>을 볼 수 있습니다.
 
-- <span style='background-color : #fff5b1'>유일하게 활성 상태인 쿼리는 현재 페이지에 대한 쿼리</span>이고 **나머지 쿼리도 남아 있습니다.**
+- 유일하게 활성 상태인 쿼리는 현재 페이지에 대한 쿼리</span>이고 **나머지 쿼리도 남아 있습니다.**
 - 한편 아직 9페이지가 아니지만 9페이지를 미리 가져온 것을 볼 수 있습니다.
 - 9페이지로 가면 10페이지를 미리 가져옵니다.
 

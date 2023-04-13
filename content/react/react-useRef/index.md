@@ -9,7 +9,7 @@ categories: React
 
 ### **useRef ❓**
 
-JavaScript 를 사용 할 때에는, 우리가 특정 DOM 을 선택해야 하는 상황에 getElementById, querySelector 같은 <span style='background-color : #fff5b1'>**DOM Selector**</span> 함수를 사용해서 DOM 을 선택합니다.
+JavaScript 를 사용 할 때에는, 우리가 특정 DOM 을 선택해야 하는 상황에 getElementById, querySelector 같은 **DOM Selector**</span> 함수를 사용해서 DOM 을 선택합니다.
 
 리액트를 사용하는 프로젝트에서도 가끔씩 DOM 을 직접 선택해야 하는 상황이 발생 할 때도 있습니다.
 
@@ -34,7 +34,7 @@ useMemo 와 useCallback 포스팅을 보시면 **함수형 컴포넌트의 특�
 
 <br>
 
-컴포넌트는 <span style='background-color : #fff5b1'>**자신의 state가 변경되거나, 부모에게서 받는 props가 변경되었을 때마다 리렌더링 됩니다.**</span>
+컴포넌트는 **자신의 state가 변경되거나, 부모에게서 받는 props가 변경되었을 때마다 리렌더링 됩니다.**</span>
 
 만약, 하위 컴포넌트에 최적화 설정을 해주지 않으면 부모에게서 받는 props가 변경되지 않았더라도 리렌더링 되는게 기본입니다.
 
@@ -42,7 +42,7 @@ useMemo 와 useCallback 포스팅을 보시면 **함수형 컴포넌트의 특�
 
 이제 조금 감이 오실까요 ❓
 
-그렇습니다, <span style='background-color : #fff5b1'>**state 와 반대로 ref 를 사용하면 데이터들을 리렌더링 없이 관리 할 수 있습니다.**</span>
+그렇습니다, **state 와 반대로 ref 를 사용하면 데이터들을 리렌더링 없이 관리 할 수 있습니다.**</span>
 
 <br>
 
@@ -61,7 +61,7 @@ useMemo 와 useCallback 포스팅을 보시면 **함수형 컴포넌트의 특�
 ![2](https://user-images.githubusercontent.com/87301268/224224174-5a67931f-5af8-4a41-bd6f-f852fa6856da.png)
 
 1.  input창을 useRef hook을 통해 inputRef라는 지정 DOM으로 설정하고
-2.  <span style='background-color : #fff5b1'>**inputRef.current.focus()**</span> 라는 focus 함수를 선언해준 뒤 button 태그의 클릭event로 넣어주면 됩니다.
+2.  **inputRef.current.focus()**</span> 라는 focus 함수를 선언해준 뒤 button 태그의 클릭event로 넣어주면 됩니다.
 
 <br>
 
@@ -69,7 +69,7 @@ useMemo 와 useCallback 포스팅을 보시면 **함수형 컴포넌트의 특�
 
 > Ref객체의 .current값은 선택한 DOM을 가리키게 됩니다.
 
-<span style='background-color : #fff5b1'>**현재 Ref 객체**</span>를 뜻하므로 해당 객체의 기능을 이용한다거나 값을 이용하는 경우에는 current를 반드시 붙여주어야 합니다.
+**현재 Ref 객체**</span>를 뜻하므로 해당 객체의 기능을 이용한다거나 값을 이용하는 경우에는 current를 반드시 붙여주어야 합니다.
 
 <br>
 

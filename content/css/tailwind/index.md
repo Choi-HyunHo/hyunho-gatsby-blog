@@ -11,7 +11,7 @@ categories: CSS
 
 ### Tailwind CSS 란 ❓
 
-**Tailwind CSS**는 <span style='background-color : #fff5b1'>Utility-First</span> 컨셉을 가진 CSS 프레임워크 입니다. <br>
+**Tailwind CSS**는 Utility-First</span> 컨셉을 가진 CSS 프레임워크 입니다. <br>
 
 부트스트랩과 비슷하게 m-1, flex와 같이 미리 세팅된 유틸리티 클래스를 활용하는 방식으로 HTML 코드 내에서 스타일링을 할 수 있습니다.
 
@@ -60,12 +60,12 @@ categories: CSS
 
 #### 1. 빠른 개발
 
-➡️ Tailwind CSS는 **클래스 기반 스타일링**을 지원하여 개발자가 <span style='background-color : #fff5b1'>CSS 작성에 소요되는 시간을 대폭 줄여줍니다.</span> <br>
+➡️ Tailwind CSS는 **클래스 기반 스타일링**을 지원하여 개발자가 CSS 작성에 소요되는 시간을 대폭 줄여줍니다.</span> <br>
 ➡️ 또한, 레이아웃이나 디자인 시스템에서 미리 정의된 클래스를 사용하므로 디자인 시스템을 개발하는 데 소요되는 시간을 대폭 줄여줍니다.
 
 #### 2. 유지 보수 용이성
 
-➡️ Tailwind CSS는 스타일 시트를 구성하는 다양한 클래스를 나열하여 <span style='background-color : #fff5b1'>구조적이고 일관된 CSS 작성</span>을 가능케 합니다. <br>
+➡️ Tailwind CSS는 스타일 시트를 구성하는 다양한 클래스를 나열하여 구조적이고 일관된 CSS 작성</span>을 가능케 합니다. <br>
 ➡️ 이는 프로젝트에서 유지 보수 및 수정이 필요할 때 특히 유용합니다.
 
 #### 3. 커스터마이징 가능성
@@ -79,14 +79,14 @@ categories: CSS
 
 #### 1. 러닝 커브
 
-➡️ 새로운 사용자는 처음에 <span style='background-color : #fff5b1'>Tailwind의 문법과 클래스 이름을 이해하는 데 시간이 걸릴 수 있습니다.</span>
+➡️ 새로운 사용자는 처음에 Tailwind의 문법과 클래스 이름을 이해하는 데 시간이 걸릴 수 있습니다.</span>
 
 #### 2, 파일 크키
 
 ➡️ Tailwind CSS는 매우 유연한 프레임워크이지만 모든 클래스를 포함하고 있기 때문에 파일 크기가 상당히 커질 수 있습니다.<br>
 ➡️ 이는 페이지 로드 시간을 늘릴 수 있습니다.
 
-#### 3. <span style='background-color : #fff5b1'>JavaScript 코드 사용 불가</span>
+#### 3. JavaScript 코드 사용 불가</span>
 
 ➡️ 클래스명을 분기 처리하여 동적으로 스타일링을 설정할 수는 있지만 styled-components와 같이 JavaScript 변수 값에 따라 가로 길이를 설정하는 등의 구현은 가능하기는 하지만 무척 번거로운 설정이 필요하다.
 

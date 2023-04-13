@@ -13,13 +13,13 @@ categories: TS
 
 #### 유니언(union)
 
-➡️ 값에 허용된 타입을 <span style='background-color : #fff5b1'>두 개 이상의 가능한 타입으로 확장</span> 하는 것
+➡️ 값에 허용된 타입을 두 개 이상의 가능한 타입으로 확장</span> 하는 것
 
 <br>
 
 #### 내로잉(narrowing)
 
-➡️ 값에 허용된 타입이 <span style='background-color : #fff5b1'>하나 이상의 가능한 타입이 되지 않도록 좁히는 것</span>
+➡️ 값에 허용된 타입이 하나 이상의 가능한 타입이 되지 않도록 좁히는 것</span>
 
 <br>
 
@@ -30,13 +30,13 @@ categories: TS
 ![carbon (23)](https://user-images.githubusercontent.com/87301268/228715345-579b6acf-ad5c-4fb4-b197-c5ec30426b07.png)
 
 잠재적인 타입이긴 하지만 무조건 undefined 도 아니고 무조건 string 도 아닙니다. <br>
-이것처럼 <span style='background-color : #fff5b1'>'이거 혹은 저거'</span> 와 같은 타입을 <span style='background-color : #fff5b1'>**유니언**</span> 이라고 합니다.
+이것처럼 '이거 혹은 저거'</span> 와 같은 타입을 **유니언**</span> 이라고 합니다.
 
 > 유니언 타입은 값이 정확히 어떤 타입인지 모르지만 두 개 이상의 옵션 중 하나라는 것을 알고 있는 경우에 코드를 처리하는 개념 입니다.
 
 <br>
 
-타입스크립트는 가능한 값 또는 구성 요소 사이에 <span style='background-color : #fff5b1'>'|' (수직선)</span> 연산자를 사용해 유니언 타입을 나타냅니다.
+타입스크립트는 가능한 값 또는 구성 요소 사이에 '|' (수직선)</span> 연산자를 사용해 유니언 타입을 나타냅니다.
 
 ![123](https://user-images.githubusercontent.com/87301268/228727236-da104c1e-76f5-4b36-be97-de2e4f4470c4.png)
 
@@ -46,7 +46,7 @@ categories: TS
 
 변수의 **초기값이 있더라도 변수에 대한 명시적 타입 애너테이션을 제공하는 것**이 유용할 때 <br> 유니언 타입을 사용 합니다.
 
-아래 코드는 value 의 초기값은 null 이지만, <span style='background-color : #fff5b1'>잠재적으로 null 대신 string이 될 수 있음을</span> 알려줍니다.
+아래 코드는 value 의 초기값은 null 이지만, 잠재적으로 null 대신 string이 될 수 있음을</span> 알려줍니다.
 
 ![carbon (24)](https://user-images.githubusercontent.com/87301268/228727881-bc67ff57-9e32-41b3-8fa0-254ac8532afd.png)
 
@@ -59,41 +59,41 @@ categories: TS
 
 #### 3.1.2 유니언 속성
 
-값이 **유니언 타입**일 때 유니언으로 선언한 모든 <span style='background-color : #fff5b1'>가능한 타입에 존재하는 멤버 속성만 접근</span>할 수 있습니다.
+값이 **유니언 타입**일 때 유니언으로 선언한 모든 가능한 타입에 존재하는 멤버 속성만 접근</span>할 수 있습니다.
 
-- <span style='background-color : #fff5b1'>**유니언 외의 타입에 접근** 하려고 하면 타입 검사 오류가 발생</span> 합니다.
+- **유니언 외의 타입에 접근** 하려고 하면 타입 검사 오류가 발생</span> 합니다.
 
 ![carbon (25)](https://user-images.githubusercontent.com/87301268/228728743-483b889a-cd9b-4695-b119-5839f4a8a657.png)
 
-value 는 number | string 타입으로 <span style='background-color : #fff5b1'>**두 개의 타입에 모두 존재**</span>하는 toString()은 사용 할 수 있지만 <br>
-toUpperCase() 는 <span style='background-color : #fff5b1'>number 타입에 없고</span>, toFixed()는 <span style='background-color : #fff5b1'>string 타입에 없기 때문에</span> 사용 할 수 없습니다.
+value 는 number | string 타입으로 **두 개의 타입에 모두 존재**</span>하는 toString()은 사용 할 수 있지만 <br>
+toUpperCase() 는 number 타입에 없고</span>, toFixed()는 string 타입에 없기 때문에</span> 사용 할 수 없습니다.
 
 > 이처럼 모든 유니언 타입에 존재하지 않는 속성에 대한 접근을 제한하는 것은 타입스크립트의 안전 조치 입니다.
 
 어떤 속성을 포함한 타입인지 확실하게 알려지지 않은 경우, 해당 속성을 사용하려고 시도하는 것이 안전하지 않다고 여깁니다.
 
-유니언 타입으로 정의된 여러 타입 중 <span style='background-color : #fff5b1'>**하나의 타입으로 된 값의 속성을 사용하려면**</span> 코드에서 값이 보다 구체적인 타입 중 하나라는 것을 타입 스크립트에 알려야 하는데 이 과정을 <span style='background-color : #fff5b1'>**내로잉**</span>이라고 합니다.
+유니언 타입으로 정의된 여러 타입 중 **하나의 타입으로 된 값의 속성을 사용하려면**</span> 코드에서 값이 보다 구체적인 타입 중 하나라는 것을 타입 스크립트에 알려야 하는데 이 과정을 **내로잉**</span>이라고 합니다.
 
 <br>
 
 ### 3.2 내로잉
 
-내로잉은 값이 정의, 선언 혹은 이전에 <span style='background-color : #fff5b1'>**유추된 것보다 더 구체적인 타입임을 코드에서 유추**</span>하는 것 입니다.
+내로잉은 값이 정의, 선언 혹은 이전에 **유추된 것보다 더 구체적인 타입임을 코드에서 유추**</span>하는 것 입니다.
 
-그리고 <span style='background-color : #fff5b1'>타입을 좁히는 데 사용할 수 있는 논리적 검사</span>를 **타입 가드**라고 합니다.
+그리고 타입을 좁히는 데 사용할 수 있는 논리적 검사</span>를 **타입 가드**라고 합니다.
 
 <br>
 
 #### 3.2.1 값 할당을 통한 내로잉
 
-변수에 **값을 직접 할당**하면 타입스크립트는 <span style='background-color : #fff5b1'>변수의 타입을 할당된 값의 타입으로 좁힙니다.</span>
+변수에 **값을 직접 할당**하면 타입스크립트는 변수의 타입을 할당된 값의 타입으로 좁힙니다.</span>
 <br>
 
-➡️ 변수에 유니언 타입 애너테이션이 명시되고 초기값이 주어질 때 값 <span style='background-color : #fff5b1'>할당 내로잉</span>이 작동 합니다.
+➡️ 변수에 유니언 타입 애너테이션이 명시되고 초기값이 주어질 때 값 할당 내로잉</span>이 작동 합니다.
 
 ![carbon (26)](https://user-images.githubusercontent.com/87301268/228730853-b7a2005b-06be-4ad0-b42d-ac0fbd69ee39.png)
 
-value 변수는 초기에 number | string 으로 선언했지만 <span style='background-color : #fff5b1'>'choi' 값이 할당된 이후 타입스크립트는 string 타입</span>이라는 걸 알게 됩니다. <br>
+value 변수는 초기에 number | string 으로 선언했지만 'choi' 값이 할당된 이후 타입스크립트는 string 타입</span>이라는 걸 알게 됩니다. <br>
 ➡️ 즉시 string 타입으로 좁혀졌다는 것을 타입스크립트는 알고 있습니다.
 
 <br>
@@ -108,7 +108,7 @@ value 변수는 초기에 number | string 으로 선언했지만 <span style='ba
 
 #### 3.2.3 typeof 검사를 통한 내로잉
 
-직접 값을 확인해 타입을 좁히기도 하지만, <span style='background-color : #fff5b1'>typeof</span> 연산자를 사용할 수도 있습니다.
+직접 값을 확인해 타입을 좁히기도 하지만, typeof</span> 연산자를 사용할 수도 있습니다.
 
 ![carbon (28)](https://user-images.githubusercontent.com/87301268/228733713-aae0d417-ae56-42ec-8402-4a056f9d8bb6.png)
 
@@ -122,7 +122,7 @@ value 변수는 초기에 number | string 으로 선언했지만 <span style='ba
 
 #### 3.2.4 참 검사를 통한 내로잉
 
-타입스크립트는 <span style='background-color : #fff5b1'>truthy</span> 로 확인된 일부에 한해서만 변수의 타입을 좁힐 수 있습니다.
+타입스크립트는 truthy</span> 로 확인된 일부에 한해서만 변수의 타입을 좁힐 수 있습니다.
 
 ![carbon (32)](https://user-images.githubusercontent.com/87301268/228744083-47612334-3f35-4ea1-b64a-d30fbe66b54f.png)
 
@@ -132,13 +132,13 @@ value 변수는 초기에 number | string 으로 선언했지만 <span style='ba
 
 리터럴 타입은 좀 더 구체적인 버전의 원시 타입 입니다. <br>
 
-만약 변수를 **const로 선언**하고 직접 리터럴 값을 할당하면 타입스크립트는 <span style='background-color : #fff5b1'>해당 변수를 할당된 리터럴 값으로 유추</span> 합니다.
+만약 변수를 **const로 선언**하고 직접 리터럴 값을 할당하면 타입스크립트는 해당 변수를 할당된 리터럴 값으로 유추</span> 합니다.
 
 ![111](https://user-images.githubusercontent.com/87301268/228735381-18ccceb7-a5e3-4639-a78a-bb4526ca17a9.png)
 
 value 는 string 타입이라고 말할 수 있습니다. 하지만 value 는 단지 string 타입이 아닌 'choi' 라는 특별한 값 입니다. 따라서 변수 value 의 타입은 기술적으로 좀 더 구체적인 'choi' 입니다.
 
-즉, <span style='background-color : #fff5b1'>리터럴 타입은 원시 타입 값 중 어떤 것이 아닌</span> **특정 원시값** 으로 알려진 타입 입니다.
+즉, 리터럴 타입은 원시 타입 값 중 어떤 것이 아닌</span> **특정 원시값** 으로 알려진 타입 입니다.
 
 원시 타입 string 은 존재할 수 있는 모든 가능한 문자열의 집할을 나타내지만 <br> 리터럴 타입인 'choi' 는 하나의 문자열만 나타냅니다.
 
@@ -154,7 +154,7 @@ value 는 string 타입이라고 말할 수 있습니다. 하지만 value 는 �
 
 #### 3.3.1 리터럴 할당 가능성
 
-0 과 1 처럼 <span style='background-color : #fff5b1'>동일한 원시 타입일지라도</span> 서로 다른 리터럴 타입은 서로 **할당할 수 없습니다.**
+0 과 1 처럼 동일한 원시 타입일지라도</span> 서로 다른 리터럴 타입은 서로 **할당할 수 없습니다.**
 
 ![carbon (31)](https://user-images.githubusercontent.com/87301268/228738706-7f5441d1-178b-4f30-88f4-2b05331f7688.png)
 
@@ -175,7 +175,7 @@ strictNullChecks 옵션을 true 로 설정하면 코드가 null 또는 undefined
 
 <br>
 
-이런 경우 <span style='background-color : #fff5b1'>재사용하는 타입에 더 쉬운 이름을 할당</span>하는 **타입 별칭**이 있습니다.
+이런 경우 재사용하는 타입에 더 쉬운 이름을 할당</span>하는 **타입 별칭**이 있습니다.
 
 <br>
 

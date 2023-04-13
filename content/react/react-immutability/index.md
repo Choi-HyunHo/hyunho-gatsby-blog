@@ -25,7 +25,7 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 - 실행 중인 함수를 추적하여 계산을 수행하고, 지역 변수를 저장 (LIFO 방식)
 - 고정된 크기로 메모리에 저장(실제 데이터가 변수에 할당)
-- <span style='background-color : #fff5b1'>**원시 타입**</span>이 이곳에 저장 됩니다. <span style='background-color : #fff5b1'>( Boolean, String, Number, Null, Undefined, Symbol )</span>
+- **원시 타입**</span>이 이곳에 저장 됩니다. ( Boolean, String, Number, Null, Undefined, Symbol )</span>
 
 <br>
 
@@ -33,11 +33,11 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 - 콜 스택과 달리 메모리 할당은 랜덤하게 배치 → 데이터의 크기가 정해지지 않고 메모리에 저장 + 변수에 Heap 메모리 주소 값 할당
 - 메모리 누수를 방지하기 위해 JS 엔진의 메모리 관리자가 항상 관리
-- <span style='background-color : #fff5b1'>**참조 타입**</span>이 이곳에 할당 됩니다. <span style='background-color : #fff5b1'>( Object, Array )</span>
+- **참조 타입**</span>이 이곳에 할당 됩니다. ( Object, Array )</span>
 
 <br>
 
-앞서 먼저 설명한 이유는, <span style='background-color : #fff5b1'>**타입별로 데이터 저장방식과 할당 방식이 다르기 때문**</span> 입니다.
+앞서 먼저 설명한 이유는, **타입별로 데이터 저장방식과 할당 방식이 다르기 때문**</span> 입니다.
 
 <br>
 
@@ -45,14 +45,14 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 **1\. 원시 타입**
 
-<span style='background-color : #fff5b1'>**한 번 생성된 원시 값은 읽기 전용 값으로, 변경 할 수 없습니다.**</span>
+**한 번 생성된 원시 값은 읽기 전용 값으로, 변경 할 수 없습니다.**</span>
 
 ![carbon (9)](https://user-images.githubusercontent.com/87301268/223899574-82c136d0-82de-4501-83ac-df453d4b0d01.png)
 
 <br>
 
 - age 변수의 값을 31로 재할당 했으나, oldage의 값이 바뀌지 않는 이유는 원시 타입의 값은 변경할 수 없는 값이기 때문 입니다.
-- 값을 변경할 수 없기 때문에 age = 31 이라는 새로운 값을 재할당할 때는, <span style='background-color : #fff5b1'>새로운 메모리공간을 확보해 그 곳에 값을 저장</span> 합니다.
+- 값을 변경할 수 없기 때문에 age = 31 이라는 새로운 값을 재할당할 때는, 새로운 메모리공간을 확보해 그 곳에 값을 저장</span> 합니다.
 
 <br>
 
@@ -65,11 +65,11 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 <br>
 
-**위와 같은 특징이 <span style='background-color : #fff5b1'>불변성</span> 입니다.**
+**위와 같은 특징이 불변성</span> 입니다.**
 
 > 불변성 : 값이나 상태를 변경 할 수 없는 것
 
-하지만 자바스크립트에서의 진짜 정의는 <span style='background-color : #fff5b1'>**'메모리 영역의 값을 변경 할 수 없는 것'**</span>
+하지만 자바스크립트에서의 진짜 정의는 **'메모리 영역의 값을 변경 할 수 없는 것'**</span>
 
 <br>
 
@@ -84,7 +84,7 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 **2\. map, spread operator 등 기존의 변수를 변경한 새로운 변수를 반환하는 경우**
 
 만약 위의 그림과 같이 기존의 변수를 변경하는 경우를 살펴보면, 변수 값이 변경되면
-콜스택의 변화는 없으며 메모리 힙의 value 값만 변경 됩니다. 즉, <span style='background-color : #fff5b1'>기존의 메모리 영역의 값이 변경되므로 불변성 유지가 되지 않습니다.</span>
+콜스택의 변화는 없으며 메모리 힙의 value 값만 변경 됩니다. 즉, 기존의 메모리 영역의 값이 변경되므로 불변성 유지가 되지 않습니다.</span>
 
 <br>
 
@@ -94,9 +94,9 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 ### **✅  React 에서 불변성을 지켜야 하는 이유**
 
-**1\. 리액트의 state 의 변화 감지 기준은 <span style='background-color : #fff5b1'>'Call Stack 의 주소 값'</span> 입니다.**
+**1\. 리액트의 state 의 변화 감지 기준은 'Call Stack 의 주소 값'</span> 입니다.**
 
-> 리액트는 콜스택의 주소값만을 비교하여 상태 변화를 감지 합니다. 이를 <span style='background-color : #fff5b1'>'**얕은 비교'**</span> 라고 합니다.
+> 리액트는 콜스택의 주소값만을 비교하여 상태 변화를 감지 합니다. 이를 '**얕은 비교'**</span> 라고 합니다.
 
 리액트의 빠른 state 변화 감지를 할 수 있도록 해주는 장점이자, 불변성을 지켜야하는 이유 입니다.
 
@@ -107,7 +107,7 @@ React 를 사용하면서 state 를 변경 했지만, 리액트가 제대로 감
 
 **참조 타입**은 콜스택에 메모리 힙의 주소만을 저장하고 값은 메모리 힙에 저장, 변경되기 때문에 참조 타입의 값을 변경하면
 
-<span style='background-color : #fff5b1'>콜스택의 주소값은 변경이 없어</span> react는 state의 변경이 없다고 감지 합니다. 때문에 변경된 **state는 재랜더링되지 않습니다.**
+콜스택의 주소값은 변경이 없어</span> react는 state의 변경이 없다고 감지 합니다. 때문에 변경된 **state는 재랜더링되지 않습니다.**
 
 따라서 참조타입의 변경된 값을 react가 감지 할 수 있도록 불변성을 유지 해야합니다.
 

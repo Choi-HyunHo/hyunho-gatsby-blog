@@ -21,7 +21,7 @@ useCallback 은 지난번 공부한 [useMemo](https://choi-hyunho.com/react/reac
 
 useMemo 는 특정 결과값을 재사용 할 때 사용하는 반면,
 
-**useCallback** 은 <span style='background-color : #fff5b1'>**특정 함수를 새로 만들지 않고 재사용하고 싶을때 사용**</span>합니다.
+**useCallback** 은 **특정 함수를 새로 만들지 않고 재사용하고 싶을때 사용**</span>합니다.
 
 <br>
 
@@ -42,9 +42,9 @@ useMemo 는 특정 결과값을 재사용 할 때 사용하는 반면,
 
 <br>
 
-**첫 번째 인자**는 <span style='background-color : #fff5b1'>**Memozation 할 콜백 함수**</span>
+**첫 번째 인자**는 **Memozation 할 콜백 함수**</span>
 
-**두 번째 인자**는 <span style='background-color : #fff5b1'>**의존성 배열** ( \[\] )</span>
+**두 번째 인자**는 **의존성 배열** ( \[\] )</span>
 
 > 위의 코드처럼 함수를 useCallback 으로 감싸주면 calculate 변수는 Memozation 된 함수를 가지고 있게 되고, 의존성 배열안 내부의 값이 변경되지 않는 한 다시 초기화 되지 않습니다.
 
@@ -60,15 +60,15 @@ useMemo 는 특정 결과값을 재사용 할 때 사용하는 반면,
 
 **맨 처음에 useEffect 안의 콘솔이 한 번 나오고**, **number state 를 한 번 바꾼다고 가정 했을 때**
 
-useEffect 안의 의존성 배열인 <span style='background-color : #fff5b1'>**someFunction 이 변하는게 아니니까 'someFunction이 변경되었습니다.' 는 나오지 않겠지 ??**</span>
+useEffect 안의 의존성 배열인 **someFunction 이 변하는게 아니니까 'someFunction이 변경되었습니다.' 는 나오지 않겠지 ??**</span>
 
-정답은 콘솔에 계속 <span style='background-color : #fff5b1'>**'someFunction이 변경되었습니다.'**</span> 문구가 나옵니다.
+정답은 콘솔에 계속 **'someFunction이 변경되었습니다.'**</span> 문구가 나옵니다.
 
 <br>
 
 **이유가 뭘까 ❓**
 
-**➡️ <span style='background-color : #fff5b1'>리액트 컴포넌트에서 state 를 변경 할 때 마다 컴포넌트는 다시 렌더링이 됩니다.</span>**
+**➡️ 리액트 컴포넌트에서 state 를 변경 할 때 마다 컴포넌트는 다시 렌더링이 됩니다.</span>**
 
 그리고 함수형 컴포넌트를 사용하고 있으니까 App 컴포넌트가 렌더링이 된다는 것은 App 이라는 함수가 다시 호출이 되는 것이고,
 
@@ -76,7 +76,7 @@ useEffect 안의 의존성 배열인 <span style='background-color : #fff5b1'>**
 
 <br>
 
-즉, 위에 보이는 <span style='background-color : #fff5b1'>someFunction 도 하나의 변수입니다.</span> ( 함수 객체를 가지고 있는 ) <br>
+즉, 위에 보이는 someFunction 도 하나의 변수입니다.</span> ( 함수 객체를 가지고 있는 ) <br>
 
 또한 자바스크립트에서 객체를 변수에 할당할 때 바로 변수에 저장하는 것이 아니라 메모리 공간의 주소를 대신 저장합니다. ( 자세한 내용은 [불변성](https://choi-hyunho.com/react-immutability/) )
 
@@ -102,7 +102,7 @@ useEffect 안의 의존성 배열인 <span style='background-color : #fff5b1'>**
 
 의존성 배열에 아무 값도 넣지 않았으니, someFunction 함수는 맨 처음 App 컴포넌트가 렌더링 될 때 만들어져서 **Memozation** 이 됩니다.
 
-그리고<span style='background-color : #fff5b1'> **메모이제이션된 함수의 주소**</span>가 들어있게 될 것 입니다. <br> 추후 렌더링 부터는 더 이상 함수 객체를 새로 생성해서 할당해주는 것이 아니라 <span style='background-color : #fff5b1'>**이미 가지고 있는 메모이제이션 된 객체의 주소를 someFunction 이 가지고 있게 됩니다.**</span>
+그리고 **메모이제이션된 함수의 주소**</span>가 들어있게 될 것 입니다. <br> 추후 렌더링 부터는 더 이상 함수 객체를 새로 생성해서 할당해주는 것이 아니라 **이미 가지고 있는 메모이제이션 된 객체의 주소를 someFunction 이 가지고 있게 됩니다.**</span>
 
 이제 number state 를 변화시켜도 콘솔은 더 이상 변화가 없습니다. 하지만 'Call someFunc' 을 누르면
 
@@ -110,7 +110,7 @@ useEffect 안의 의존성 배열인 <span style='background-color : #fff5b1'>**
 
 위의 메시지만 지속적으로 출력이 됩니다. <br>
 
-이유는, 함수를 메모이제이션 했을 당시에 <span style='background-color : #fff5b1'>${number} 의 값은 0 이었고</span>, 그 다음 렌더링 부터는 <span style='background-color : #fff5b1'>이미 메모이제이션 된 함수를 가져다 사용하기 때문에</span> 이후의 number state 가 다른 숫자로 바뀌어도 메모이제이션 된 함수안에 들어있는 number 값에는 0이 들어있게 됩니다. <br> ( 의존성 배열이 빈 배열이기 때문 )
+이유는, 함수를 메모이제이션 했을 당시에 ${number} 의 값은 0 이었고</span>, 그 다음 렌더링 부터는 이미 메모이제이션 된 함수를 가져다 사용하기 때문에</span> 이후의 number state 가 다른 숫자로 바뀌어도 메모이제이션 된 함수안에 들어있는 number 값에는 0이 들어있게 됩니다. <br> ( 의존성 배열이 빈 배열이기 때문 )
 
 <br>
 
@@ -118,10 +118,10 @@ useEffect 안의 의존성 배열인 <span style='background-color : #fff5b1'>**
 
 ![4](https://user-images.githubusercontent.com/87301268/224202583-6dd5e66a-8e91-4370-9ee4-338692274cbf.png)
 
-의존성 배열안에 들어있는 <span style='background-color : #fff5b1'>number 가 바뀔 때 마다 useCallback 안에 있는 함수가 갱신</span> 될 것 입니다. 이제 input 안에 있는 number 를 변화시키면 number state 가 바뀔 때 마다 useEffect 가 호출 되는 것을 볼 수 있습니다. 왜냐하면
+의존성 배열안에 들어있는 number 가 바뀔 때 마다 useCallback 안에 있는 함수가 갱신</span> 될 것 입니다. 이제 input 안에 있는 number 를 변화시키면 number state 가 바뀔 때 마다 useEffect 가 호출 되는 것을 볼 수 있습니다. 왜냐하면
 
 1.  number 가 바뀌면 함수가 다시 생성되고 또 다시 메모이제이션 됩니다.
-2.  그렇게되면 <span style='background-color : #fff5b1'>someFunction 안에는 새로운 메모리 주소</span>가 들어가게 되고
+2.  그렇게되면 someFunction 안에는 새로운 메모리 주소</span>가 들어가게 되고
 3.  useEffect 의 의존성 배열안에 있는 someFunction 의 값이 달라져서 콘솔 출력이 됩니다.
 
 <br>
@@ -145,7 +145,7 @@ useEffect 안의 의존성 배열인 <span style='background-color : #fff5b1'>**
 
 useMemo 는 특정 결과값을 재사용 할 때 사용하는 반면,
 
-**useCallback** 은 <span style='background-color : #fff5b1'>**특정 함수를 새로 만들지 않고 재사용하고 싶을때 사용**</span>합니다.
+**useCallback** 은 **특정 함수를 새로 만들지 않고 재사용하고 싶을때 사용**</span>합니다.
 
 <br>
 

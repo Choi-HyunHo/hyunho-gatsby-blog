@@ -28,7 +28,7 @@ useContext 에 대하여 공부해보도록 하겠습니다.
 
 <br>
 
-**이 때, props 와 state 를 사용하게 되면 <span style='background-color : #fff5b1'>부모 컴포넌트 ➡️ 자식 컴포넌트**</span> <br>
+**이 때, props 와 state 를 사용하게 되면 부모 컴포넌트 ➡️ 자식 컴포넌트**</span> <br>
 **즉, 위에서 아래로 흐르듯이 한쪽으로 데이터가 흐르게 됩니다.**
 
 <br>
@@ -43,20 +43,20 @@ useContext 에 대하여 공부해보도록 하겠습니다.
 
 <br>
 
-React 에서 데이터는 단방향으로 위에서 아래로, 즉 부모 컴포넌트에서 자식 컴포넌트로 전달 하기 때문에 <span style='background-color : #fff5b1'>**데이터를 사용하고 싶은 컴포넌트들의 공통 부모 컴포넌트에 state 를 만들고 props 로 전달 할 수 있습니다.**</span>
+React 에서 데이터는 단방향으로 위에서 아래로, 즉 부모 컴포넌트에서 자식 컴포넌트로 전달 하기 때문에 **데이터를 사용하고 싶은 컴포넌트들의 공통 부모 컴포넌트에 state 를 만들고 props 로 전달 할 수 있습니다.**</span>
 
 ![3](https://user-images.githubusercontent.com/87301268/223927374-29f33164-c0f7-43e1-a37a-b0d410606b4a.png)
 
 <br>
 
 하지만, 컴포넌트 트리의 구조가 더 복잡하고 깊어지면❓
-<span style='background-color : #fff5b1'>props drilling</span> 문제가 발생 할 수 있습니다.
+props drilling</span> 문제가 발생 할 수 있습니다.
 
 <br>
 
 ### **props drilling 은** ❓
 
-<span style='background-color : #fff5b1'>**props를 오로지 하위 컴포넌트로 전달하는 용도로만 쓰이는 컴포넌트들을 거치면서**</span> <br>
+**props를 오로지 하위 컴포넌트로 전달하는 용도로만 쓰이는 컴포넌트들을 거치면서**</span> <br>
 React Component 트리의 한 부분에서 다른 부분으로 데이터를 전달하는 과정입니다.
 
 <br>
@@ -69,7 +69,7 @@ props 로 컴포넌트 간 데이터를 전달하는건 지극히 정상적인 �
 
 <br>
 
-**1번의 경우 예를 들어 해당 <span style='background-color : #fff5b1'>data 는 F 에서 사용하기 위해서</span> A 와 D 를 거쳐 가야 합니다.**
+**1번의 경우 예를 들어 해당 data 는 F 에서 사용하기 위해서</span> A 와 D 를 거쳐 가야 합니다.**
 
 ![7](https://user-images.githubusercontent.com/87301268/223928214-56855d31-8a73-427f-b3e4-1e0aa69257cf.png)
 
@@ -95,7 +95,7 @@ props 로 컴포넌트 간 데이터를 전달하는건 지극히 정상적인 �
 
 부모 컴포넌트에서 자식 컴포넌트로 전달되는 데이터의 흐름과는 상관없이
 
-<span style='background-color : #fff5b1'>**전역적인 데이터를 다룰 때 사용**</span> 합니다.
+**전역적인 데이터를 다룰 때 사용**</span> 합니다.
 
 ![4](https://user-images.githubusercontent.com/87301268/223928333-98ac38a9-1311-4447-a9d9-44bd32e8d30d.png)
 
@@ -103,13 +103,13 @@ props 로 컴포넌트 간 데이터를 전달하는건 지극히 정상적인 �
 
 props 로 부모 컴포넌트에서 하위 컴포넌트까지 데이터를 전달 하지 않고
 
-<span style='background-color : #fff5b1'>**필요로 하는 컴포넌트에서 직접 전달하여 사용 할 수 있습니다.**</span>
+**필요로 하는 컴포넌트에서 직접 전달하여 사용 할 수 있습니다.**</span>
 
 context 를 사용하기 위해서는 context API 를 사용해야 하며 **createContext, Provider, Consumer** 등에 대해 알아야 합니다.
 
-- <span style='background-color : #fff5b1'>**createContext**</span> : Context 객체를 만든다.
-- <span style='background-color : #fff5b1'>**Provider**</span> : 생성된 Context 의 data 를 하위 컴포넌트에 전달하는 역할
-- <span style='background-color : #fff5b1'>**Consumer**</span> : Context 의 변화를 감시하는 역할
+- **createContext**</span> : Context 객체를 만든다.
+- **Provider**</span> : 생성된 Context 의 data 를 하위 컴포넌트에 전달하는 역할
+- **Consumer**</span> : Context 의 변화를 감시하는 역할
 
 <br>
 

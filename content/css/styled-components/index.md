@@ -15,7 +15,7 @@ categories: CSS
 
 ### CSS-in-JS ❓
 
-<span style='background-color : #fff5b1'>자바스크립트 파일(코드) 안에서</span> **css** 문법을 사용 할 수 있는 라이브러리 입니다.
+자바스크립트 파일(코드) 안에서</span> **css** 문법을 사용 할 수 있는 라이브러리 입니다.
 
 <br>
 

@@ -21,7 +21,7 @@ categories: CS
 
 <br>
 
-#### **[](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#200%EB%B2%88%EB%8C%80--%ED%86%B5%EC%8B%A0-%EC%84%B1%EA%B3%B5)✔ <span style='background-color : #fff5b1'>200번대 : 통신 성공**</span>
+#### **[](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#200%EB%B2%88%EB%8C%80--%ED%86%B5%EC%8B%A0-%EC%84%B1%EA%B3%B5)✔ 200번대 : 통신 성공**</span>
 
 | 상태코드 | 이름        | 의미                     |
 | -------- | ----------- | ------------------------ |
@@ -32,7 +32,7 @@ categories: CS
 
 <br>
 
-#### [](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#300%EB%B2%88%EB%8C%80--%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8)**✔ <span style='background-color : #fff5b1'>300번대 : 리다이렉트**</span>
+#### [](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#300%EB%B2%88%EB%8C%80--%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8)**✔ 300번대 : 리다이렉트**</span>
 
 | 상태코드 | 이름             | 의미                          |
 | -------- | ---------------- | ----------------------------- |
@@ -42,7 +42,7 @@ categories: CS
 
 <br>
 
-#### [](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#400%EB%B2%88%EB%8C%80--%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%98%A4%EB%A5%98)**✔ <span style='background-color : #fff5b1'>400번대 : 클라이언트 오류**</span>
+#### [](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#400%EB%B2%88%EB%8C%80--%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%98%A4%EB%A5%98)**✔ 400번대 : 클라이언트 오류**</span>
 
 | 상태코드 | 이름               | 의미                              |
 | -------- | ------------------ | --------------------------------- |
@@ -58,7 +58,7 @@ categories: CS
 
 <br>
 
-#### [](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#500%EB%B2%88%EB%8C%80--%EC%84%9C%EB%B2%84-%EC%98%A4%EB%A5%98)**✔ <span style='background-color : #fff5b1'>500번대 : 서버 오류**</span>
+#### [](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/HTTP%20status%20code.md#500%EB%B2%88%EB%8C%80--%EC%84%9C%EB%B2%84-%EC%98%A4%EB%A5%98)**✔ 500번대 : 서버 오류**</span>
 
 | 상태코드 | 이름                  | 의미                 |
 | -------- | --------------------- | -------------------- |

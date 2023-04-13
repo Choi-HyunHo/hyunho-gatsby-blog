@@ -11,12 +11,12 @@ categories: JS
 
 제어문은
 
-- <span style='background-color : #fff5b1'>조건에 따라</span> 코드 블록을 실행 하거나(조건문)
-- <span style='background-color : #fff5b1'>반복 실행(반복문)</span> 할 때 사용
+- 조건에 따라</span> 코드 블록을 실행 하거나(조건문)
+- 반복 실행(반복문)</span> 할 때 사용
 
 코드는 위에서 아래로 순차적으로 실행하는데,
 
-- 제어문을 사용하면 <span style='background-color : #fff5b1'>코드 실행 흐름을 인위적으로 제어</span>할 수 있다. 하지만 직관적인 코드의 흐름을 혼란스럽게 만들어서 코드의 가독성을 해치는 단점이 있다.
+- 제어문을 사용하면 코드 실행 흐름을 인위적으로 제어</span>할 수 있다. 하지만 직관적인 코드의 흐름을 혼란스럽게 만들어서 코드의 가독성을 해치는 단점이 있다.
 - **forEach**, **map**, **filter**, **reduce** 같은 함수형 프로그래밍 기법에서는 제어문의 사용을 억제하여 복잡성을 해결하고자 노력한다.
 
 <br>
@@ -25,7 +25,7 @@ categories: JS
 
 > 0개 이상의 문을 중괄호 {} 로 묶은 것으로 코드 블록 이라고 부르기도 한다.
 
-- 자바스크립트에서는 **블록문**을 <span style='background-color : #fff5b1'>**하나의 실행단위**</span> 로 취급한다.
+- 자바스크립트에서는 **블록문**을 **하나의 실행단위**</span> 로 취급한다.
 
 ![carbon (58)](https://user-images.githubusercontent.com/87301268/224894556-f387628e-6c32-4afa-95ab-517dbec4e1f8.png)
 
@@ -35,7 +35,7 @@ categories: JS
 
 > 주어진 조건식의 평가 결과에 따라 코드 블록의 실행을 결정 한다.
 
-- 자바스크립트는 <span style='background-color : #fff5b1'>**if-else**</span> 문과 <span style='background-color : #fff5b1'>**switch**</span> 두가지 조건문을 제공한다.
+- 자바스크립트는 **if-else**</span> 문과 **switch**</span> 두가지 조건문을 제공한다.
 
 <br>
 
@@ -44,7 +44,7 @@ categories: JS
 > 주어진 조건식에 따른 참과 거짓(true / false) 으로 평가
 
 - 조건식의 개수에 따라 코드 블록을 늘리고 **else if** 문을 사용
-- 대부분의 **if-else** 문은 <span style='background-color : #fff5b1'>삼항 조건 연산자</span>로 바꾸어 사용 할 수 있다.
+- 대부분의 **if-else** 문은 삼항 조건 연산자</span>로 바꾸어 사용 할 수 있다.
 
 ![carbon (59)](https://user-images.githubusercontent.com/87301268/224894659-1716c467-ec0c-43e4-af21-ef91d0b21869.png)
 
@@ -81,7 +81,7 @@ categories: JS
 
 > 조건식의 평가 결과가 참인 경우 코드 블록을 실행
 
-- 자바스크립트는 <span style='background-color : #fff5b1'>**for**, **while**, **do-while**</span> 문을 제공
+- 자바스크립트는 **for**, **while**, **do-while**</span> 문을 제공
 
 <br>
 
@@ -103,8 +103,8 @@ categories: JS
 
 > 주어진 조건식의 평가 결과가 참이면 코드 블록을 계속 실행하며 반복
 
-- <span style='background-color : #fff5b1'>for 문</span>은 반복 횟수가 명확할 때 주로 사용
-- <span style='background-color : #fff5b1'>while 문</span>은 반복 회수가 **불명확** 할 때 주로 사용
+- for 문</span>은 반복 횟수가 명확할 때 주로 사용
+- while 문</span>은 반복 회수가 **불명확** 할 때 주로 사용
 
 ![carbon (63)](https://user-images.githubusercontent.com/87301268/224895340-36b0cb2c-f652-4590-b5f6-d975fd544374.png)
 

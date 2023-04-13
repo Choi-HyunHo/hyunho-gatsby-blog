@@ -13,25 +13,25 @@ categories: JS
 
 프로그래밍 언어의 함수는
 
-- <span style='background-color : #fff5b1'>**일련의 과정을 문(statement)으로 구현**</span>하고
-- **코드 블록으로 감싸서 <span style='background-color : #fff5b1'>하나의 실행 단위</span>로 정의한 것** 이다.
+- **일련의 과정을 문(statement)으로 구현**</span>하고
+- **코드 블록으로 감싸서 하나의 실행 단위</span>로 정의한 것** 이다.
 
 ![](https://velog.velcdn.com/images/hoho_0815/post/e670aed5-5052-4936-ad36-6d68c3ca396b/image.png)
 
 각 용어에 대한 간단한 설명은,
 
-- **함수 내부로 입력을 전달받는 변수**를 <span style='background-color : #fff5b1'>**매개변수(parameter)**</span>
-- 입력을 <span style='background-color : #fff5b1'>**인수(argument)**</span>
-- 출력을 <span style='background-color : #fff5b1'>**반환값(return value)**</span>
+- **함수 내부로 입력을 전달받는 변수**를 **매개변수(parameter)**</span>
+- 입력을 **인수(argument)**</span>
+- 출력을 **반환값(return value)**</span>
 
 함수는 정의만으로 실행되는 것은 아니므로, 실행을 명시적으로 지시해야 한다.  
-➡️ 이를 <span style='background-color : #fff5b1'>**함수 호출**</span> 이라 한다.
+➡️ 이를 **함수 호출**</span> 이라 한다.
 
 <br>
 
 ### 12.2 함수를 사용하는 이유
 
-- 함수는 몇 번이든 호출할 수 있으므로 <span style='background-color : #fff5b1'>**코드의 재사용**</span> 이라는 측면에서 매우 유용하다.
+- 함수는 몇 번이든 호출할 수 있으므로 **코드의 재사용**</span> 이라는 측면에서 매우 유용하다.
 - 코드의 중복을 억제하고 재사용성을 높이는 함수는 **유지보수의 편의성** 을 높이고 **코드의 신뢰성** 을 높인다.
 
 <br>
@@ -55,9 +55,9 @@ categories: JS
 
 ### 12.4 함수 정의
 
-함수를 호출하기 이전에 <span style='background-color : #fff5b1'>**인수를 전달받은 매개변수** 와 **실행할 문**들, 그리고 **반환할 값을 지정**</span> 하는 것을 말한다.
+함수를 호출하기 이전에 **인수를 전달받은 매개변수** 와 **실행할 문**들, 그리고 **반환할 값을 지정**</span> 하는 것을 말한다.
 
-함수를 <span style='background-color : #fff5b1'>정의</span>하는 방법은,
+함수를 정의</span>하는 방법은,
 
 - 함수 선언문
 - 함수 표현식
@@ -69,7 +69,7 @@ categories: JS
 #### 12.4.1 함수 선언문
 
 **함수 선언문은 함수 리터럴과 형태가 동일**하다,  
-단, 함수 리터럴은 함수 이름은 생략 할 수 있으나, <span style='background-color : #fff5b1'>**함수 선언문은 함수 이름을 생략 할 수 없다.**</span>
+단, 함수 리터럴은 함수 이름은 생략 할 수 있으나, **함수 선언문은 함수 이름을 생략 할 수 없다.**</span>
 
 ![carbon (1)](https://user-images.githubusercontent.com/87301268/225246488-ecf9e521-82f9-4e60-ac21-9535cfa628a6.png)
 
@@ -77,25 +77,25 @@ categories: JS
 
 #### 12.4.2 함수 표현식
 
-함수는 **일급 객체** 이므로 함수 리터럴로 생성한 함수 객체를 <span style='background-color : #fff5b1'>**변수에 할당**</span> 할 수 있는데,  
-이러한 함수 정의 방식을 <span style='background-color : #fff5b1'>**함수 표현식**</span> 이라 한다.
+함수는 **일급 객체** 이므로 함수 리터럴로 생성한 함수 객체를 **변수에 할당**</span> 할 수 있는데,  
+이러한 함수 정의 방식을 **함수 표현식**</span> 이라 한다.
 
 > 일급 객체란?
 >
-> 자바스크립트의 함수는 값처럼 변수에 할당할 수도 있고, 프로퍼티 값이 될 수도 있으며 배열의 요소가 될 수도 있다. 이처럼 <span style='background-color : #fff5b1'>값의 성질을 갖는 객체</span>를 일급 객체라 한다. 자바스크립트의 함수는 일급 객체다.
+> 자바스크립트의 함수는 값처럼 변수에 할당할 수도 있고, 프로퍼티 값이 될 수도 있으며 배열의 요소가 될 수도 있다. 이처럼 값의 성질을 갖는 객체</span>를 일급 객체라 한다. 자바스크립트의 함수는 일급 객체다.
 
 <br>
 
 #### 12.4.3 함수 생성 시점과 호이스팅
 
-<span style='background-color : #fff5b1'>함수 선언문</span>으로 정의한 함수 와 <span style='background-color : #E6E6FA'>함수 표현식</span>으로 정의한 함수 의 **생성 시점**이 다르다.
+함수 선언문</span>으로 정의한 함수 와 <span style='background-color : #E6E6FA'>함수 표현식</span>으로 정의한 함수 의 **생성 시점**이 다르다.
 
 **함수 선언문** <br>
 
-> 함수 선언문으로 정의한 함수는 <span style='background-color : #fff5b1'>함수 선언문 이전에 호출할 수 있다.</span>
+> 함수 선언문으로 정의한 함수는 함수 선언문 이전에 호출할 수 있다.</span>
 
-1.함수 선언문으로 정의하면 <span style='background-color : #fff5b1'>런타임 이전에 함수 객체가 먼저 생성</span>되고<br> 2.**자바스크립트 엔진**은 함수 이름과 <span style='background-color : #fff5b1'>동일한 이름의 식별자를 암묵적으로 생성</span>하고,<br> 생성된 함수 객체를 할당한다. <br>  
- ➡️ 즉, **런타임 시점**에는 이미 함수 객체가 생성되어 있고, 함수 이름과 동일한 식별자에 할당까지 완료된 상태이다. <span style='background-color : #fff5b1'>(= 호이스팅)</span>
+1.함수 선언문으로 정의하면 런타임 이전에 함수 객체가 먼저 생성</span>되고<br> 2.**자바스크립트 엔진**은 함수 이름과 동일한 이름의 식별자를 암묵적으로 생성</span>하고,<br> 생성된 함수 객체를 할당한다. <br>  
+ ➡️ 즉, **런타임 시점**에는 이미 함수 객체가 생성되어 있고, 함수 이름과 동일한 식별자에 할당까지 완료된 상태이다. (= 호이스팅)</span>
 
 <br>
 
@@ -114,7 +114,7 @@ categories: JS
 
 #### 12.4.4 Function 생성자 함수
 
-자바스크립트가 기본 제공하는 빌트인 함수인 `Function` 생성자 함수에 <span style='background-color : #fff5b1'>**매개변수 목록**</span> 과 <span style='background-color : #fff5b1'>**함수 몸체**</span> 를 문자열로 전달하면서 `new` 연산자와 함께 호출하면 함수 객체를 생성해서 반환한다.
+자바스크립트가 기본 제공하는 빌트인 함수인 `Function` 생성자 함수에 **매개변수 목록**</span> 과 **함수 몸체**</span> 를 문자열로 전달하면서 `new` 연산자와 함께 호출하면 함수 객체를 생성해서 반환한다.
 
 > 생성자 함수는 객체를 생성하는 함수
 
@@ -131,7 +131,7 @@ categories: JS
 
 #### 12.4.5 화살표 함수
 
-ES6에서 도입된 <span style='background-color : #fff5b1'>화살표 함수(**arrow function**)</span> 은 function 키워드 대신에 <span style='background-color : #fff5b1'>화살표( => )</span> 를 사용해서 좀 더 간략한 방법으로 함수를 선언 할 수 있다.
+ES6에서 도입된 화살표 함수(**arrow function**)</span> 은 function 키워드 대신에 화살표( => )</span> 를 사용해서 좀 더 간략한 방법으로 함수를 선언 할 수 있다.
 
 - 화살표 함수는 생성자 함수로 사용할 수 없으며
 - 기존 함수와 **this** 바인딩 방식이 다르고,
@@ -144,7 +144,7 @@ ES6에서 도입된 <span style='background-color : #fff5b1'>화살표 함수(**
 
 ### 12.5 함수 호출
 
-함수는 함수를 가리키는 식별자와 한 쌍의 <span style='background-color : #fff5b1'>소괄호()</span> 인 함수 호출 연산자로 호출된다.
+함수는 함수를 가리키는 식별자와 한 쌍의 소괄호()</span> 인 함수 호출 연산자로 호출된다.
 
 <br>
 
@@ -152,8 +152,8 @@ ES6에서 도입된 <span style='background-color : #fff5b1'>화살표 함수(**
 
 함수를 실행하기 위해 **필요한 값을 함수 외부에서 내부로 전달할 필요가 있는 경우**, 매개변수를 통해 인수를 전달한다.
 
-- **인수** : <span style='background-color : #fff5b1'>함수를 호출</span>할 때 지정하며, 개수와 타입에 제한이 없다.
-- **매개변수** : <span style='background-color : #fff5b1'>함수를 정의</span>할 때 선언하며, **스코프(유효범위)는 함수 내부이다.**
+- **인수** : 함수를 호출</span>할 때 지정하며, 개수와 타입에 제한이 없다.
+- **매개변수** : 함수를 정의</span>할 때 선언하며, **스코프(유효범위)는 함수 내부이다.**
 
 <br>
 
@@ -167,8 +167,8 @@ ES6에서 도입된 <span style='background-color : #fff5b1'>화살표 함수(**
 
 위 코드는 자바스크립트 문법상 어떠한 문제도 없으므로 **자바스크립트 엔진은 아무런 이의 제기없이 실행할 것**이다. 이러한 상황이 가능한 이유는,
 
-- 자바스크립트 함수는 <span style='background-color : #fff5b1'>매개변수와 인수의 개수가 일치하는지 확인하지 않는다.</span>
-- 자바스크립트는 **동적 타입 언어**다. 따라서 자바스크립트 함수는 <span style='background-color : #fff5b1'>매개변수의 타입을 사전에 지정할 수 없다.</span>
+- 자바스크립트 함수는 매개변수와 인수의 개수가 일치하는지 확인하지 않는다.</span>
+- 자바스크립트는 **동적 타입 언어**다. 따라서 자바스크립트 함수는 매개변수의 타입을 사전에 지정할 수 없다.</span>
 
 그래서 자바스크립트는 함수를 정의할 때 **적절한 인수가 전달되었는지 확인할 필요가 있다.**
 
@@ -180,10 +180,10 @@ ES6에서 도입된 <span style='background-color : #fff5b1'>화살표 함수(**
 
 ECMAScirpt 사양에서는 매개변수의 최대 개수에 대해 명시적으로 제한하고 있지는 않지만, 물리적 한계는 있으므로 자바스크립트 엔진마다 매개변수의 최대 개수에 대한 제한은 있다.
 
-- 함수의 매개변수는 코드를 이해하는 데 방해되는 요소이므로, <span style='background-color : #fff5b1'>이상적인 매개변수의 개수는 0개이며 최대 3개</span> 이상을 넘지 않는 것을 권장
+- 함수의 매개변수는 코드를 이해하는 데 방해되는 요소이므로, 이상적인 매개변수의 개수는 0개이며 최대 3개</span> 이상을 넘지 않는 것을 권장
 - **매개변수의 개수가 많다는 것은 함수가 여러가지 일을 한다는 증거**이므로 바람직하지 않다.
 
-<span style='background-color : #fff5b1'>**이상적인 함수는 한 가지 일만 해야 하며**</span> 가급적 작게 만들어야 한다.
+**이상적인 함수는 한 가지 일만 해야 하며**</span> 가급적 작게 만들어야 한다.
 
 <br>
 
@@ -193,11 +193,11 @@ ECMAScirpt 사양에서는 매개변수의 최대 개수에 대해 명시적으�
 
 반환문은 두 가지 역할을 하는데,
 
-- 첫째, 반환문은 <span style='background-color : #fff5b1'>함수의 실행을 중단하고 함수 몸체를 빠져나간다.</span> <br>
+- 첫째, 반환문은 함수의 실행을 중단하고 함수 몸체를 빠져나간다.</span> <br>
   ➡️ 반환문 이후에 **다른 문이 존재하면 그 문은 실행되지 않고 무시**된다.
 
 - 둘째, 반환문은 return 키워드 뒤에 오는 표현식을 평가에 반환한다. <br>
-  ➡️ return 키워드 뒤에 <span style='background-color : #fff5b1'>반환값</span>으로 사용할 표현식을 명시적으로 지정하지 않으면 undefined가 반환된다.
+  ➡️ return 키워드 뒤에 반환값</span>으로 사용할 표현식을 명시적으로 지정하지 않으면 undefined가 반환된다.
 
 <br>
 
@@ -207,7 +207,7 @@ ECMAScirpt 사양에서는 매개변수의 최대 개수에 대해 명시적으�
 
 > 함수 정의와 동시에 즉시 호출되는 함수
 
-- <span style='background-color : #fff5b1'>단 한 번만 호출</span>되며 **다시 호출 할 수 없다.**
+- 단 한 번만 호출</span>되며 **다시 호출 할 수 없다.**
 
 ![carbon (7)](https://user-images.githubusercontent.com/87301268/225246516-2f546d1a-463d-4c21-b27f-d1e82a7f34a6.png)
 
@@ -231,8 +231,8 @@ ECMAScirpt 사양에서는 매개변수의 최대 개수에 대해 명시적으�
 > 중첩 함수 ( = 내부 함수 )
 
 - **함수 내부에 정의된 함수**
-- 중첩 함수는 <span style='background-color : #fff5b1'>**외부 함수 내에서만 호출**</span> 할 수 있다.
-- 일반적으로 중첩 함수는 <span style='background-color : #fff5b1'>자신을 포함하는 외부 함수를 돕는</span> **헬퍼 함수** 의 역할을 한다.
+- 중첩 함수는 **외부 함수 내에서만 호출**</span> 할 수 있다.
+- 일반적으로 중첩 함수는 자신을 포함하는 외부 함수를 돕는</span> **헬퍼 함수** 의 역할을 한다.
 
 ![carbon (9)](https://user-images.githubusercontent.com/87301268/225246523-d9ec9b2e-a08f-40ab-aaa3-39aac65ca41d.png)
 

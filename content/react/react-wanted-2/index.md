@@ -21,7 +21,7 @@ categories: React
 
 ➡️ [useState 바로가기](https://choi-hyunho.com/react/react-useState/)
 
-<span style='background-color : #fff5b1'>간단한 상태 관리 (값이 하나인 경우)</span>
+간단한 상태 관리 (값이 하나인 경우)</span>
 
 - 상태들이 서로 관련이 없는 경우
 - 컴포넌트 내에서 사용
@@ -32,7 +32,7 @@ categories: React
 
 ➡️ [useReducer 바로가기](https://choi-hyunho.com/react/react-useReducer/)
 
-<span style='background-color : #fff5b1'>복잡한 상태관리</span>
+복잡한 상태관리</span>
 
 - 상태들이 서로 관련이 있거나, 참조가 필요한 경우
 - reducer 를 따로 선언하는 것이 일반적
@@ -54,7 +54,7 @@ categories: React
 
 ➡️ [useMemo 바로가기](https://choi-hyunho.com/react/react-useMemo/)
 
-<span style='background-color : #fff5b1'>함수의 결과를 cache하기 위해 사용</span>
+함수의 결과를 cache하기 위해 사용</span>
 
 - “Expensive” computation
 - React는 1ms 이상 걸리면 `expensive`라고 칭함
@@ -66,7 +66,7 @@ categories: React
 
 ➡️ [useCallback 바로가기](https://choi-hyunho.com/react/react-useCallback/)
 
-<span style='background-color : #fff5b1'>함수 자체를 cache하기 위해 사용</span>
+함수 자체를 cache하기 위해 사용</span>
 
 - dependency를 확인해야 하는 함수일 때
 - ChildComponent에 prop으로 넘겨주는 함수일 때
@@ -146,7 +146,7 @@ categories: React
 
 #### 자동배치(Automatic Batching)
 
-<span style='background-color : #fff5b1'>여러 개의 상태 업데이트를 하나의 리렌더링으로 그룹핑하는 것 입니다.</span>
+여러 개의 상태 업데이트를 하나의 리렌더링으로 그룹핑하는 것 입니다.</span>
 
 ![carbon (5)](https://user-images.githubusercontent.com/87301268/230404594-cf581ef9-6f60-4ea5-b0db-41d8b44ae383.png)
 
@@ -156,14 +156,14 @@ categories: React
 
 긴급 업데이트와 전환 업데이트를 구분하기 위한 React의 새로운 개념으로 전환 업데이트를 명시적으로 구분하여 상태 업데이트를 진행할 수 있게 되었습니다.
 
-- <span style='background-color : #fff5b1'>긴급한 업데이트 (urgent updates)</span> : 직접적인 상호작용 반영 (타이핑, 호버, 스크롤 등). 업데이트가 즉각적으로 일어나는 대상.
-- <span style='background-color : #fff5b1'>전환 업데이트(Transition updates)</span> : 하나의 뷰에서 다른 뷰로 UI 전환. 상태값 변화에 따른 모든 업데이트가 뷰에 즉시 반영되지 않아도 됨.
+- 긴급한 업데이트 (urgent updates)</span> : 직접적인 상호작용 반영 (타이핑, 호버, 스크롤 등). 업데이트가 즉각적으로 일어나는 대상.
+- 전환 업데이트(Transition updates)</span> : 하나의 뷰에서 다른 뷰로 UI 전환. 상태값 변화에 따른 모든 업데이트가 뷰에 즉시 반영되지 않아도 됨.
 
 <br>
 
 #### Suspense
 
-<span style='background-color : #fff5b1'>아직 브라우저에 표시되지 않은 컴포넌트에 대한 로딩 상태(UI)를 선언적으로 지정할 수 있습니다.</span>
+아직 브라우저에 표시되지 않은 컴포넌트에 대한 로딩 상태(UI)를 선언적으로 지정할 수 있습니다.</span>
 
 Suspense는 v16에서 도입되었는데 React.lazy를 활용한 code splitting에서만 지원되었고, 서버 렌더링은 지원하지 못했습니다.
 v18에서는 서버 렌더링 지원을 추가 했습니다.
@@ -176,7 +176,7 @@ v18에서는 서버 렌더링 지원을 추가 했습니다.
 
 ![carbon (2)](https://user-images.githubusercontent.com/87301268/230403129-682be693-1647-4e84-8df5-f3fd1c1739b9.png)
 
-<span style='background-color : #fff5b1'>useId는 클라이언트와 서버 간의 hydration에서 mismatch를 피하면서 <br> 고유한 id값을 생성해주는 훅.</span>
+useId는 클라이언트와 서버 간의 hydration에서 mismatch를 피하면서 <br> 고유한 id값을 생성해주는 훅.</span>
 
 - 이것은 유니크한 ID가 필요한 API를 사용하는 컴포넌트에서 유용하게 쓰일 수 있습니다.
 - 공식 문서에서는 useId 훅이 list에서의 key로서 사용되기 위해 도입된 것은 아니라고 설명 합니다.
@@ -187,7 +187,7 @@ v18에서는 서버 렌더링 지원을 추가 했습니다.
 
 ![carbon (3)](https://user-images.githubusercontent.com/87301268/230403250-7b43231c-f3f5-4d46-bb6d-e2e6b2883936.png)
 
-<span style='background-color : #fff5b1'>useTransition은 트렌지션의 펜딩 상태 여부를 나타내는 값과, 트랜지션을 실행시킬 함수를 리턴.</span>
+useTransition은 트렌지션의 펜딩 상태 여부를 나타내는 값과, 트랜지션을 실행시킬 함수를 리턴.</span>
 
 - useTransition과 startTransition은 일부 상태 업데이트를 긴급하지 않은 것으로 간주해 관리가 가능 합니다.
 - isPending 은 작업이 지연되고 있음을 알리는 boolean 이며, startTransition 은 낮은 우선순위로 실행할 함수를 인자로 받습니다.
@@ -198,7 +198,7 @@ v18에서는 서버 렌더링 지원을 추가 했습니다.
 
 ![carbon (4)](https://user-images.githubusercontent.com/87301268/230403356-2e8aaedf-8f98-4ac5-9258-e8b253f74807.png)
 
-<span style='background-color : #fff5b1'>useTransition 과 유사하게 낮은 우선순위를 지정하기 위한 훅</span>
+useTransition 과 유사하게 낮은 우선순위를 지정하기 위한 훅</span>
 
 - 차이점이라면 useTransition은 함수 실행의 우선순위를 지정하는 반면
 - useDeferredValue는 값의 업데이트 우선순위를 지정 합니다.

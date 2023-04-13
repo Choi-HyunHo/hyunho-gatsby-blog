@@ -52,7 +52,7 @@ React는 자체적으로 state(와 props)를 관리할 수 있지만 컴포넌�
 
 **순수함수** : 외부의 개입 없이 동일한 인풋값에 따라 항상 동일한 결과를 내보내느 함수
 
-**리듀서** : <span style='background-color : #fff5b1'>**이전 상태의 액션을**</span> 받아 다음 상태를 반환하는 <span style='background-color : #fff5b1'>**순수 함수**</span>. 이전 상태값을 변경하는 것이 아닌 <span style='background-color : #fff5b1'>**새로운 상태값을 반환 합니다.**</span>
+**리듀서** : **이전 상태의 액션을**</span> 받아 다음 상태를 반환하는 **순수 함수**</span>. 이전 상태값을 변경하는 것이 아닌 **새로운 상태값을 반환 합니다.**</span>
 
 위 3가지의 원칙을 지키면 자연스럽게 사용이 가능 합니다.
 
@@ -60,19 +60,19 @@ React는 자체적으로 state(와 props)를 관리할 수 있지만 컴포넌�
 
 ### **Redux 용어 설명**
 
-<span style='background-color : #fff5b1'>**1\. Store**</span>
+**1\. Store**</span>
 
 스토어는 컴포넌트의 상태를 관리하는 저장소. 하나의 프로젝트는 하나의 스토어만 가질 수 있습니다.
 
-<span style='background-color : #fff5b1'>**2\. Action**</span>
+**2\. Action**</span>
 
 스토어의 상태를 변경하기 위해서는, 액션을 생성해야 합니다. 액션은 객체이며, 반드시 type을 가져야 합니다. 액션 객체는 액션 생성함수에 의해서 만들어 집니다.
 
-<span style='background-color : #fff5b1'>**3\. Reducer**</span>
+**3\. Reducer**</span>
 
 리듀서는 현재 상태와 액션 객체를 받아 새로운 상태를 리턴하는 함수
 
-<span style='background-color : #fff5b1'>**4\. Dispatch**</span>
+**4\. Dispatch**</span>
 
 디스패치는 스토어의 내장 함수 중 하나이며, 액션 객체를 넘겨줘 상태를 업데이트 시켜주는 역할을 합니다.
 
@@ -168,13 +168,13 @@ plus, minus 따라 컴포넌트 안에서 state 의 값이 달라질 것 입니�
 
 ![7](https://user-images.githubusercontent.com/87301268/223938154-6f3c71a5-67f7-4630-b30d-8eb1656888c4.png)
 
-**name :** <span style='background-color : #fff5b1'>useSelector</span> 할 때 값을 가져오는 장소의 이름
+**name :** useSelector</span> 할 때 값을 가져오는 장소의 이름
 
-**initialState** : <span style='background-color : #fff5b1'>state 의 초기값</span>, 즉 처음 상태를 정의 합니다.
+**initialState** : state 의 초기값</span>, 즉 처음 상태를 정의 합니다.
 
-**reducers** : 해당 state를 변화시키는 <span style='background-color : #fff5b1'>action</span> 을 지정 합니다.
+**reducers** : 해당 state를 변화시키는 action</span> 을 지정 합니다.
 
-**actions** : <span style='background-color : #fff5b1'>dispatch</span> 를 통해 상태를 변화 시킬 수 있는 함수
+**actions** : dispatch</span> 를 통해 상태를 변화 시킬 수 있는 함수
 
 ❗️ 사실 실무에서 바로 사용하는 위주로 배워서 이론이 많이 빈약 할 수 있습니다.. 언제나 피드백은 환영입니다..
 
@@ -194,8 +194,8 @@ provider 는 react-redux 에서 리액트 앱이 스토어를 연동 할 수 있
 
 마지막으로, 해당 값을 꺼내오고 변화시키는 방법 입니다.
 
-- **useSelector()** : <span style='background-color : #fff5b1'>스토어에서 현재 상태 값을 가져온다.</span>
-- **useDispatch()** 를 통해 <span style='background-color : #fff5b1'>변경되는 값을 스토어로 전달</span>한다.
+- **useSelector()** : 스토어에서 현재 상태 값을 가져온다.</span>
+- **useDispatch()** 를 통해 변경되는 값을 스토어로 전달</span>한다.
 
 ![9](https://user-images.githubusercontent.com/87301268/223938215-f772ba22-5afa-4437-a59d-bd1653bf96f4.png)
 

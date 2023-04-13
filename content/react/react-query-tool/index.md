@@ -14,7 +14,7 @@ React Query 개발자 도구는 앱에 추가할 수 있는 컴포넌트로 개�
 
 ### Dev Tools 특징
 
-➡️ 쿼리 키로 쿼리를 표시해 주고 **활성(active)**, **비활성(inactive)**, **만료(stale)** 등 모든 <span style='background-color : #fff5b1'>쿼리의 상태</span>를 알려줍니다.<br>
+➡️ 쿼리 키로 쿼리를 표시해 주고 **활성(active)**, **비활성(inactive)**, **만료(stale)** 등 모든 쿼리의 상태</span>를 알려줍니다.<br>
 ➡️ 마지막으로 업데이트된 **타임 스탬프**도 알려줍니다.<br>
 ➡️ 쿼리에 의해 반환된 데이터를 탐색할 수 있는 **데이터 탐색기**도 있습니다.<br>
 ➡️ 쿼리를 볼 수 있는 **쿼리 탐색기**도 있습니다.
@@ -32,7 +32,7 @@ React Query 개발자 도구는 앱에 추가할 수 있는 컴포넌트로 개�
 - CRA 는 npm run build 를 실행할 때만 NODE_ENV 변수를 production 으로 설정 합니다.
   ➡️ 그렇지 않으면 development 또는 testing 으로 설정 됩니다.
 
-즉, <span style='background-color : #fff5b1'>**개발 중일 때는 개발자 도구가 표시되고 프로덕션 때는 표시되지 않습니다.**</span>
+즉, **개발 중일 때는 개발자 도구가 표시되고 프로덕션 때는 표시되지 않습니다.**</span>
 
 <br>
 

@@ -52,7 +52,7 @@ POST CSS 는 JS 플러그인을 사용하여 CSS를 변환시키는 툴 입니�
 
 #### 이유는 ❓
 
-> <span style='background-color : #fff5b1'>동일한 클래스 명</span>을 사용하게 되면 **가장 나중에 import 된** <br> css 파일에 정의된 셀렉터가 적용이 됩니다.
+> 동일한 클래스 명</span>을 사용하게 되면 **가장 나중에 import 된** <br> css 파일에 정의된 셀렉터가 적용이 됩니다.
 
 그렇기에 일반적인 css 파일을 만들게 되면 이름 충돌이 나지 않기 위해 주의해야 합니다.
 
@@ -62,14 +62,14 @@ POST CSS 는 JS 플러그인을 사용하여 CSS를 변환시키는 툴 입니�
 
 ### PostCSS 를 사용하는 방법
 
-<span style='background-color : #fff5b1'>css 파일 확장자 이전에 module 이라고 붙이게 되면</span> **PostCSS 를 자동으로 사용** 할 수 있습니다.
+css 파일 확장자 이전에 module 이라고 붙이게 되면</span> **PostCSS 를 자동으로 사용** 할 수 있습니다.
 
 <br>
 
 #### 위의 예시에 적용해보면
 
 이전 처럼 그냥 import 하면 안되고 아래와 같이 사용 할 수 있습니다. <br>
-➡️ <span style='background-color : #fff5b1'>특히 styles 라고 된 부분은 사용자 임의로 이름을 바꿀 수 있습니다.</span>
+➡️ 특히 styles 라고 된 부분은 사용자 임의로 이름을 바꿀 수 있습니다.</span>
 
 ![carbon (29)](https://user-images.githubusercontent.com/87301268/226674843-9cf37143-3c98-495f-baed-d4ad095f2317.png)
 
@@ -93,7 +93,7 @@ POST CSS 는 JS 플러그인을 사용하여 CSS를 변환시키는 툴 입니�
 <br>
 <br>
 
-PostCSS 를 사용하게 되면 이전 처럼 <span style='background-color : #fff5b1'>외부에 있는 이름 충돌을 걱정하지 않아도 됩니다.</span>
+PostCSS 를 사용하게 되면 이전 처럼 외부에 있는 이름 충돌을 걱정하지 않아도 됩니다.</span>
 
 <br>
 

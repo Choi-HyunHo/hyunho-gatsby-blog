@@ -13,9 +13,9 @@ categories: CS
 
 ### **1\. URI (Uniform Resource Identifier)** 
 
-- <span style='background-color : #fff5b1'>**Uniform**</span> : 리소스 식별하는 통일된 방식 입니다.
-- <span style='background-color : #fff5b1'>**Resource**</span> :  URI로 식별할 수 있는 모든 걸 자원이라고 합니다. 웹 브라우저에 있는 HTML의 파일 것만 자원을 뜻하는 게 아니라 실시간 교통 정보 등등 이런것도 자원이라고 합니다.
-- <span style='background-color : #fff5b1'>**Idenrifier**</span> : 다른 항목과 구분하는 데 필요한 정보. 사람을 식별할 때 주민등록번호를 식별 하는 것처럼.
+- **Uniform**</span> : 리소스 식별하는 통일된 방식 입니다.
+- **Resource**</span> :  URI로 식별할 수 있는 모든 걸 자원이라고 합니다. 웹 브라우저에 있는 HTML의 파일 것만 자원을 뜻하는 게 아니라 실시간 교통 정보 등등 이런것도 자원이라고 합니다.
+- **Idenrifier**</span> : 다른 항목과 구분하는 데 필요한 정보. 사람을 식별할 때 주민등록번호를 식별 하는 것처럼.
 
 ![1](https://user-images.githubusercontent.com/87301268/224230695-7702a05a-c21e-45cf-bbbd-2a763f525583.png)
 ![2](https://user-images.githubusercontent.com/87301268/224230728-cdbeb6dd-98ab-475f-b2e4-83c94816a82e.png)
@@ -45,46 +45,46 @@ categories: CS
 
 <br>
 
-<span style='background-color : #fff5b1'>scheme</span>
+scheme</span>
 
 - 주로 프로토콜를 사용 합니다.
 - 어떤 방식으로 자원에 접근 할 것인가 하는 클라이언트와 서버 간의 규칙 입니다.
 
 <br>
 
-<span style='background-color : #fff5b1'>userinfo</span>
+userinfo</span>
 
 - URL에 사용자정보를 포함해서 인증해야 할 때 있는데 거의 사용하지 않습니다.
 
 <br>
 
-<span style='background-color : #fff5b1'>host</span>
+host</span>
 
 - 도메인 이름이나 IP 주소를 직접 사용이 가능 합니다.
 
 <br>
 
-<span style='background-color : #fff5b1'>port</span>
+port</span>
 
 - 접속 포트
 - 일반적으로 웹 브라우저에서는 많이 생략 하지만, 특정 서버에 따로 접근 할 때는 port 번호 입력을 합니다.
 
 <br>
 
-<span style='background-color : #fff5b1'>path</span>
+path</span>
 
 - 리소스가 있는 경로이자, 계층 구조로 되어있습니다. (ex. home/post)
 
 <br>
 
-<span style='background-color : #fff5b1'>query</span>
+query</span>
 
 - key 와 value 형태로 데이터가 들어 있습니다.
 - ? 시작하고, &로 추가적으로 쿼리 스트링을 입력 합니다.
 
 <br>
 
-<span style='background-color : #fff5b1'>fragment</span>
+fragment</span>
 
 - HTML 내부 북마크 등에 사용 합니다.
 - 잘 사용하지 않고, 서버에 전송하지 않습니다.
@@ -97,15 +97,15 @@ categories: CS
 
 1\. 브라우저에 URL을 입력
 
-2\. <span style='background-color : #fff5b1'>**DNS 서버로 IP를 찾아내고**</span> 생략된 PORT는 scheme로 찾습니다.
+2\. **DNS 서버로 IP를 찾아내고**</span> 생략된 PORT는 scheme로 찾습니다.
 
 3\. 웹 브라우저가 HTTP 요청 메시지를 생성 합니다.
 
 ![4](https://user-images.githubusercontent.com/87301268/224230743-4bafddb3-2bfc-454b-8073-a34b78047cde.png)
 
-4\. <span style='background-color : #fff5b1'>**SOCKET 라이브러리**</span>를 통해서 <span style='background-color : #fff5b1'>**TCP/IP로 IP와 PORT 정보를 찾은 거를 3 way handshake 방식으로 서버랑 연결**</span>
+4\. **SOCKET 라이브러리**</span>를 통해서 **TCP/IP로 IP와 PORT 정보를 찾은 거를 3 way handshake 방식으로 서버랑 연결**</span>
 
-5\. <span style='background-color : #fff5b1'>**HTTP 요청 메시지**</span>는 OS에 있는 <span style='background-color : #fff5b1'>**TCP/IP 계층으로 전달**</span>
+5\. **HTTP 요청 메시지**</span>는 OS에 있는 **TCP/IP 계층으로 전달**</span>
 
 6\. TCP/IP 계층에서 HTTP 요청 메시지를 패킷으로 묶습니다.
 
