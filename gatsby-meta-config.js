@@ -106,6 +106,35 @@ module.exports = {
       },
     ],
 
+    certificate: [
+      // =====       [Timestamp Sample and Structure]      =====
+      // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
+      {
+        date: '',
+        activity: '',
+        info: '',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          web: '',
+        },
+      },
+      {
+        date: '2022.04',
+        activity: '컴퓨터활용능력 1급',
+      },
+      {
+        date: '2021.08',
+        activity: '정보처리기사',
+      },
+      {
+        date: '2019.08',
+        activity: '워드프로세스 단일 등급',
+      },
+    ],
+
     projects: [
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====

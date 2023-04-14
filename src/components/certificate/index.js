@@ -3,11 +3,11 @@ import SectionHeader from '../section-header';
 import IconButtonBar from '../icon-button-bar';
 import './style.scss';
 
-function TimeStampSection({ timestamps }) {
+function Certificate({ timestamps }) {
   if (!timestamps || timestamps.length < 2) return null;
   return (
     <div className="timestamp-section">
-      <SectionHeader title="Career" />
+      <SectionHeader title="Certificate" />
       <div className="body">
         {timestamps.map((timestamp, index) =>
           index === 0 ? null : (
@@ -28,4 +28,4 @@ function TimeStampSection({ timestamps }) {
   );
 }
 
-export default TimeStampSection;
+export default Certificate;

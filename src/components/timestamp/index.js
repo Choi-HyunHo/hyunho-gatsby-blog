@@ -4,7 +4,6 @@ import IconButtonBar from '../icon-button-bar';
 import './style.scss';
 
 function TimeStamp({ timestamps }) {
-  console.log(timestamps);
   if (!timestamps || timestamps.length < 2) return null;
   return (
     <div className="timestamp-section">
