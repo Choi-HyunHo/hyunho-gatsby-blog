@@ -2,29 +2,21 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
 import Seo from '../components/seo';
-import Bio from '../components/bio';
-import TimeStampSection from '../components/timestamp-section';
 import ProjectSection from '../components/project-section';
-import TimeStamp from '../components/timestamp';
-import Certificate from '../components/certificate';
 
-function AboutPage({ data }) {
+function ProjectPage({ data }) {
   const metaData = data.site.siteMetadata;
-  const { author, about, language } = metaData;
-  const { timestamps, projects, timestamp, certificate } = about;
+  const { about } = metaData;
+  const { projects } = about;
   return (
     <Layout>
-      <Seo title="About" />
-      <Bio author={author} language={language} />
-      <TimeStampSection timestamps={timestamps} />
-      <TimeStamp timestamps={timestamp} />
-      <Certificate timestamps={certificate} />
+      <Seo title="project" />
       <ProjectSection projects={projects} />
     </Layout>
   );
 }
 
-export default AboutPage;
+export default ProjectPage;
 
 export const pageQuery = graphql`
   query {
@@ -78,6 +70,20 @@ export const pageQuery = graphql`
             date
             activity
             info
+            links {
+              post
+              github
+              web
+              googlePlay
+              appStore
+            }
+          }
+
+          projects {
+            title
+            description
+            techStack
+            thumbnailUrl
             links {
               post
               github
