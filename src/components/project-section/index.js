@@ -5,6 +5,7 @@ import Image from '../image';
 import './style.scss';
 
 function ProjectSection({ projects }) {
+  console.log(projects);
   if (!projects || projects.length < 2) return null;
   return (
     <div className="project-section">
