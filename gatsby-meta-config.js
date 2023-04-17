@@ -161,7 +161,7 @@ module.exports = {
         thumbnailUrl: 'bg.png',
         links: {
           github: 'https://github.com/Choi-HyunHo/shopping_mall',
-          // demo: 'https://www.zoomkoding.com',
+          demo: 'https://www.zoomkoding.com',
         },
       },
     ],
