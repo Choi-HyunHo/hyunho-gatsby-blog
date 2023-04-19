@@ -77,9 +77,34 @@ Next.js 13은 `app` 디렉토리를 이용해 페이지 구성과 라우팅 기�
 
 <br>
 
+**동적 라우팅**은 정해진 경로가 아니라 동적으로 어떤 경로도 접근 할 수 있기 때문에 **빌드를 할 때 페이지를 미리 만들 수 없습니다.** <br>
+
+동적 라우팅 기능은 이용하지만 원하는 경로만 따로 페이지를 미리 만들 수 없을까요 ? <br>
+➡️ `generateStaticParams` 를 사용하면 됩니다.
+
+<br>
+
+#### generateStaticParams
+
+동적 라우팅을 사용하는 컴포넌트안에서 명시 합니다.
+
+![5](https://user-images.githubusercontent.com/87301268/233005818-997f3bc7-7844-477a-9264-17467ef57244.png)
+
+확인할 때는 `yarn build`
+
+![6](https://user-images.githubusercontent.com/87301268/233006019-7d7b7443-8ebc-4530-8b86-9e4a132f97bc.png)
+
+➡️ 각 경로 옆에 아이콘은 어떤 페이지인지 알려주는 용도 입니다. <br>
+➡️ /shop/product/[slug] 안에 3개의 페이지가 정적으로 만들어진 것을 볼 수 있습니다. <br>
+➡️ generateStaticParams 을 사용하면 빌드 할 때 미리 만들어둡니다. (해당 경로만 SSG)
+
+<br>
+
 ### 참고
 
+- https://akoskm.com/how-to-build-static-web-apps-with-dynamic-routes-in-nextjs-13
 - https://beta.nextjs.org/docs/routing/pages-and-layouts
+- https://beta.nextjs.org/docs/api-reference/generate-static-params
 - https://velog.io/@brgndy/Next.js-13-%EB%9D%BC%EC%9A%B0%ED%8C%85
 - https://mycodings.fly.dev/blog/2022-11-14-nextjs-13-first-look-and-layout
 
