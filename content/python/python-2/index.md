@@ -80,6 +80,17 @@ categories: python
 
 <br>
 
+### 자료형 변환하기
+
+- `int` : 정수형로 변환
+- `float` : 실수형로 변환
+- `str` : 문자열로 변환
+- `list` : 리스트로 변환
+
+![7](https://user-images.githubusercontent.com/87301268/233524325-6d697311-c03d-406a-aae9-42b9aae0e134.png)
+
+<br>
+
 ### 참고
 
 - [김왼손의 왼손코딩](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EC%B4%88-%EA%B0%95%EC%A2%8C)
