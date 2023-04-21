@@ -67,6 +67,7 @@ print()는 **값을 출력해주는 함수** 입니다.
 
 ### 참고
 
+- [김왼손의 왼손코딩](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EC%B4%88-%EA%B0%95%EC%A2%8C)
 - https://homzzang.com/b/py-6
 
 <br>
