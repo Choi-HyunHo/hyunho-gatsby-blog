@@ -69,9 +69,29 @@ categories: python
 
 <br>
 
+#### 정렬
+
+1. 리스트 본체 정렬
+
+- `reverse` : 리스트를 거꾸로 뒤집습니다.
+
+- `sort` : 정렬, 기본 값은 오름차순, `reverse=True`는 내림차순 정렬
+
+![7](https://user-images.githubusercontent.com/87301268/233875242-e961e4b3-bad8-4233-9518-c35dcd10f184.png)
+
+<br>
+
+2. 리스트 정렬된 결과 값 반환
+
+- `sorted` : 순서대로 정렬, 정렬된 리스트 반환
+
+![8](https://user-images.githubusercontent.com/87301268/233875585-899c8bf8-d6ab-43a3-9c04-fe4b0547daf7.png)
+
+<br>
+
 ### 후기
 
-리스트 추가, 삭제 하는 방법은 훨씬 많습니다. <br>
+리스트를 활용하기 위한 메서드 종류는 훨씬 많습니다. <br>
 지금은 이렇구나 정도로 보고, 알고리즘 공부를 하며 더 추가하겠습니다.
 
 <br>
