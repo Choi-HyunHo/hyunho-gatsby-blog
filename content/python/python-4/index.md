@@ -98,6 +98,7 @@ categories: python
 
 ### 참고
 
+- [김왼손의 왼손코딩](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EC%B4%88-%EA%B0%95%EC%A2%8C)
 - https://wikidocs.net/16040
 - https://mimah.tistory.com/entry/Python-List-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1slicng
 

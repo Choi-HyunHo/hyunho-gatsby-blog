@@ -90,6 +90,14 @@ for 의 내장 함수 입니다.
 
 <br>
 
+### 참고
+
+- [김왼손의 왼손코딩](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EC%B4%88-%EA%B0%95%EC%A2%8C)
+- https://wikidocs.net/22805
+- https://wikidocs.net/22
+
+<br>
+
 ```toc
 
 ```
