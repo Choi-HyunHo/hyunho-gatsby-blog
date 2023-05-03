@@ -10,14 +10,14 @@ categories: JS
 ### 11\_원시 값과 객체의 비교
 
 자바스크립트에서 제공하는 데이터 타입은  
-크게 **원시 타입(premitive type)**</span> 과 <span style='background-color : #E6E6FA'>**객체 타입(obejct/reperence type)**</span> 으로 구분 하는데,<br>둘 사이는 차이점이 존재한다.
+크게 **원시 타입(premitive type)**</span> 과 **객체 타입(obejct/reperence type)** 으로 구분 하는데,<br>둘 사이는 차이점이 존재한다.
 
-1. 원시 타입 값은 **변경 불가능 한 값**</span> 이고, 객체(참조) 타입 값은 <span style='background-color : #E6E6FA'>**변경 가능한 값**</span> 이다.
+1. 원시 타입 값은 **변경 불가능 한 값**</span> 이고, 객체(참조) 타입 값은 **변경 가능한 값** 이다.
 
-2. 원시 타입 값을 변수에 할당하면 변수(확보된 메모리 공간) 에는 **실제 값이 저장**</span> <br>객체(참조) 타입 값은 변수(확보된 메모리 공간)에는 <span style='background-color : #E6E6FA'>**참조 값이 저장**</span>
+2. 원시 타입 값을 변수에 할당하면 변수(확보된 메모리 공간) 에는 **실제 값이 저장**</span> <br>객체(참조) 타입 값은 변수(확보된 메모리 공간)에는 **참조 값이 저장**</span>
 
 3. 원시 타입 값을 갖는 변수를 다른 변수에 할당하면 **원본의 원시 값이 복사되어 전달**</span>  
-   객체 타입 값을 갖는 변수를 다른 변수에 할당하면 <span style='background-color : #E6E6FA'>**원본의 참조 값이 복사되어 전달**</span>
+   객체 타입 값을 갖는 변수를 다른 변수에 할당하면 **원본의 참조 값이 복사되어 전달**</span>
 
 <br>
 
@@ -89,7 +89,7 @@ score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된
 > 프로퍼티의 개수가 정해져 있지 않아 **동적으로 추가되고 삭제할 수 있고** <br>
 > 프로퍼티의 값에도 제약이 없다.
 
-**원시 값과 같이 <span style='background-color : #E6E6FA'>확보해야 할 메모리 공간의 크기를 사전에 정해 둘 수 없고</span>  
+**원시 값과 같이 확보해야 할 메모리 공간의 크기를 사전에 정해 둘 수 없고</span>  
 복합적인 자료구조라서 ,원시 값과는 다른 방식으로 동작하도록 설계되어 있다.**
 
 <br>
@@ -102,7 +102,7 @@ score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된
 ➡️ 객체는 크기가 매우 클 수도 있고 원시 값처럼 크기가 일정하지도 않으며 <br>
 ➡️ 프로퍼티 값이 객체일 수도 있다.
 
-따라서 <span style='background-color : #E6E6FA'>**메모리를 효율적으로 사용하기 위해,**</span> 그리고 객체를 복사해 생성하는 비용을 절약하여 성능을 향상시키기 위해 ➡️ <span style='background-color : #E6E6FA'>**객체는 변경 가능한 값으로 설계되어 있다.**</span>
+따라서 **메모리를 효율적으로 사용하기 위해,**</span> 그리고 객체를 복사해 생성하는 비용을 절약하여 성능을 향상시키기 위해 ➡️ **객체는 변경 가능한 값으로 설계되어 있다.**</span>
 
 <br>
 
@@ -110,9 +110,9 @@ score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된
 
 > 객체(참조) 타입의 값은 변경 가능한 값 이다.
 
-- 객체를 할당한 변수는 <span style='background-color : #E6E6FA'>**재할당 없이 객체를 직접 변경**</span> 할 수 있다.
-- 즉, 재할당 없이 프로퍼티를 <span style='background-color : #E6E6FA'>**동적으로 추가**</span> 할 수 있고
-- <span style='background-color : #E6E6FA'>**값을 갱신**</span> 할 수 있으며, <span style='background-color : #E6E6FA'>**자체를 삭제**</span> 할 수 있다.
+- 객체를 할당한 변수는 **재할당 없이 객체를 직접 변경**</span> 할 수 있다.
+- 즉, 재할당 없이 프로퍼티를 **동적으로 추가**</span> 할 수 있고
+- **값을 갱신**</span> 할 수 있으며, **자체를 삭제**</span> 할 수 있다.
 
 <br>
 
@@ -121,7 +121,7 @@ score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된
 객체를 프로퍼티 값으로 갖는 객체인 경우
 
 - **얕은 복사**</span> 는 **한 단계**</span> 까지만 복사하는 것을 말하고 ➡️ 참조 값을 복사
-- <span style='background-color : #E6E6FA'>**깊은 복사**</span> 는 <span style='background-color : #E6E6FA'>**객체에 중첩되어 있는 객체**</span> 까지 복사하는 것을 말한다.  
+- **깊은 복사**</span> 는 **객체에 중첩되어 있는 객체**</span> 까지 복사하는 것을 말한다.  
   ➡️ 객체에 중첩되어 있는 객체까지 모두 복사해서 원시 값처럼 **완전한 복사본**을 만드는 복사
 
 ![carbon (92)](https://user-images.githubusercontent.com/87301268/225221774-11213d6f-e75f-4edd-8524-47e0787a5283.png)
@@ -139,7 +139,7 @@ score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된
 ![carbon (93)](https://user-images.githubusercontent.com/87301268/225221917-34a33515-df57-4ba3-bbd0-da587b3cf86b.png)
 
 위의 코드에서 person과 copy 모두 동일한 객체를 가리키는데  
-이는 <span style='background-color : #E6E6FA'>**두 개의 식별자가 하나의 객체를 공유**</span> 한다는것을 의미한다.
+이는 **두 개의 식별자가 하나의 객체를 공유**</span> 한다는것을 의미한다.
 
 <br>
 
@@ -153,7 +153,7 @@ score 변수와 copy 변수의 값 100은 **다른 메모리 공간에 저장된
 
 > 원시타입과 가장 큰 차이점은 변수의 크기가 동적으로 변한다는 것</span>이다.
 
-이러한 특징 때문에 <span style='background-color : #E6E6FA'>객체의 데이터 자체는</span> 별도의 [메모리 공간(heap)](https://choi-hyunho.com/react-immutability/)에 저장되며, 변수에 할당 시 <span style='background-color : #E6E6FA'>데이터에 대한 주소</span> ( 힙(Heap) 메모리의 주소값)가 저장되기 때문에 자바스크립트 엔진이 변수가 가지고 있는 <span style='background-color : #E6E6FA'>메모리 주소를 이용해서 변수의 값에 접근</span>하게 되는것이다.
+이러한 특징 때문에 객체의 데이터 자체는</span> 별도의 [메모리 공간(heap)](https://choi-hyunho.com/react-immutability/)에 저장되며, 변수에 할당 시 데이터에 대한 주소</span> ( 힙(Heap) 메모리의 주소값)가 저장되기 때문에 자바스크립트 엔진이 변수가 가지고 있는 메모리 주소를 이용해서 변수의 값에 접근</span>하게 되는것이다.
 
 <br>
 
