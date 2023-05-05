@@ -7,7 +7,9 @@ tags: Next.js
 categories: Next.js
 ---
 
-loading.js 는 해당 route에서 페이지 UI가 준비되기 이전에 사용자에게 로딩 중인 상태를 나타낼 수 있는 UI 컴포넌트 입니다.
+loading.js 는
+
+- 해당 route에서 페이지 UI가 준비되기 이전에 사용자에게 로딩 중인 상태를 나타낼 수 있는 UI 컴포넌트 입니다.
 
 파일을 만들어서 사용하면 자동적으로 **React Suspense Boundary** 를 사용하는 것과 동일 합니다.
 
@@ -15,7 +17,34 @@ loading.js 는 해당 route에서 페이지 UI가 준비되기 이전에 사용�
 
 <br>
 
-### 사용하는 방법
+<img src='https://user-images.githubusercontent.com/87301268/236440573-67365b04-f978-4726-9aa3-7a663015f30d.png'>
+
+<br>
+
+공식 사이트에서 동작 원리를 보면 `loading.js` 를 만들면 `layout.js` 에서 `page.js` 가 보여주는 부분을 `<Suspense>` 로 감싸줍니다.
+
+1. 리액트에서 만든 Suspense 안에 들어있는 페이지 컴포넌트가 준비되기 전에 **fallback** 으로 명시한 컴포넌트를 보여주고 나서
+2. 실제 페이지 컴포넌트가 준비되는 대로 loading.js 가 아니라 준비된 page.js 로 대체해서 보여줍니다.
+
+하지만 페이지 전체를 로딩으로 감싸는 것 말고도 각 요소마다 Suspense 를 감싸서 사용 할 수 있습니다.
+
+<br>
+
+### 각 요소마다 suspense boundary 하기
+
+[공식문서](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#parallel-data-fetching)
+
+이 부분에서 Fetch 를 하여 데이터를 `Promise.all` 을 사용하여 동시에 불러오는데 위와 같이만 구현하면
+**사용자가 의미있는 로딩을 볼 수 없다하여(두 개의 데이터가 전부 올 때 까지 어떤 UI를 볼 수 없다)** `suspense boundary` 사용을 추천합니다.
+
+따라서 두 개의 데이터를 다 받아서 보여주지 않고
+
+1. 데이터 하나를 따로 받아서 UI 하나만 먼저 보여주고
+2. 무게가 큰 컴포넌트에서 나타나는 내용은 `<Suspense>` 로 감싸서 컴포넌트에 필요한 데이터의 요청이 끝나지 않아도 이름을 먼저보여주고 의미있는 로딩을 보여주는 등 최대한 사용자 입장을 배려하는 것을 볼 수 있습니다.
+
+<br>
+
+### 그럼 이제 loading.js 을 알아봅시다
 
 사용하고자 하는 경로에서(폴더) `loading.js` 파일을 우선 만듭니다. <br>
 그리고 해당 파일안에 나타내고 싶은 spinner 나 스켈레톤, 문구 등을 작성 합니다.
@@ -48,6 +77,14 @@ layout 파일안에 있는 `{children}` 요소들을 자동적으로 **React Sus
 - 똑같이 새로고침을 하여 데이터를 불러와도 변함이 이미 정적으로 만들어진 페이지이기 때문에 로딩을 하여 데이터를 불러올 이유가 없습니다.
 
 ![2](https://user-images.githubusercontent.com/87301268/236428429-da839025-3cf6-48c9-b639-be2d0deceadf.gif)
+
+<br>
+
+### 정리
+
+경로안의 페이지 컴포넌트를 크게 감싸기 때문에 중첩 Suspense 구현이 안됩니다.
+
+- 이를 위해서 page 컴포넌트에 내용을 작은 단위로 분리하여 직접 Suspense 를 사용
 
 <br>
 
