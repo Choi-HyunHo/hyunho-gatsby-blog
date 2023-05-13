@@ -225,6 +225,8 @@ MoreNarrowStrings 인터페이스는 **string 에 할당할 수 없습니다.** 
 - 속성이 이미 인터페이스에 선언되어 있다면
 - 나중에 병합된 인터페이스에도 동일한 타입을 사용해야 합니다.
 
+![17](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/ff55f001-7d73-4e90-b7a6-70b0754615a9)
+
 <br>
 
 ```toc
