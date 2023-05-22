@@ -177,7 +177,114 @@ categories: TS
 
 ![13](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/2de8498e-0c8a-41ff-bd64-1cdd8bde8aa9)
 
-- Empty 클래스는 Graded와 Reporter 인터페이스
+- Empty 클래스는 Graded와 Reporter 인터페이스를 제대로 구현하지 못했으므로 두 가지 타입오류가 발생 합니다.
+
+> 만약 인터페이스끼리 중복된 부분이 있고 두 인터페이스가 매우 다른 객체 형태를 표현하는 경우 해당 클래스는 정의할 수 없습니다.
+
+<br>
+
+### 8.5 클래스 확장
+
+다른 클래스를 확장하거나 하위 클래스를 만드는 자바스크립트 개념에 타입 검사를 추가합니다.
+
+![14](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/2b9cca62-8bb0-40f7-90dd-cc02728f8e56)
+
+<br>
+
+#### 8.5.1 할당 가능성 확장
+
+하위 클래스에서 기본 클래스의 멤버나 메서드를 사용할 수 있습니다.
+
+![15](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/890b002a-913a-4315-8409-0afa3ba1ccd9)
+
+구조적 타이핑에 따라 기본 클래스의 타입이 **하위 클래스의 모든 맴버가 동일하게 존재하는 경우** 기본 클래스의 인스턴스를 하위 클래스 대신 사용할 수 있습니다.
+
+<br>
+
+#### 8.5.2 재정의된 생성자
+
+하위 클래스는 자체 생성자를 정의할 필요가 없습니다.
+
+- 자체 생성자가 없는 하위 생성자는 암묵적으로 기본 클래스의 생성자를 사용합니다.
+- 자바스크립트에서 하위 클래스가 자체 생성자를 선언하면 `super` 키워드를 통해 기본 클래스 생성자를 호출해야 합니다.
+
+![16](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/14bf5feb-f7ba-4dae-aad7-ffb513edc3c2)
+
+Brand 클래스는 super 생성자를 호출하고 color 매개변수를 전달하여 Colors 클래스의 생성자를 적절하게 재정의합니다.
+
+<br>
+
+#### 8.5.3 재정의된 메서드 (Overriding)
+
+하위 클래스는 기본 클래스의 메서드를 재정의 할 수 있습니다.
+
+- 기본 클래스를 사용하는 모든 곳에 하위 클래스를 사용할 수 있으므로
+- 새 메서드의 기본 타입도 기본 메서드 대신 사용할 수 있어야 합니다.
+
+![17](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/e68d87e9-e7b2-4361-9652-cabbe758b8f7)
+
+Colors 클래스에는 색상을 설명하는 문자열을 반환하는 getColorInfo() 메서드가 있습니다.
+
+- Brand 클래스는 Colors를 확장하고 반환된 문자열에 브랜드 정보를 포함하는 자체 구현으로 getColorInfo() 메서드를 재정의합니다.
+- 이제 Brand 클래스의 인스턴스를 만들고 getColorInfo() 메서드를 호출하면
+- Colors 클래스 대신 Brand 클래스에서 재정의된 메서드가 호출됩니다.
+
+<br>
+
+#### 8.5.4 재정의된 속성
+
+속성을 다시 선언하는 대부분의 하위 클래스는 해당 속성을
+
+- 유니언 타입의 더 구체적인 하위 집합으로 만들거나
+- 기본 클래스 속성 타입에서 확장되는 타입으로 만듭니다.
+
+![18](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/488ca528-ad10-47ec-89c2-603c147c05e2)
+
+<br>
+
+### 8.6 추상 클래스
+
+일부 메서드의 구현을 하지 않고, 대신 하위 클래스가 해당 메서드를 제공할 것을 예상하여<br>
+기본 클래스를 만드는 방법이 유용할 수 있습니다.
+
+- 추상화하려는 클래스 이름과 메서드 앞에 `abstract` 키워드를 추가합니다.
+- 이러한 추상화 메서드 선언은 추상화 기본 클래스에서 메서드의 본문을 제공하는 것을 건너뛰고
+- 대신 인터페이스와 동일한 방식으로 선언됩니다.
+
+![19](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/b2871cf9-2845-41a4-b7f6-fc4251ea9343)
+
+<br>
+
+### 8.7 멤버 접근성
+
+타입스크립에는 접근 제한자가 존재 합니다.
+
+자바스크립트에도 `#`이라는 private한 접근 제한자가 존재하지만 <br> private와 #은 비슷한 역할을 하지만 미묘한 차이가 존재 합니다.
+
+- `#`은 컴파일 후에도 사라지지 않는 자바스크립트 고유의 문법
+- `private`은 컴파일 후에 사라지는 타입스크립트 고유의 문법
+
+<br>
+
+접근 제한자 설명
+
+- `public` : 어디서나 누구나 접근 가능
+- `protected` : 클래스 내부 또는 하위 클래스에서만 접근 가능
+- `private` : 클래스 내부에서만 접근 가능
+
+![20](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/6933bd53-30f6-4cd7-9be3-2643571ddd7c)
+
+<br>
+
+#### 8.7.1 정적 필드 제한자
+
+자바스크립트는 `static` 키워드를 사용해 **클래스 자체에 멤버를 선언** 합니다. <br>
+타입스크립트는 `static` 키워드를 단독으로 사용하거나 `readonly`와 접근성 키워드를 함께 사용할 수 있습니다.
+
+- 함께 사용할 경우 `접근성 키워드 > static > readonly` 키워드가 옵니다.
+- static 클래스 필드에 대해 readonly와 접근성 제한자를 사용하면 해당 클래스 외부에서 접근되거나 수정되는 것을 제한하는데 유용
+
+![21](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/89a15105-c903-47ae-a56d-a75ebaa68017)
 
 <br>
 
