@@ -7,6 +7,10 @@ tags: TS
 categories: TS
 ---
 
+> 이정환 님의 [한 입 크기로 잘라먹는 타입스크립트](https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%ED%81%AC%EA%B8%B0-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/) 를 수강한 내용 입니다.
+
+<br>
+
 ### 대수 타입(Algebraic type)이란
 
 대수 타입이란 **여러 개의 타입을 합성**해서 만드는 타입을 말합니다.
