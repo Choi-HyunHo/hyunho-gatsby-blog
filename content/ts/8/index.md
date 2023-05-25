@@ -98,6 +98,14 @@ Number 타입과 Number Literal 타입이 있을 때
 
 <br>
 
+### 타입스크립트를 사용하면서 참고하면 좋은 표
+
+> 업 캐스팅 , 다운 캐스팅 참고
+
+![8](https://github.com/Choi-HyunHo/hyunho-gatsby-blog/assets/87301268/83973364-893b-4dcb-a2fb-6ac95a888ce5)
+
+<br>
+
 ```toc
 
 ```
